@@ -1,0 +1,4 @@
+# 최신 로컬 동결 모델: 기존 Python3.10 환경에서 확인한 버전
+-r ag_b3.txt
+pydantic==2.11.10
+tokenizers==0.21.4

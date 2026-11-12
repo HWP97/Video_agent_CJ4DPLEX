@@ -1,0 +1,35 @@
+{
+  "seed": 20261111,
+  "configs": [
+    "B2-D01",
+    "B2-D02",
+    "B2-D03"
+  ],
+  "conditional": "B2-D04",
+  "ridge": 0.01,
+  "pca_rank": 16,
+  "epochs": "analytic one pass",
+  "fit_counts": {
+    "fit": 526,
+    "inner_group": 256,
+    "inner_time": 204,
+    "purged": 183
+  },
+  "protected": {
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/manifest.json": "61780b4815544e4f17a0d7b85c8a3ac7922e9dd08c2090921368af63c97429f7",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/inputs.npz": "7d5179e458ed5f3b4a3416002fb58a1589380c256440be2d7d514bfc8adf992e",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/assembly_receipt.json": "e248b8ecbd9406b71f272f9fc0d122b325c4ca092112446f0a94c6935246b6de",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/extraction_complete.json": "f954484c91346a2c756607aafc2c025e24670e05600e809c60c66447d0ee3fac",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/extract.py": "d0ad301638d746e9d88b3285c2ac8d39f2adc5c639ffb273572eb3d1cae13ffc",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/labels_train.json": "3cf44f07ff594042910c172273f21d5b7a17aa47febdae268f3be7422a68ee2f",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/data/receipt.json": "f5758107105452f7b8a90c09c79af56b148addf8a7d3ce240c3f2d4b07a6dd69",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/followup_reasoned_combinations/selection_lock.json": "3427f8c89d65eafdbf5a9fb0a5f062edf2a44f846f2b33d1cd7f78e91a4ba794",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/followup_reasoned_combinations/COMPLETION_RECEIPT.json": "baa13053de200f6d9a04ef4ac1980963510aaaa655d1271d42062c3b804c1fcc",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/predictions/direct_gru_h8_contrast0.npz": "1ef2d0890a706b1af7475956d5e73bfd665a15cd7f8fe061481f45001f52b282"
+  },
+  "decisions_sha256": "f4f56a235cad6c9b314646e13696e5bcb0b01970729c9b4331f515a68d7a9169",
+  "split_sha256": "f0e990ce235032e5d6cc25c220391244273871917b564739b996443326296402",
+  "source": "91a29fe9191b7e2ed214fec69b40e20e1dd8a70d2fd028f4b42ced6d0f91f258",
+  "selection": "both validation future MAE<=hold and CCC>=hold; minimize worst relative MAE; else hold",
+  "outer_labels_read": false
+}

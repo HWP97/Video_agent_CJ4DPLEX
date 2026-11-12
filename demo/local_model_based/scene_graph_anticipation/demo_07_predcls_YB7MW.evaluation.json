@@ -1,0 +1,93 @@
+[
+  {
+    "pts_s": 28.533333,
+    "GT_relations": [
+      "person > not looking at > television",
+      "television > above > person",
+      "person > not contacting > television",
+      "person > unsure > floor",
+      "floor > behind > person",
+      "person > lying on > floor",
+      "person > looking at > cupglassbottle",
+      "cupglassbottle > in front of > person",
+      "person > holding > cupglassbottle",
+      "person > drinking from > cupglassbottle"
+    ],
+    "baseline_R20": 0.6,
+    "ours_R20": 0.9,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        9
+      ],
+      [
+        4
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      []
+    ]
+  }
+]

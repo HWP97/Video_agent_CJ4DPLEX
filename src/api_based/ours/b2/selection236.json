@@ -1,0 +1,47 @@
+{
+  "experiment": "baseline_residual_20261110",
+  "method": "observation_residual_lambda1",
+  "selection_score": {
+    "n": 236,
+    "MAE": 0.19748953490610174,
+    "CCC": 0.5590044111457853,
+    "MAE_by_horizon_axis": [
+      [
+        0.2206649685238031,
+        0.16792573741274808
+      ],
+      [
+        0.22124623065278654,
+        0.16435845809861377
+      ],
+      [
+        0.22780309075829486,
+        0.16608525676799604
+      ],
+      [
+        0.24236426026051927,
+        0.169468276774052
+      ]
+    ]
+  },
+  "selection_candidates": 49,
+  "source_predictions": [
+    {
+      "path": "/mnt/RG2/baseline_residual_20261110/b2/predictions.jsonl",
+      "sha256": "fa864d17d165f6b7ec792bcee028fee38e12b1d970605621872647e9923737e5"
+    },
+    {
+      "path": "/mnt/RG2/fixed_baseline_bottleneck_20261110/b2/predictions.jsonl",
+      "sha256": "62056c97279f118bf5e5f9ced98a633f5387af0de25c5acfeb6659a2a197f973"
+    },
+    {
+      "path": "/mnt/RG2/llm_transfer_20261110/b2/predictions.jsonl",
+      "sha256": "679bc21ed887dd545ba0d64e049583bced4100e3171acce47a07679802e57231"
+    },
+    {
+      "path": "/mnt/RG2/llm_transfer_expansion_20261110/b2/predictions.jsonl",
+      "sha256": "2ec60af5c20be0cbda2c4a25e8e0bef73b737d30b9d19d174646c4936a8ea5cd"
+    }
+  ],
+  "selection_labels_sha256": "c9f3757b803876fe73e60264c12b0b87f37208e58f156073414dcdabd6beb099"
+}

@@ -1,0 +1,1325 @@
+[
+  {
+    "method": "fast_trm/chronos_independent",
+    "canonical": "fast_trm/chronos_independent",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "chronos_independent",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/chronos_joint",
+    "canonical": "fast_trm/chronos_joint",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "chronos_joint",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/direct_continuous",
+    "canonical": "fast_trm/direct_continuous",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "direct_continuous",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/direct_dct_bpe",
+    "canonical": "fast_trm/direct_dct_bpe",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "direct_dct_bpe",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/direct_raw_bpe",
+    "canonical": "fast_trm/direct_raw_bpe",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "direct_raw_bpe",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/direct_single_state",
+    "canonical": "fast_trm/direct_single_state",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "direct_single_state",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/direct_two_state_deep",
+    "canonical": "fast_trm/direct_two_state_deep",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "direct_two_state_deep",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/direct_two_state_last",
+    "canonical": "fast_trm/direct_two_state_last",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "direct_two_state_last",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/kalman",
+    "canonical": "analytic/kalman",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 KF 대조군 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "kalman",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/kf_self",
+    "canonical": "residual/kalman_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "동일 residual KF-self anchor 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "kf_self",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local",
+    "canonical": "loop/direct_unshared4_d4",
+    "role": "주 baseline",
+    "dedup_reason": "고정 attention anchor 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local_continuous",
+    "canonical": "fast_trm/local_continuous",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local_continuous",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local_dct_bpe",
+    "canonical": "fast_trm/local_dct_bpe",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local_dct_bpe",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local_raw_bpe",
+    "canonical": "fast_trm/local_raw_bpe",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local_raw_bpe",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local_single_state",
+    "canonical": "fast_trm/local_single_state",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local_single_state",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local_two_state_deep",
+    "canonical": "fast_trm/local_two_state_deep",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local_two_state_deep",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/local_two_state_last",
+    "canonical": "fast_trm/local_two_state_last",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "local_two_state_last",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/selected_fast",
+    "canonical": "fast_trm/selected_fast",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "selected_fast",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "fast_trm/selected_trm",
+    "canonical": "fast_trm/selected_trm",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/predictions.npz",
+    "array_key": "selected_trm",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/constant_velocity",
+    "canonical": "analytic/constant_velocity",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 CV 대조군 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "constant_velocity",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/development_selected",
+    "canonical": "loop/development_selected",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "development_selected",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_dynamic_d1",
+    "canonical": "loop/direct_dynamic_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_dynamic_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_dynamic_d2",
+    "canonical": "loop/direct_dynamic_d2",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_dynamic_d2",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_dynamic_d4",
+    "canonical": "loop/direct_dynamic_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_dynamic_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_dynamic_d8",
+    "canonical": "loop/direct_dynamic_d8",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_dynamic_d8",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared2_d1",
+    "canonical": "loop/direct_shared2_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared2_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared2_d2",
+    "canonical": "loop/direct_shared2_d2",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared2_d2",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared2_d4",
+    "canonical": "loop/direct_shared2_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared2_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared2_d8",
+    "canonical": "loop/direct_shared2_d8",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared2_d8",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared4_d1",
+    "canonical": "loop/direct_shared4_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared4_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared4_d2",
+    "canonical": "loop/direct_shared4_d2",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared4_d2",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared4_d4",
+    "canonical": "loop/direct_shared4_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared4_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_shared4_d8",
+    "canonical": "loop/direct_shared4_d8",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_shared4_d8",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_single_d1",
+    "canonical": "loop/direct_single_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_single_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_unshared4_d4",
+    "canonical": "loop/direct_unshared4_d4",
+    "role": "주 baseline",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_unshared4_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/direct_unshared4_small_d4",
+    "canonical": "loop/direct_unshared4_small_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "direct_unshared4_small_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/idea_diagnostic",
+    "canonical": "loop/idea_diagnostic",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "idea_diagnostic",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/idea_diagnostic_no_neighbors",
+    "canonical": "loop/idea_diagnostic_no_neighbors",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "idea_diagnostic_no_neighbors",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kalman",
+    "canonical": "analytic/kalman",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 KF 대조군 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kalman",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_dynamic_d1",
+    "canonical": "loop/kf_dynamic_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_dynamic_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_dynamic_d2",
+    "canonical": "loop/kf_dynamic_d2",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_dynamic_d2",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_dynamic_d4",
+    "canonical": "loop/kf_dynamic_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_dynamic_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_dynamic_d8",
+    "canonical": "loop/kf_dynamic_d8",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_dynamic_d8",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_self_reference",
+    "canonical": "residual/kalman_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "동일 residual KF-self anchor 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_self_reference",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared2_d1",
+    "canonical": "loop/kf_shared2_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared2_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared2_d2",
+    "canonical": "loop/kf_shared2_d2",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared2_d2",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared2_d4",
+    "canonical": "loop/kf_shared2_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared2_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared2_d8",
+    "canonical": "loop/kf_shared2_d8",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared2_d8",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared4_d1",
+    "canonical": "loop/kf_shared4_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared4_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared4_d2",
+    "canonical": "loop/kf_shared4_d2",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared4_d2",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared4_d4",
+    "canonical": "loop/kf_shared4_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared4_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_shared4_d8",
+    "canonical": "loop/kf_shared4_d8",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_shared4_d8",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_single_d1",
+    "canonical": "loop/kf_single_d1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_single_d1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_unshared4_d4",
+    "canonical": "loop/kf_unshared4_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_unshared4_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "loop/kf_unshared4_small_d4",
+    "canonical": "loop/kf_unshared4_small_d4",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_20261110/b3/predictions.npz",
+    "array_key": "kf_unshared4_small_d4",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/constant_velocity",
+    "canonical": "analytic/constant_velocity",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 CV 대조군 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "constant_velocity",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_adapted_r0.001",
+    "canonical": "memory_ttt/direct_prefix_adapted_r0.001",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_adapted_r0.001",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_adapted_r0.01",
+    "canonical": "memory_ttt/direct_prefix_adapted_r0.01",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_adapted_r0.01",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_adapted_r0.1",
+    "canonical": "memory_ttt/direct_prefix_adapted_r0.1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_adapted_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.001",
+    "canonical": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.001",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_ordinaryfit_unadapted_r0.001",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.01",
+    "canonical": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.01",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_ordinaryfit_unadapted_r0.01",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.1",
+    "canonical": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_ordinaryfit_unadapted_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.001",
+    "canonical": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.001",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_ordinaryfit_updated_r0.001",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.01",
+    "canonical": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.01",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_ordinaryfit_updated_r0.01",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.1",
+    "canonical": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_ordinaryfit_updated_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_update_disabled_r0.001",
+    "canonical": "memory_ttt/direct_prefix_update_disabled_r0.001",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_update_disabled_r0.001",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_update_disabled_r0.01",
+    "canonical": "memory_ttt/direct_prefix_update_disabled_r0.01",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_update_disabled_r0.01",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/direct_prefix_update_disabled_r0.1",
+    "canonical": "memory_ttt/direct_prefix_update_disabled_r0.1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "direct_prefix_update_disabled_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman",
+    "canonical": "analytic/kalman",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 KF 대조군 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_adapt_r0.001",
+    "canonical": "memory_ttt/kalman_adapt_r0.001",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_adapt_r0.001",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_adapt_r0.1",
+    "canonical": "memory_ttt/kalman_adapt_r0.1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_adapt_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_adapt_r1.0",
+    "canonical": "memory_ttt/kalman_adapt_r1.0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_adapt_r1.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_adapt_r10.0",
+    "canonical": "memory_ttt/kalman_adapt_r10.0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_adapt_r10.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_adapt_r1e-05",
+    "canonical": "memory_ttt/kalman_adapt_r1e-05",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_adapt_r1e-05",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_identity_update",
+    "canonical": "memory_ttt/kalman_identity_update",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_identity_update",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_memory_k1",
+    "canonical": "memory_ttt/kalman_memory_k1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_memory_k1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_memory_k20",
+    "canonical": "memory_ttt/kalman_memory_k20",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_memory_k20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_memory_k5",
+    "canonical": "memory_ttt/kalman_memory_k5",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_memory_k5",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_static_r0.1",
+    "canonical": "memory_ttt/kalman_static_r0.1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_static_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_static_r1.0",
+    "canonical": "memory_ttt/kalman_static_r1.0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_static_r1.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_static_r10.0",
+    "canonical": "memory_ttt/kalman_static_r10.0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_static_r10.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kalman_update_disabled",
+    "canonical": "memory_ttt/kalman_update_disabled",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kalman_update_disabled",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/kf_self",
+    "canonical": "residual/kalman_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "동일 residual KF-self anchor 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "kf_self",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local",
+    "canonical": "loop/direct_unshared4_d4",
+    "role": "주 baseline",
+    "dedup_reason": "고정 attention anchor 재사용",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_adapt_r0.001",
+    "canonical": "memory_ttt/local_adapt_r0.001",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_adapt_r0.001",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_adapt_r0.1",
+    "canonical": "memory_ttt/local_adapt_r0.1",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_adapt_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_adapt_r1.0",
+    "canonical": "memory_ttt/local_adapt_r1.0",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_adapt_r1.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_adapt_r10.0",
+    "canonical": "memory_ttt/local_adapt_r10.0",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_adapt_r10.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_adapt_r1e-05",
+    "canonical": "memory_ttt/local_adapt_r1e-05",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_adapt_r1e-05",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_identity_update",
+    "canonical": "memory_ttt/local_identity_update",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_identity_update",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_memory_k1",
+    "canonical": "memory_ttt/local_memory_k1",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_memory_k1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_memory_k20",
+    "canonical": "memory_ttt/local_memory_k20",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_memory_k20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_memory_k5",
+    "canonical": "memory_ttt/local_memory_k5",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_memory_k5",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_memory_shuffled_k5",
+    "canonical": "memory_ttt/local_memory_shuffled_k5",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_memory_shuffled_k5",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_static_r0.1",
+    "canonical": "memory_ttt/local_static_r0.1",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_static_r0.1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_static_r1.0",
+    "canonical": "memory_ttt/local_static_r1.0",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_static_r1.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_static_r10.0",
+    "canonical": "memory_ttt/local_static_r10.0",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_static_r10.0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/local_update_disabled",
+    "canonical": "memory_ttt/local_update_disabled",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "local_update_disabled",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/memory_direct_uniform_k1",
+    "canonical": "memory_ttt/memory_direct_uniform_k1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "memory_direct_uniform_k1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/memory_direct_uniform_k20",
+    "canonical": "memory_ttt/memory_direct_uniform_k20",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "memory_direct_uniform_k20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/memory_direct_uniform_k5",
+    "canonical": "memory_ttt/memory_direct_uniform_k5",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "memory_direct_uniform_k5",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/memory_direct_weighted_k1",
+    "canonical": "memory_ttt/memory_direct_weighted_k1",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "memory_direct_weighted_k1",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/memory_direct_weighted_k20",
+    "canonical": "memory_ttt/memory_direct_weighted_k20",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "memory_direct_weighted_k20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/memory_direct_weighted_k5",
+    "canonical": "memory_ttt/memory_direct_weighted_k5",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "memory_direct_weighted_k5",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/selected_adapt",
+    "canonical": "memory_ttt/selected_adapt",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "selected_adapt",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "memory_ttt/selected_memory",
+    "canonical": "memory_ttt/selected_memory",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/llm_transfer_expansion_20261110/b3/predictions.npz",
+    "array_key": "selected_memory",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/direct_ar",
+    "canonical": "new/direct_ar",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "direct_ar",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/direct_masked",
+    "canonical": "new/direct_masked",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "direct_masked",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/direct_mtp",
+    "canonical": "new/direct_mtp",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "direct_mtp",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/direct_parallel",
+    "canonical": "new/direct_parallel",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "direct_parallel",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/kalman",
+    "canonical": "analytic/kalman",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 KF 대조군 재사용",
+    "source_predictions": null,
+    "array_key": null,
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/kf_self",
+    "canonical": "residual/kalman_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "동일 residual KF-self anchor 재사용",
+    "source_predictions": null,
+    "array_key": null,
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/local",
+    "canonical": "loop/direct_unshared4_d4",
+    "role": "주 baseline",
+    "dedup_reason": "고정 attention anchor 재사용",
+    "source_predictions": null,
+    "array_key": null,
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/local_ar",
+    "canonical": "new/local_ar",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "local_ar",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/local_masked",
+    "canonical": "new/local_masked",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "local_masked",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/local_mtp",
+    "canonical": "new/local_mtp",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "local_mtp",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/local_parallel",
+    "canonical": "new/local_parallel",
+    "role": "attention 기반 아이디어 변경",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/metric_local_followup_20261110/b3/predictions.npz",
+    "array_key": "local_parallel",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/selected_masked",
+    "canonical": "new/selected_masked",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": null,
+    "array_key": null,
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "new/selected_mtp",
+    "canonical": "new/selected_mtp",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": null,
+    "array_key": null,
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/constant_velocity_8obs",
+    "canonical": "papers/constant_velocity_8obs",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "constant_velocity_8obs",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/kalman_8obs",
+    "canonical": "papers/kalman_8obs",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "kalman_8obs",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/moif_default",
+    "canonical": "papers/moif_default",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/20261109T112301Z/predictions.json",
+    "array_key": "moif_default",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/moif_selected",
+    "canonical": "papers/moif_selected",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/20261109T112301Z/predictions.json",
+    "array_key": "moif_selected",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/official_re_default_mean20",
+    "canonical": "papers/official_re_default_mean20",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "official_re_default_mean20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/official_re_default_sample0",
+    "canonical": "papers/official_re_default_sample0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "official_re_default_sample0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/official_re_history_reversed_mean20",
+    "canonical": "papers/official_re_history_reversed_mean20",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "official_re_history_reversed_mean20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/official_re_history_reversed_sample0",
+    "canonical": "papers/official_re_history_reversed_sample0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "official_re_history_reversed_sample0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/official_re_no_neighbors_mean20",
+    "canonical": "papers/official_re_no_neighbors_mean20",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "official_re_no_neighbors_mean20",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/official_re_no_neighbors_sample0",
+    "canonical": "papers/official_re_no_neighbors_sample0",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/official8/predictions.json",
+    "array_key": "official_re_no_neighbors_sample0",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/re_default",
+    "canonical": "papers/re_default",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/20261109T112301Z/predictions.json",
+    "array_key": "re_default",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/re_selected",
+    "canonical": "papers/re_selected",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/20261109T112301Z/predictions.json",
+    "array_key": "re_selected",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "papers/self_control",
+    "canonical": "papers/self_control",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/paper_experiments_20261109/b3/runs/20261109T112301Z/predictions.json",
+    "array_key": "self_control",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/constant_velocity",
+    "canonical": "analytic/constant_velocity",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "같은 관측 CV 대조군 재사용",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "constant_velocity",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/cv_random_self",
+    "canonical": "residual/cv_random_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "cv_random_self",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/cv_zero_self",
+    "canonical": "residual/cv_zero_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "cv_zero_self",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/kalman_self",
+    "canonical": "residual/kalman_self",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "kalman_self",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/kalman_social",
+    "canonical": "residual/kalman_social",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "kalman_social",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/kalman_social_collision",
+    "canonical": "residual/kalman_social_collision",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "kalman_social_collision",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/kalman_zero",
+    "canonical": "residual/kalman_zero",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "kalman_zero",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/local_best_dev_diagnostic",
+    "canonical": "residual/local_best_dev_diagnostic",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "local_best_dev_diagnostic",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "residual/local_selected",
+    "canonical": "residual/local_selected",
+    "role": "독립 대안 또는 비교 대조군",
+    "dedup_reason": "독립설정 또는 dev선택 출력; 성적만 같다고 병합하지 않음",
+    "source_predictions": "/mnt/RG2/baseline_residual_20261110/b3/predictions_v2.json",
+    "array_key": "local_selected",
+    "status": "pilot 이후 전수실행 승인 대기"
+  },
+  {
+    "method": "C/hold",
+    "canonical": "analytic/hold",
+    "role": "비학습 비교 대조군",
+    "dedup_reason": "CV/KF는 기존 계열과 공통; damping/selector는 구현별도이며 기존 점수동일만으로 삭제하지 않음",
+    "source_predictions": "/mnt/RG2/C/results/001_frozen_selector",
+    "array_key": null,
+    "status": "전수실행 승인 대기"
+  },
+  {
+    "method": "C/constant_velocity",
+    "canonical": "analytic/constant_velocity",
+    "role": "비학습 비교 대조군",
+    "dedup_reason": "CV/KF는 기존 계열과 공통; damping/selector는 구현별도이며 기존 점수동일만으로 삭제하지 않음",
+    "source_predictions": "/mnt/RG2/C/results/001_frozen_selector",
+    "array_key": null,
+    "status": "전수실행 승인 대기"
+  },
+  {
+    "method": "C/kalman",
+    "canonical": "analytic/kalman",
+    "role": "비학습 비교 대조군",
+    "dedup_reason": "CV/KF는 기존 계열과 공통; damping/selector는 구현별도이며 기존 점수동일만으로 삭제하지 않음",
+    "source_predictions": "/mnt/RG2/C/results/001_frozen_selector",
+    "array_key": null,
+    "status": "전수실행 승인 대기"
+  },
+  {
+    "method": "C/damped_velocity",
+    "canonical": "analytic/damped_velocity",
+    "role": "비학습 비교 대조군",
+    "dedup_reason": "CV/KF는 기존 계열과 공통; damping/selector는 구현별도이며 기존 점수동일만으로 삭제하지 않음",
+    "source_predictions": "/mnt/RG2/C/results/001_frozen_selector",
+    "array_key": null,
+    "status": "전수실행 승인 대기"
+  },
+  {
+    "method": "C/selector_early",
+    "canonical": "analytic/selector_early",
+    "role": "비학습 비교 대조군",
+    "dedup_reason": "CV/KF는 기존 계열과 공통; damping/selector는 구현별도이며 기존 점수동일만으로 삭제하지 않음",
+    "source_predictions": "/mnt/RG2/C/results/001_frozen_selector",
+    "array_key": null,
+    "status": "전수실행 승인 대기"
+  },
+  {
+    "method": "C/selector_final",
+    "canonical": "analytic/selector_final",
+    "role": "비학습 비교 대조군",
+    "dedup_reason": "CV/KF는 기존 계열과 공통; damping/selector는 구현별도이며 기존 점수동일만으로 삭제하지 않음",
+    "source_predictions": "/mnt/RG2/C/results/001_frozen_selector",
+    "array_key": null,
+    "status": "전수실행 승인 대기"
+  }
+]

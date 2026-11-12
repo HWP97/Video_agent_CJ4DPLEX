@@ -1,0 +1,320 @@
+{
+  "videos": [
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_01_crowds_zara01_576.mp4",
+      "sha256": "515ba49a749a20d3b1792b076b7db2ca6617215d3b6d5cc54eae948f4efef78b",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_02_crowds_students003_3349.mp4",
+      "sha256": "553af9799986be76be040f3c414f8266e242b9f76328f51fa91417a324a66721",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_03_crowds_zara01_631.mp4",
+      "sha256": "09cce182572ea9f78ad1a04610f5fff227338be931901d24b80f609992b4a917",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_04_crowds_zara01_675.mp4",
+      "sha256": "ccecb6a6b1a62e1b170a78fba409ec7bfa1368e3f3abf006183a629f5c701ec2",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_05_crowds_students003_3499.mp4",
+      "sha256": "e2f023d64fd47f955fd8cf27ab2444f5edebc0ba627f3db6df850f15faa88024",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_06_crowds_zara01_708.mp4",
+      "sha256": "bcaa31e75a3e071526137e53f77deb0aad0f2ed99f3b465f8350f77069ce90e4",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_07_crowds_students003_3679.mp4",
+      "sha256": "3b345a973039f3c10c92772d851fdc983fc51c99120a97c93e5a12c23d51fca0",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_08_crowds_students003_3432.mp4",
+      "sha256": "624e8ebd6447d589528f44b97667a08d6d70f57598f10461f27338f111ff28ea",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_09_crowds_students003_3654.mp4",
+      "sha256": "fa7da00ea8849bf4bada69c5e1eeb69eb7715b948abccaee6f27ea51b90ce565",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_10_crowds_zara01_772.mp4",
+      "sha256": "4fbda96178e9af51f25e9bd9dd262577e1a602c47283c4c05cd91b22cc321cb2",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_11_crowds_students003_3570.mp4",
+      "sha256": "9ddeecf3b01a2dd49125517b26f33cbaffdc5f523f99eb226f114c6410b81325",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_12_crowds_zara01_601.mp4",
+      "sha256": "184da64021374c7550279f4f8b63412534baeba4da7f3604ced03d91670f16e0",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_13_crowds_students003_3343.mp4",
+      "sha256": "3d37a42bf544d4f4284aa3fea34e6c22b092f6c4bdc8a62151cd3cf3e7b221a4",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_14_crowds_zara01_613.mp4",
+      "sha256": "1cd8e2764b21269999b35054b71e1b2769783e9a284ddf9e49bc645602c35d22",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_15_crowds_students003_3417.mp4",
+      "sha256": "51f4711d5b41c31c51feac335712012725b2d5417f0db9ef7dbe2c923680729c",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_16_crowds_zara01_590.mp4",
+      "sha256": "b3851c3f6f411f37fa7da1c03013714728d0ceff70d05c680e7bf564dfa48537",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_17_crowds_students003_3500.mp4",
+      "sha256": "2e869432a630fdb9ddd0ebd0036c4afbb1e243e116bb8b073f8ba6f87617a62d",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_18_crowds_students003_3501.mp4",
+      "sha256": "503aff1b1da8ed46ca16b73ed76ddbe18c3ec78346e33fd165b885313ecac335",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_19_crowds_zara01_707.mp4",
+      "sha256": "36bafea09e6e260f00ed2c0908635c50b490355697e276824ee6351ae50b4ae8",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "video": "demo/api_based/trajectory_forecasting_reselected/demo_20_crowds_students003_3647.mp4",
+      "sha256": "cdc8258218f30b86121cffa40a58f639944327da2ff315998b7e1b95396f6a5e",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    }
+  ],
+  "full_decode": 20,
+  "new_videos": 19,
+  "first_preserved": true,
+  "previous_directory_unchanged": true,
+  "previous_file_sha256": {
+    "source_videos.json": "8ece2626b990065c3cb518a45756c5586bc1a3b0c4f878246d1b7f175de5da0c",
+    "cosmos_input.json": "96a918217076d66ed2a0d042b4a5f855d698cdd5adb9cf32ff8c06b068ee72e6",
+    "selection_manifest.json": "50b897f12a8951129b75968d1ccb26f40b86d902f82e6e08bae0f8fe4fe900b2",
+    "demo_16_crowds_students003_3573.mp4": "c2aa708a17f035ba0b23b4357e53f8ef2787bc4e7e5d4321b0a74527190fa71c",
+    "demo_01_crowds_zara01_576.mp4": "515ba49a749a20d3b1792b076b7db2ca6617215d3b6d5cc54eae948f4efef78b",
+    "demo_01_crowds_zara01_576.jpg": "b08be8a52ef86d473ac02d25f8d472eed5f48338fdad5a623f68cb6aa0b073f0",
+    "demo_01_crowds_zara01_576.webm": "d8c82d0eefc0d6e426f89b2df80f4f8c29ac33a8dcf3f07e91a78c9a5616a62a",
+    "demo_16_crowds_students003_3573.webm": "2c4e2b255912c7464bae7fe5b38a65e8982e9885fe0e5e4ad28172517ed63b29",
+    "demo_02_crowds_students003_3384.mp4": "af01fea51ac42fbf235de95b09da17e0318628f55fb544793f493d40dbcf37a6",
+    "demo_02_crowds_students003_3384.jpg": "b31df320f63fec25b909a04e6ad8f4f7cc7037117d578cac61a9d689844b392e",
+    "demo_02_crowds_students003_3384.webm": "712cb10f28ce06dcecbf09b6bdde80c0695a6dbf9a01628cd78bcddfde3109be",
+    "demo_17_crowds_zara01_752.webm": "ee6d4df6a4dca04dee5fe216f5194c0200ebee1d7aadd0bf58cb5596a8b3cfe5",
+    "demo_03_crowds_zara01_625.mp4": "749d3f7230d285739b3d9ec2651c2d97a089aa43f3213eb94a1b1ca0981cdc8b",
+    "demo_03_crowds_zara01_625.jpg": "dba8e77faef556747f7a3d8f0fc7cee628d697ed12fc776c3cbe4a1dbe9b22f5",
+    "demo_03_crowds_zara01_625.webm": "0ba25de4167b047d6b190c686c338f28b52d826d68660f443e6bcc1760cb03f8",
+    "demo_17_crowds_zara01_752.mp4": "39530852a35aa093f7dd8cb8cade2eed25675763398979b5e15269d1611e1038",
+    "demo_04_crowds_students003_3400.mp4": "b5d4e1d6e7aabe716db41fc22b942225235f078c2b26583bd953c3972247555b",
+    "demo_04_crowds_students003_3400.jpg": "d3140cda095003d8ab7631b3bf86412c1afb7b38161ec59f436bb671384e3286",
+    "demo_04_crowds_students003_3400.webm": "9e21cf26647df5d976651470dcc777a1f6913f6557c86e32f42ba14dac97bcf0",
+    "demo_17_crowds_zara01_752.jpg": "ce0fd8cfd0745cc38d132e13bdfb1ce158453773f7a86c63b18119bd37a776fc",
+    "demo_05_crowds_zara01_666.mp4": "421d756d07a142a22799eeff9876d947563a1bcef0e7009e5dfc3e7f25d38ad0",
+    "demo_05_crowds_zara01_666.jpg": "e81a9f7b2fd03b647f60ba94aa2fc47d90896f911b68f02b8ebbf638db5a1b77",
+    "demo_05_crowds_zara01_666.webm": "7328ff49c4c85a1982e7566b38fb7fac70b6a6bc2c52ea6cbfb81e0f799d7d22",
+    "demo_20_crowds_students003_3643.mp4": "4e710b945d3dd16986b1c79720cc90147d011d022b43ce2682134dd827ef56fc",
+    "demo_06_crowds_students003_3188.mp4": "f123a917d2a4e8b5893991abecb8e54c5b1e526e8c5c6686dbcc859bfe68b950",
+    "demo_06_crowds_students003_3188.jpg": "46a623d76f14277bfc1eed504b6e8d8282bb345ecc84dda0b600f59fc166dfb5",
+    "demo_06_crowds_students003_3188.webm": "2c8220079fb1685288f405a60bd15eadfa8c7286bb6fe6812481aa3d8b5eb296",
+    "demo_20_crowds_students003_3643.webm": "cb63b9d67ee466dd2765830cd53ea1d63a5a7551f762348773c4ab0a87af0d43",
+    "demo_07_crowds_zara01_674.mp4": "6f46c450defaa0a92e147c3954747cd05e96df42aa99d850212be5df123e597c",
+    "demo_07_crowds_zara01_674.jpg": "7d25edc74709ba9bcc3a41da09781bc1a1efb4e973d4f3352a3e474eec42eefc",
+    "demo_07_crowds_zara01_674.webm": "a373d42a3fdcc207ff336c1d027b722d1b8f979fafb6b86a33322031d2a7f375",
+    "catalog.json": "7cd555b3dbbb53ed495c18be6656ba99b0ae43b3fa1979627d735279d89b198d",
+    "demo_08_crowds_students003_3418.mp4": "61904a275c6f44e464177137c2bd2d14bc09d43da287d5906594689507407b06",
+    "demo_08_crowds_students003_3418.jpg": "7d588da049e31da03ec4482fb69e7012ec249995d6fd6e115b4c10ac1557140a",
+    "demo_08_crowds_students003_3418.webm": "e5f64e4a75c979fbaa01c5c2a814a039d27b7770c424da0b7a36f4f540ad6cd3",
+    "CATALOG.md": "4cbd43bd637e922f816f9c3fe4c4a9c1cad8d28ec20f0d2d52c09f53f8f62ca5",
+    "demo_09_crowds_zara01_676.mp4": "17f9ffa8cc5083aed1ad71376453a15a1f5c401da77ac015898b686ab2eba973",
+    "demo_09_crowds_zara01_676.jpg": "dfbbcd98c7b63cb24b6cb56327bc5c37fa2957d2caddb4614eeee7458bd3f756",
+    "demo_09_crowds_zara01_676.webm": "630b3333e5db600f49f6a4124ae181901767467149919593b5d00d6e8124d22f",
+    "demo_10_crowds_students003_3502.mp4": "e5e825e73ce9c4a3739e4820719c7748e51b724b255d4282c492595d3c661e50",
+    "demo_10_crowds_students003_3502.jpg": "299be338591ec16689f18abc39144dc8a5bc80b635b57e56bf743050fda47f52",
+    "demo_10_crowds_students003_3502.webm": "b92390c582127854c35461e6264153446df109c2df56a3441a7cf5f7dc60cce3",
+    "demo_11_crowds_zara01_695.mp4": "f4c1041570e588c0e456a65333f9fd89f73c2c1e5e7a7474439e1d1c37a424b3",
+    "demo_11_crowds_zara01_695.jpg": "2face778fb3ede6b32e949bd7e1c500deb246964ebd90619e62839db664436b6",
+    "demo_11_crowds_zara01_695.webm": "98959651074c13728f82898ce1cb9db8cf0476e3f09b36521a09393a824ad5c1",
+    "demo_12_crowds_students003_3461.mp4": "0d33d5a0c465529485aeefed70415bbe3186bd5645980eecea25c4207c5b5325",
+    "demo_12_crowds_students003_3461.jpg": "0c08f6e4a568f0edef1065f078a9a7ff8c7776b60c40022831954a6a5fc17510",
+    "demo_12_crowds_students003_3461.webm": "4bba9b247cfcb7a534a6674973024355d79107b469dccd46a4a284be6feab6d3",
+    "demo_13_crowds_zara01_699.mp4": "47696039d3ce86aa2aec1c4e7fddd19d11c92887e80b7d067b3bbf4299d1f8ec",
+    "demo_13_crowds_zara01_699.jpg": "da6ab28b7546d252faa9dffc79d260717153709fe9055ddb09f59baabeb3e51d",
+    "demo_13_crowds_zara01_699.webm": "19252ae0165c71d16000ab29ec7942aea7e89366083393dc6fdcb5d0d433310b",
+    "demo_14_crowds_students003_3281.mp4": "1ed498ef49cb2acab621fd6f5772985021133dc22cc0bc8130205e41530ec16b",
+    "demo_14_crowds_students003_3281.jpg": "cf1c28e55e632c0210c7ec41b9e234f70c7ec39ac774fb6a5bc40707ee6501b2",
+    "demo_14_crowds_students003_3281.webm": "b56f715ac80a67159190f608b286c99f1388f514752f508a6690c7a7db277baa",
+    "demo_15_crowds_zara01_717.mp4": "a05d3cba355ede0a7a18c2e6836899aa0e0e36b5ec12080d8b9734350bac3263",
+    "demo_15_crowds_zara01_717.jpg": "f545b7658744650d593bd762f52f20974f66b8d7281dd027b490aad12b25b425",
+    "demo_15_crowds_zara01_717.webm": "c2a4db70a79fe70ed738c2dc6e53406df10b22223a77780ff6e61740399a13be",
+    "demo_16_crowds_students003_3573.jpg": "75d31d6ea5692ec504a16eef982ce4b3a7145de98d5396d1b85c902ba03c070d",
+    "demo_18_crowds_students003_3481.mp4": "2144f8a170cef68d9d90c7a0e6006e0f7abecab920e7bf0474d0751b2cd39a5b",
+    "demo_18_crowds_students003_3481.jpg": "aaef4994d2f804f63ce7d7ca644b1af85a6167598ee787cc6dd6f9c230f73986",
+    "demo_18_crowds_students003_3481.webm": "1ca41ec1e2d13a02545cfdde071a55c7b80c380959b50b13827a9d6b720382c6",
+    "demo_19_crowds_zara01_766.mp4": "517d5c0d7f6d20a8bfea9be8a4236cb2874d8b60104a03e10872da0147013a2d",
+    "demo_19_crowds_zara01_766.jpg": "fa990352dca75e3516dabbddcde0c857d5a0399a10bdc44a5a2fd1d9e716e0b0",
+    "demo_19_crowds_zara01_766.webm": "4308780b59ab2fe37b03c73e59750bcb717fd9bb08134aca21aad5cc721adb58",
+    "demo_20_crowds_students003_3643.jpg": "f0334ea6d34ff4cb5184486a8c862b415dd26a596aa3127447f419d3e82f0e86",
+    ".omo/evidence/alignment_cutoff.jpg": "1bf25906a9fc9e69537f120a261833949f7e1f2850aeb5117e3cbcf3780a217f",
+    ".omo/evidence/alignment_future.jpg": "5aba0aff449e6cd8832c560b970a2a0b790dee7a8aa33f006fbe9706817afdf5",
+    ".omo/evidence/alignment_points.json": "6053a35139375037e04f7928e840a7091f0e6ee9fbc721cf3c323707db8592b9",
+    ".omo/evidence/verification.json": "fe65e9034b258c169ec411f23999c0564804fccfabae48ee74511701edae1cad"
+  },
+  "projection_points_checked": 420
+}

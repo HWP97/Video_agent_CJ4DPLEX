@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-11-10T17:46:15.597580+00:00",
+  "runplan_sha256": "7f34d01c47d989de45a8769f0d1b788e579d69714551c989ad46b45c6d533fac",
+  "original_catalog_sha256": "23286c6043a53bd467bcdd651215b46e9843aef23b104dfb4c437696e5ea4149",
+  "protocol_sha256": "5a70ad59a7677f21fcc734abf8b01e96dce74e63606c22044227bd0603e9aaff",
+  "additional_fit_configs": 11,
+  "new_hyperparameter_grid": false,
+  "methods": [
+    {
+      "method": "residual/attention_self",
+      "canonical": "residual/attention_self",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "residual/attention_self"
+      ]
+    },
+    {
+      "method": "residual/attention_social",
+      "canonical": "residual/attention_social",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "residual/attention_self"
+      ]
+    },
+    {
+      "method": "residual/attention_social_collision",
+      "canonical": "residual/attention_social_collision",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "residual/attention_self"
+      ]
+    },
+    {
+      "method": "papers/attention_re_default",
+      "canonical": "papers/attention_re_default",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_re_no_resonance"
+      ]
+    },
+    {
+      "method": "papers/attention_re_no_resonance",
+      "canonical": "papers/attention_re_no_resonance",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_re_no_resonance"
+      ]
+    },
+    {
+      "method": "papers/attention_re_identity_transform",
+      "canonical": "papers/attention_re_identity_transform",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_re_no_resonance"
+      ]
+    },
+    {
+      "method": "papers/attention_re_partitions4",
+      "canonical": "papers/attention_re_partitions4",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_re_no_resonance"
+      ]
+    },
+    {
+      "method": "papers/attention_moif_default",
+      "canonical": "papers/attention_moif_default",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_moif_first_only"
+      ]
+    },
+    {
+      "method": "papers/attention_moif_first_only",
+      "canonical": "papers/attention_moif_first_only",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_moif_first_only"
+      ]
+    },
+    {
+      "method": "papers/attention_moif_no_direction",
+      "canonical": "papers/attention_moif_no_direction",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_moif_first_only"
+      ]
+    },
+    {
+      "method": "papers/attention_moif_eta_zero",
+      "canonical": "papers/attention_moif_eta_zero",
+      "eligible_for_ours": true,
+      "method_type": "주 attention anchor의 고정 잔차 전이",
+      "ablation_comparators": [
+        "loop/direct_unshared4_d4",
+        "papers/attention_moif_first_only"
+      ]
+    }
+  ],
+  "evaluation_selection_opened": false
+}

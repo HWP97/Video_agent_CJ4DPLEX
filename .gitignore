@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+src/*/data/
+results/
+*.pth
+*.pt
+*.ckpt
+*.tar
+*.onnx
+*.safetensors
+demo/*/inputs/
+demo/*/outputs/
+docs/print/

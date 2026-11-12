@@ -1,0 +1,128 @@
+{
+  "verified": true,
+  "points": 420,
+  "frame_offset": 0,
+  "projection": "u=x/0.0210+360, v=288-y/0.0239",
+  "records": [
+    {
+      "sample_id": "crowds_zara01_57",
+      "primary": 7,
+      "points": 21,
+      "max_axis_error": 0.004895384147683202
+    },
+    {
+      "sample_id": "crowds_students003_3356",
+      "primary": 301,
+      "points": 21,
+      "max_axis_error": 0.004999721882857244
+    },
+    {
+      "sample_id": "crowds_zara01_222",
+      "primary": 28,
+      "points": 21,
+      "max_axis_error": 0.004947970996889595
+    },
+    {
+      "sample_id": "crowds_students003_2473",
+      "primary": 222,
+      "points": 21,
+      "max_axis_error": 0.004913289334871895
+    },
+    {
+      "sample_id": "crowds_zara01_258",
+      "primary": 32,
+      "points": 21,
+      "max_axis_error": 0.004867633894521495
+    },
+    {
+      "sample_id": "crowds_students003_642",
+      "primary": 58,
+      "points": 21,
+      "max_axis_error": 0.004999999999999449
+    },
+    {
+      "sample_id": "crowds_zara01_372",
+      "primary": 50,
+      "points": 21,
+      "max_axis_error": 0.004827368203661031
+    },
+    {
+      "sample_id": "crowds_students003_2456",
+      "primary": 221,
+      "points": 21,
+      "max_axis_error": 0.004963074378125931
+    },
+    {
+      "sample_id": "crowds_zara01_389",
+      "primary": 54,
+      "points": 21,
+      "max_axis_error": 0.004968908024512331
+    },
+    {
+      "sample_id": "crowds_students003_704",
+      "primary": 63,
+      "points": 21,
+      "max_axis_error": 0.0049013087366208685
+    },
+    {
+      "sample_id": "crowds_zara01_556",
+      "primary": 77,
+      "points": 21,
+      "max_axis_error": 0.004999999999999671
+    },
+    {
+      "sample_id": "crowds_students003_3526",
+      "primary": 324,
+      "points": 21,
+      "max_axis_error": 0.0047670448673367005
+    },
+    {
+      "sample_id": "crowds_zara01_671",
+      "primary": 89,
+      "points": 21,
+      "max_axis_error": 0.004964440824245742
+    },
+    {
+      "sample_id": "crowds_students003_2823",
+      "primary": 237,
+      "points": 21,
+      "max_axis_error": 0.00491576790109316
+    },
+    {
+      "sample_id": "crowds_zara01_777",
+      "primary": 107,
+      "points": 21,
+      "max_axis_error": 0.004908565225859363
+    },
+    {
+      "sample_id": "crowds_students003_2964",
+      "primary": 247,
+      "points": 21,
+      "max_axis_error": 0.00499031374754999
+    },
+    {
+      "sample_id": "crowds_zara01_868",
+      "primary": 123,
+      "points": 21,
+      "max_axis_error": 0.004911203546404508
+    },
+    {
+      "sample_id": "crowds_students003_3101",
+      "primary": 255,
+      "points": 21,
+      "max_axis_error": 0.004971236281714364
+    },
+    {
+      "sample_id": "crowds_zara01_888",
+      "primary": 126,
+      "points": 21,
+      "max_axis_error": 0.004828105894508106
+    },
+    {
+      "sample_id": "crowds_students003_2297",
+      "primary": 205,
+      "points": 21,
+      "max_axis_error": 0.0049173744312981105
+    }
+  ]
+}

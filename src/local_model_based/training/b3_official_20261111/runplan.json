@@ -1,0 +1,362 @@
+{
+  "status": "frozen_preparation_and_pilot_only",
+  "official_challenge_reproduction": false,
+  "source": "official_v4_train.zip real_data only",
+  "group_policy": "CFF all dates one conservative source group; UCY students/zara one source group; hotel/LCAS/WildTrack merged third supergroup. No claim that source files establish unique physical identity.",
+  "groups": {
+    "other_sites": [
+      {
+        "file": "train/real_data/biwi_hotel.ndjson",
+        "scenes": 229,
+        "sha256": "e719f61853293b6e988f26daf5c2c20a475550aecce2271810cac7bfd211e2a4"
+      },
+      {
+        "file": "train/real_data/lcas.ndjson",
+        "scenes": 889,
+        "sha256": "6732a22c914b61fd5e86abba8f3c5bff13cf614e976dcefb02aa009038079a44"
+      },
+      {
+        "file": "train/real_data/wildtrack.ndjson",
+        "scenes": 1101,
+        "sha256": "9975ec91d603bbe1752c26540f67b8c90dc3ce0ca85d09941598ba9430189c14"
+      }
+    ],
+    "cff": [
+      {
+        "file": "train/real_data/cff_06.ndjson",
+        "scenes": 23751,
+        "sha256": "886e9272ba9252b808330ba00248d29653956fad4ad5dde02cd7c6c86021db86"
+      },
+      {
+        "file": "train/real_data/cff_07.ndjson",
+        "scenes": 24100,
+        "sha256": "390b3f187576cf94c01a0f3e1191c55eb3df6c37456225500510c03903034044"
+      },
+      {
+        "file": "train/real_data/cff_08.ndjson",
+        "scenes": 23070,
+        "sha256": "2a11fca41db724ab75674ef446f6c15cc8c205bab8aae879729164c770a6bff4"
+      },
+      {
+        "file": "train/real_data/cff_09.ndjson",
+        "scenes": 11433,
+        "sha256": "c9a84ec2e3ddd287278bf71013375a506f16f6a948eaa8ae095d852ff7d45155"
+      },
+      {
+        "file": "train/real_data/cff_10.ndjson",
+        "scenes": 9702,
+        "sha256": "9bf3c43101b801edef1839a9e545f3d317d444c826f8e98f4a55593205257227"
+      },
+      {
+        "file": "train/real_data/cff_12.ndjson",
+        "scenes": 23936,
+        "sha256": "d3ae9812785a47e55343dd218cf9e69a34e363807bd5aacb4ff69f2fdd580470"
+      },
+      {
+        "file": "train/real_data/cff_13.ndjson",
+        "scenes": 22355,
+        "sha256": "e6fd15b0025e7ade61401a7ac56f91ad44c871b1517b72fc1fcd627044cb60ad"
+      },
+      {
+        "file": "train/real_data/cff_14.ndjson",
+        "scenes": 23376,
+        "sha256": "e7c858a023ff68f5a0f9e60c4a473ed2bcc31784703e14b123a1fd9917a05699"
+      },
+      {
+        "file": "train/real_data/cff_15.ndjson",
+        "scenes": 22657,
+        "sha256": "df8414601dd429c97ece86dfd394e59af4e12e37886bb98fbde4872b4695894e"
+      },
+      {
+        "file": "train/real_data/cff_16.ndjson",
+        "scenes": 10771,
+        "sha256": "afb917572737c073b18f579fbc3e8376f2f60bf877f1b861ae36deb8a7f18b9c"
+      },
+      {
+        "file": "train/real_data/cff_17.ndjson",
+        "scenes": 10000,
+        "sha256": "977278fd75e2c46ff4f2222887cb35b639c4bfbe4267b40491555707fb260ff0"
+      },
+      {
+        "file": "train/real_data/cff_18.ndjson",
+        "scenes": 22021,
+        "sha256": "094fcc109bef4a7eb3596d027846ce4c12d7d26f621c2a0aa94d9363ba4d9ddf"
+      }
+    ],
+    "ucy": [
+      {
+        "file": "train/real_data/crowds_students001.ndjson",
+        "scenes": 5265,
+        "sha256": "32ff44350facba25854f1ebfceb6e67654fee723838351d2f887907dc1b61624"
+      },
+      {
+        "file": "train/real_data/crowds_students003.ndjson",
+        "scenes": 4262,
+        "sha256": "8344424b4a5f3674f70e1db5e0c855fabebaa00737788efdcc1947c544a0ab6a"
+      },
+      {
+        "file": "train/real_data/crowds_zara01.ndjson",
+        "scenes": 1017,
+        "sha256": "c6e15786705e72a92b57eec8bec157edc1bd93457b225eb1556f95cdb8ec9307"
+      },
+      {
+        "file": "train/real_data/crowds_zara03.ndjson",
+        "scenes": 955,
+        "sha256": "5f79e39dfb1a82e81acbc0dd146a1f272e3673342b6f57fcb815b2a2087ca482"
+      }
+    ]
+  },
+  "group_counts": {
+    "other_sites": 2219,
+    "cff": 227172,
+    "ucy": 11499
+  },
+  "folds": [
+    {
+      "train": "cff",
+      "development": "other_sites",
+      "evaluation": "ucy",
+      "counts": {
+        "train": 227172,
+        "development": 2219,
+        "evaluation": 11499
+      }
+    },
+    {
+      "train": "ucy",
+      "development": "cff",
+      "evaluation": "other_sites",
+      "counts": {
+        "train": 11499,
+        "development": 227172,
+        "evaluation": 2219
+      }
+    },
+    {
+      "train": "other_sites",
+      "development": "ucy",
+      "evaluation": "cff",
+      "counts": {
+        "train": 2219,
+        "development": 11499,
+        "evaluation": 227172
+      }
+    }
+  ],
+  "each_real_scene_evaluated_exactly_once": true,
+  "train_dev_eval_file_intersection": 0,
+  "public_test": {
+    "real_scenes": 3146,
+    "primary_observed_points": 9,
+    "future_GT_available": false,
+    "future_metrics": "not_computable",
+    "prediction_policy_proposed": "per-method fresh all-real-train refit after development choices frozen; prediction coverage only; no hidden scoring claim"
+  },
+  "synthetic": "separate only; no substitution for real",
+  "fps_policy": "9 observed and12 forecast steps; physical dt=1/scene.fps; cutoff=8/fps; future horizon=12/fps; WildTrack2fps retained, never relabeled2.5fps",
+  "data_changes_require_refit": true,
+  "old_author_protocol_results_remain_valid": true,
+  "seed": 20261110,
+  "attention": "12 original configs times3 folds=36 fits, original fixed depth variants preserved",
+  "selection": "only development; evaluate all predeclared methods; freeze all three fold choices before opening any evaluation results",
+  "previous_public_exposure": "ETH/UCY public trajectory data previously investigated; this is not a blind unseen benchmark",
+  "API_calls": 0,
+  "additional_downloads": 0,
+  "frozen_utc": "2026-11-10T16:44:58.718527+00:00",
+  "pilot": {
+    "files": {
+      "cff_06": 512,
+      "biwi_hotel": 128,
+      "wildtrack": 128
+    },
+    "train": "cff_06",
+    "dev": "biwi_hotel",
+    "fps_boundary_only": "wildtrack",
+    "epochs": 3,
+    "batch": 256,
+    "config": "direct_unshared4",
+    "GPU_physical": 1,
+    "CPU_threads": 2,
+    "no_eval_scores": true
+  },
+  "attention_grid": {
+    "anchors": [
+      "direct",
+      "kf"
+    ],
+    "configs": [
+      "single",
+      "shared2",
+      "shared4",
+      "dynamic",
+      "unshared4",
+      "unshared4_small"
+    ],
+    "epochs_max": 40,
+    "patience": 8,
+    "optimizer": "AdamW",
+    "lr": 0.0005,
+    "weight_decay": 0.01,
+    "loss": "mean norm world position error + .01 mean squared offset",
+    "batch": 256,
+    "depth_diagnostics": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  "local_method_names": [
+    "fast_trm/chronos_independent",
+    "fast_trm/chronos_joint",
+    "fast_trm/direct_continuous",
+    "fast_trm/direct_dct_bpe",
+    "fast_trm/direct_raw_bpe",
+    "fast_trm/direct_single_state",
+    "fast_trm/direct_two_state_deep",
+    "fast_trm/direct_two_state_last",
+    "fast_trm/kalman",
+    "fast_trm/kf_self",
+    "fast_trm/local",
+    "fast_trm/local_continuous",
+    "fast_trm/local_dct_bpe",
+    "fast_trm/local_raw_bpe",
+    "fast_trm/local_single_state",
+    "fast_trm/local_two_state_deep",
+    "fast_trm/local_two_state_last",
+    "fast_trm/selected_fast",
+    "fast_trm/selected_trm",
+    "loop/constant_velocity",
+    "loop/development_selected",
+    "loop/direct_dynamic_d1",
+    "loop/direct_dynamic_d2",
+    "loop/direct_dynamic_d4",
+    "loop/direct_dynamic_d8",
+    "loop/direct_shared2_d1",
+    "loop/direct_shared2_d2",
+    "loop/direct_shared2_d4",
+    "loop/direct_shared2_d8",
+    "loop/direct_shared4_d1",
+    "loop/direct_shared4_d2",
+    "loop/direct_shared4_d4",
+    "loop/direct_shared4_d8",
+    "loop/direct_single_d1",
+    "loop/direct_unshared4_d4",
+    "loop/direct_unshared4_small_d4",
+    "loop/idea_diagnostic",
+    "loop/idea_diagnostic_no_neighbors",
+    "loop/kalman",
+    "loop/kf_dynamic_d1",
+    "loop/kf_dynamic_d2",
+    "loop/kf_dynamic_d4",
+    "loop/kf_dynamic_d8",
+    "loop/kf_self_reference",
+    "loop/kf_shared2_d1",
+    "loop/kf_shared2_d2",
+    "loop/kf_shared2_d4",
+    "loop/kf_shared2_d8",
+    "loop/kf_shared4_d1",
+    "loop/kf_shared4_d2",
+    "loop/kf_shared4_d4",
+    "loop/kf_shared4_d8",
+    "loop/kf_single_d1",
+    "loop/kf_unshared4_d4",
+    "loop/kf_unshared4_small_d4",
+    "memory_ttt/constant_velocity",
+    "memory_ttt/direct_prefix_adapted_r0.001",
+    "memory_ttt/direct_prefix_adapted_r0.01",
+    "memory_ttt/direct_prefix_adapted_r0.1",
+    "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.001",
+    "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.01",
+    "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.1",
+    "memory_ttt/direct_prefix_ordinaryfit_updated_r0.001",
+    "memory_ttt/direct_prefix_ordinaryfit_updated_r0.01",
+    "memory_ttt/direct_prefix_ordinaryfit_updated_r0.1",
+    "memory_ttt/direct_prefix_update_disabled_r0.001",
+    "memory_ttt/direct_prefix_update_disabled_r0.01",
+    "memory_ttt/direct_prefix_update_disabled_r0.1",
+    "memory_ttt/kalman",
+    "memory_ttt/kalman_adapt_r0.001",
+    "memory_ttt/kalman_adapt_r0.1",
+    "memory_ttt/kalman_adapt_r1.0",
+    "memory_ttt/kalman_adapt_r10.0",
+    "memory_ttt/kalman_adapt_r1e-05",
+    "memory_ttt/kalman_identity_update",
+    "memory_ttt/kalman_memory_k1",
+    "memory_ttt/kalman_memory_k20",
+    "memory_ttt/kalman_memory_k5",
+    "memory_ttt/kalman_static_r0.1",
+    "memory_ttt/kalman_static_r1.0",
+    "memory_ttt/kalman_static_r10.0",
+    "memory_ttt/kalman_update_disabled",
+    "memory_ttt/kf_self",
+    "memory_ttt/local",
+    "memory_ttt/local_adapt_r0.001",
+    "memory_ttt/local_adapt_r0.1",
+    "memory_ttt/local_adapt_r1.0",
+    "memory_ttt/local_adapt_r10.0",
+    "memory_ttt/local_adapt_r1e-05",
+    "memory_ttt/local_identity_update",
+    "memory_ttt/local_memory_k1",
+    "memory_ttt/local_memory_k20",
+    "memory_ttt/local_memory_k5",
+    "memory_ttt/local_memory_shuffled_k5",
+    "memory_ttt/local_static_r0.1",
+    "memory_ttt/local_static_r1.0",
+    "memory_ttt/local_static_r10.0",
+    "memory_ttt/local_update_disabled",
+    "memory_ttt/memory_direct_uniform_k1",
+    "memory_ttt/memory_direct_uniform_k20",
+    "memory_ttt/memory_direct_uniform_k5",
+    "memory_ttt/memory_direct_weighted_k1",
+    "memory_ttt/memory_direct_weighted_k20",
+    "memory_ttt/memory_direct_weighted_k5",
+    "memory_ttt/selected_adapt",
+    "memory_ttt/selected_memory",
+    "new/direct_ar",
+    "new/direct_masked",
+    "new/direct_mtp",
+    "new/direct_parallel",
+    "new/kalman",
+    "new/kf_self",
+    "new/local",
+    "new/local_ar",
+    "new/local_masked",
+    "new/local_mtp",
+    "new/local_parallel",
+    "new/selected_masked",
+    "new/selected_mtp",
+    "papers/constant_velocity_8obs",
+    "papers/kalman_8obs",
+    "papers/moif_default",
+    "papers/moif_selected",
+    "papers/official_re_default_mean20",
+    "papers/official_re_default_sample0",
+    "papers/official_re_history_reversed_mean20",
+    "papers/official_re_history_reversed_sample0",
+    "papers/official_re_no_neighbors_mean20",
+    "papers/official_re_no_neighbors_sample0",
+    "papers/re_default",
+    "papers/re_selected",
+    "papers/self_control",
+    "residual/constant_velocity",
+    "residual/cv_random_self",
+    "residual/cv_zero_self",
+    "residual/kalman_self",
+    "residual/kalman_social",
+    "residual/kalman_social_collision",
+    "residual/kalman_zero",
+    "residual/local_best_dev_diagnostic",
+    "residual/local_selected"
+  ],
+  "grid_policy": "All original source configs frozen by SHA. Aliases mapped before full execution. No new grid or evaluation tuning.",
+  "full_execution_requires_parent_signal": true,
+  "source_hashes": {
+    "llm_transfer_20261110/b3/train.py": "2bda5a9e20f27a55b1ff6f4da8e030a60388832928288a464d741fc90ed1386e",
+    "llm_transfer_20261110/b3/model.py": "271e4ded61a10250d59d8c1c087e0cd6fa7327bfbee449cffed2a553b167aefc",
+    "baseline_residual_20261110/b3/train_local.py": "12292bdd8c2e4daf1202dc01b428b6dfc7763f8c0307001ec2c4579b5bda45b3",
+    "llm_transfer_expansion_20261110/b3/experiment.py": "5f2b326d40ca95728e2b1289ecd9d2147e83bf22bd82478888300f94079d66ed",
+    "metric_local_followup_20261110/b3/train.py": "ad3fb5e864bd8b37e55a01e6c5595e9b0748eb248f97c233a2644a41c092bfec",
+    "llm_transfer_expansion_20261110/additional_candidates/b3_tokens_recursive/run.py": "ed2f1ac1f6eb7dffa90d5a7aca15243d8b38f75f6279241d79935615a51cc8a9"
+  }
+}

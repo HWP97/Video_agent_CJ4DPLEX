@@ -1,0 +1,1718 @@
+[
+  {
+    "pts_s": 17.618761,
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > shoe",
+      "shoe > beneath > person",
+      "person > wearing > shoe",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 18.761275,
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > shoe",
+      "shoe > beneath > person",
+      "person > wearing > shoe",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 19.001804,
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > shoe",
+      "shoe > beneath > person",
+      "person > wearing > shoe",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 20.98617,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 21.286831,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 21.346963,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 21.888154,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 22.128683,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.271197,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.391461,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.41371,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.654239,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.834636,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 25.435959,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 25.556224,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 26.638605,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 26.819002,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 27.781118,
+    "baseline_R20": 0.16666666666666666,
+    "ours_R20": 0.5,
+    "GT_relations": [
+      "person > looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 29.043897,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.366807,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.727601,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 31.689717,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 32.351173,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 32.411305,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 32.952495,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 33.674083,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 34.275406,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  }
+]

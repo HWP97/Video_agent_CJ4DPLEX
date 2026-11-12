@@ -1,0 +1,17 @@
+{
+  "branch": "b2",
+  "family": "local",
+  "stage": "ours",
+  "method": "B2-D04",
+  "adoption_status": "preselected_before_official_test_joint_improvement_failed",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict",
+    "infer"
+  ],
+  "description": "최신 사전 선택 D04: 관측 PCA16·통계6 → D02 현재 보정 + D04 미래 delta. 2740 관측, official_test438. hold 대비 미래 MAE 감소·CCC 악화. 원영상 forward가 아닌 동결 관측 특징 계산."
+}

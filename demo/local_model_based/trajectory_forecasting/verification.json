@@ -1,0 +1,246 @@
+{
+  "demos": 20,
+  "full_decode": 20,
+  "videos": [
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_01_crowds_zara01_57.mp4",
+      "sha256": "84740c7df831eda7c7bd21f4cda12bcfcd3a0e3d47b75571c1e149dcd6147102",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_02_crowds_students003_3356.mp4",
+      "sha256": "b6f778cfe66c97ea8fb723329b3855ec5f08a55e20f339936f5e7733b7c4421d",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_03_crowds_zara01_222.mp4",
+      "sha256": "410f25f3b03c82441f267f6a640ab55921415022e07aef90b13cb2212454ac3e",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_04_crowds_students003_2473.mp4",
+      "sha256": "383023fd253836e3a4f14d1484e4b901f8639524ceac45f910626aa562a928a5",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_05_crowds_zara01_258.mp4",
+      "sha256": "86474df3774c25798b60b2de19b6788714049bb22fda1c9d382ef883ccbd2f1b",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_06_crowds_students003_642.mp4",
+      "sha256": "77651ff8ca300a6638f0b085ecd63c2387db40eb91b592b797420f55e8852a80",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_07_crowds_zara01_372.mp4",
+      "sha256": "94d27eb8b7f62202e3233b6973d7f6c1b0ca23fed36ea2a8bb7c66cfc442650f",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_08_crowds_students003_2456.mp4",
+      "sha256": "e5b2351eecd7cfa101ac5b72c1669f875cdf6555db31ea7b756e5f9a54f1ceaf",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_09_crowds_zara01_389.mp4",
+      "sha256": "bb28ed396663ad8742c42e57f4c7edd3a5c670db32377dc245d28bd9c499ea26",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_10_crowds_students003_704.mp4",
+      "sha256": "13d106c41459db03d300707e936dfeff098c6362523875b74cebf9c3834942cf",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_11_crowds_zara01_556.mp4",
+      "sha256": "cce6e305dfa2529fdb3560192da2ed5003d37137556367f121fac9a59cd169d3",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_12_crowds_students003_3526.mp4",
+      "sha256": "a7ebd332cd2366efb9e85c69c8db7e664df7fc955281ff1809d935a3ba7fd5ff",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_13_crowds_zara01_671.mp4",
+      "sha256": "a5153521a0042c36f0c832cd447822bae1f9f0075699cdaf42783b993cc3e4fa",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_14_crowds_students003_2823.mp4",
+      "sha256": "cd65ce0862c0286ed70f45fdd7f1dce4611377eaff48048af3afe117d9290c73",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_15_crowds_zara01_777.mp4",
+      "sha256": "b33bb2fdb5aee51c8e12795336b438bd01c712537a3775dfc8a458d68bc61086",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_16_crowds_students003_2964.mp4",
+      "sha256": "2140be1da0bd8e9c0868806176b0d1417c2d4658cbe471ccf54bca8ffd29d03b",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_17_crowds_zara01_868.mp4",
+      "sha256": "823766fc814292a17b33e2e3694f7827337528817d6c2c47fb4e39a3216cebe2",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_18_crowds_students003_3101.mp4",
+      "sha256": "77458988ed6871825330c29cc1764595c45461d22484ce27f15083dd1dedd3b0",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_19_crowds_zara01_888.mp4",
+      "sha256": "b5bfec82d952f49804369794013718fec36928db56b6dfba3d5fcfc1905b432f",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    },
+    {
+      "path": "demo/local_model_based/trajectory_forecasting/demo_20_crowds_students003_2297.mp4",
+      "sha256": "ae3caf2ea6c98aabca1ea7c5241332083aa221b1b6928c1b52110581d8e26ba6",
+      "full_decode": true,
+      "probe": {
+        "width": 1600,
+        "height": 900,
+        "r_frame_rate": "25/1",
+        "duration": "12.840000",
+        "nb_frames": "321"
+      }
+    }
+  ]
+}

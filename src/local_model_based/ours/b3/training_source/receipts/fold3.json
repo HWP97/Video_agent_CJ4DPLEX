@@ -1,0 +1,43 @@
+{
+  "signature": {
+    "seed": 20261111,
+    "epochs": 0,
+    "train": "f064278f10c6ebb7d234491b7669e78a5a55871375fa9938a0bb14a242a729af",
+    "validation": "5ccf19f4f2c0424bb9636387a42e899d136172cb5e410c08d271cedf5925f25d",
+    "parent": "80ab8f99f99eb7a2f6e4c856aef13842a3b63d77833000e07f281f688dc910f1",
+    "moments": true,
+    "final": true,
+    "source": "432b6556e7bb3548509f89a839875d0c68ab2bf19c5ccfcbf693e92d4a81c55d"
+  },
+  "trace": [
+    {
+      "epoch": 0,
+      "ADE": 0.7574024200439453,
+      "FDE": 1.5112669467926025,
+      "loss": null,
+      "batch_order_sha256": null
+    }
+  ],
+  "selected_epoch": 0,
+  "checkpoints": {
+    "epoch0.pt": "b9882361274f8a8c562c768b48dccc8737e293a916f4252e99a00b276fb04cac",
+    "best.pt": "f473817f0d3e54564660298a4aecc3ea379123d21e2b32f23ed87609cd405000"
+  },
+  "initial_ADE": 0.7574024200439453,
+  "moment_steps_restored": [
+    225.0,
+    225.0,
+    225.0,
+    225.0,
+    225.0,
+    225.0,
+    225.0,
+    225.0,
+    225.0,
+    225.0
+  ],
+  "seconds": 0.009261563420295715,
+  "epoch0_candidate": true,
+  "API_calls": 0,
+  "Kalman_ADE": 0.9071712493896484
+}

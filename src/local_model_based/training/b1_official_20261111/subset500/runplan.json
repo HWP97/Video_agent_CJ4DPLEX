@@ -1,0 +1,29 @@
+{
+  "scope": "기존 공식 Action Genome train 500영상 부분집합에서 로컬 미실행 아이디어 전이",
+  "official_full_train": false,
+  "new_downloads": false,
+  "train_dev_groups": [400,100],
+  "source_split": "/mnt/RG2/paper_experiments_20261109/combinations/protocol/split.json",
+  "seed": 20261111,
+  "new_methods": ["local_temporal","local_memory","local_masked","local_mtp","local_rank","local_macro"],
+  "method_definitions": {
+    "local_temporal": "4-step temporal attention direct future head plus current auxiliary target",
+    "local_memory": "train-only class-conditional relation mean blended 0.5 into observed history, anchored residual head",
+    "local_masked": "25% random history timestep masking during training, last timestep retained, anchored residual head",
+    "local_mtp": "anchored residual plus actual earlier future timestep auxiliary prediction",
+    "local_rank": "anchored residual plus positive-negative relation ranking softplus loss weight0.1",
+    "local_macro": "anchored residual with inverse-square-root train-positive class frequency weighted BCE auxiliary and future loss"
+  },
+  "controls": ["impartail_ode","encoder_hold","gt_transfer","predicted_direct","unanchored_restore_aux","identity_anchor_aux","identity_anchor_no_aux","joint_current_hold"],
+  "control_weights": "기존 development 및 final 동결 weights 재사용; 신규 재학습 없음",
+  "selection": "mode별 development NC@20 mR 증가와 R 비하락 동시 만족; 미충족시 baseline 유지",
+  "epochs": 8,
+  "batch_size": 256,
+  "optimizer": "AdamW lr0.001",
+  "after_selection": "신규6방법 전체500 eligible로 refit 후 동결, 공식 test 전조건 진단평가; dev탈락방법은 채택표시금지",
+  "test": "SGCLS/predcls, observation0.3/0.5/0.7/0.9, WC/NC, official evaluator IoU0",
+  "inference": "관측 prefix 및 동결 train memory만; 미래GT는 평가target만. SGCLS관측bbox/예측class, predcls관측bbox/class 허용",
+  "Sol_API_features_or_teacher": false,
+  "paid_API_calls": 0,
+  "symbolic_FDSG_and_OOTSM": "이미 완료된 별도조건 원본 결과 보존; 이번 신규 시각특징 전이실험에서 다시학습하지 않음"
+}

@@ -1,0 +1,2 @@
+# 기본 b1/b3 실행 환경. b2는 별도 환경에서 requirements/b2.txt 사용.
+-r requirements/ag_b3.txt

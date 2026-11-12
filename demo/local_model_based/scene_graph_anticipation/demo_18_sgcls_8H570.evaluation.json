@@ -1,0 +1,400 @@
+[
+  {
+    "pts_s": 12.033333,
+    "GT_relations": [
+      "person > not looking at > food",
+      "food > beneath > person",
+      "person > holding > food",
+      "person > not looking at > dish",
+      "dish > in front of > person",
+      "person > holding > dish"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 0.5,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 14.033333,
+    "GT_relations": [
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > unsure > phonecamera",
+      "phonecamera > in front of > person",
+      "person > holding > phonecamera",
+      "person > not looking at > dish",
+      "dish > in front of > person",
+      "person > holding > dish"
+    ],
+    "baseline_R20": 0.2222222222222222,
+    "ours_R20": 0.3333333333333333,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 14.9,
+    "GT_relations": [
+      "person > not looking at > dish",
+      "dish > in front of > person",
+      "person > holding > dish"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 15.1,
+    "GT_relations": [
+      "person > not looking at > dish",
+      "dish > in front of > person",
+      "dish > on the side of > person",
+      "person > not contacting > dish"
+    ],
+    "baseline_R20": 0.25,
+    "ours_R20": 0.75,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 15.366667,
+    "GT_relations": [
+      "person > looking at > food",
+      "food > beneath > person",
+      "person > holding > food",
+      "person > looking at > dish",
+      "dish > in front of > person",
+      "person > holding > dish"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 0.5,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 15.433333,
+    "GT_relations": [
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > dish",
+      "dish > in front of > person",
+      "person > holding > dish"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 0.5,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  }
+]

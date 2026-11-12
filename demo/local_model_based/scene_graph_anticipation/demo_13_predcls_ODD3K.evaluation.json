@@ -1,0 +1,2080 @@
+[
+  {
+    "pts_s": 17.033333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > unsure > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "chair > beneath > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.7058823529411765,
+    "ours_R20": 0.8235294117647058,
+    "baseline_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        15
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [],
+      [
+        11
+      ],
+      [
+        14
+      ],
+      [
+        16
+      ],
+      [],
+      [
+        10
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        11
+      ],
+      [
+        6
+      ],
+      [
+        1
+      ],
+      [
+        15
+      ],
+      [
+        10
+      ],
+      [
+        2
+      ],
+      [
+        0
+      ],
+      [
+        12
+      ],
+      [
+        9
+      ],
+      [
+        16
+      ],
+      [
+        3
+      ],
+      [
+        14
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ]
+    ]
+  },
+  {
+    "pts_s": 17.233333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "chair > on the side of > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.7222222222222222,
+    "ours_R20": 0.7777777777777778,
+    "baseline_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        16
+      ],
+      [
+        7
+      ],
+      [
+        9
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        17
+      ],
+      [
+        10
+      ],
+      [
+        15
+      ],
+      [
+        11
+      ],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        12
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        10
+      ],
+      [
+        6
+      ],
+      [
+        2
+      ],
+      [
+        11
+      ],
+      [
+        16
+      ],
+      [
+        1
+      ],
+      [
+        13
+      ],
+      [
+        17
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        3
+      ],
+      [
+        15
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 17.4,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.7058823529411765,
+    "ours_R20": 0.8235294117647058,
+    "baseline_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        15
+      ],
+      [
+        7
+      ],
+      [
+        16
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        14
+      ],
+      [
+        5
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        1
+      ],
+      [
+        10
+      ],
+      [
+        11
+      ],
+      [
+        15
+      ],
+      [
+        2
+      ],
+      [
+        16
+      ],
+      [
+        12
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        14
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 21.866667,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.625,
+    "ours_R20": 0.875,
+    "baseline_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        14
+      ],
+      [],
+      [
+        15
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ],
+      [],
+      [],
+      [
+        13
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        9
+      ],
+      [
+        14
+      ],
+      [
+        11
+      ],
+      [
+        1
+      ],
+      [
+        15
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [
+        10
+      ],
+      [
+        13
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.133333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 0.9333333333333333,
+    "baseline_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        5
+      ],
+      [],
+      [
+        13
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        14
+      ],
+      [
+        8
+      ],
+      [
+        4
+      ],
+      [
+        12
+      ],
+      [],
+      [],
+      [
+        10
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        10
+      ],
+      [
+        5
+      ],
+      [
+        8
+      ],
+      [
+        13
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        14
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [
+        4
+      ],
+      [
+        12
+      ],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.5,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.6428571428571429,
+    "ours_R20": 0.9285714285714286,
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [
+        4
+      ],
+      [],
+      [
+        12
+      ],
+      [
+        6
+      ],
+      [
+        0
+      ],
+      [
+        13
+      ],
+      [],
+      [],
+      [
+        11
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        7
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [
+        4
+      ],
+      [
+        12
+      ],
+      [
+        9
+      ],
+      [
+        6
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        7
+      ],
+      [
+        13
+      ],
+      [],
+      [
+        11
+      ],
+      [],
+      [
+        1
+      ],
+      [
+        8
+      ],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.633333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > unsure > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5625,
+    "ours_R20": 0.875,
+    "baseline_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        14
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [
+        15
+      ],
+      [],
+      [],
+      [],
+      [
+        13
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ]
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        3
+      ],
+      [
+        9
+      ],
+      [
+        11
+      ],
+      [
+        2
+      ],
+      [
+        14
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [
+        1
+      ],
+      [
+        15
+      ],
+      [],
+      [
+        13
+      ],
+      [],
+      [
+        10
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.733333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.6875,
+    "ours_R20": 0.875,
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        14
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [],
+      [
+        15
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        9
+      ],
+      [
+        13
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        11
+      ],
+      [
+        3
+      ],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        3
+      ],
+      [
+        11
+      ],
+      [
+        9
+      ],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        14
+      ],
+      [
+        8
+      ],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        13
+      ],
+      [
+        15
+      ],
+      [],
+      [
+        10
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 28.0,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5294117647058824,
+    "ours_R20": 0.8235294117647058,
+    "baseline_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        14
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        2
+      ]
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        2
+      ],
+      [
+        15
+      ],
+      [
+        3
+      ],
+      [
+        10
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        12
+      ],
+      [
+        16
+      ],
+      [],
+      [
+        14
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        11
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 28.833333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5882352941176471,
+    "ours_R20": 0.8235294117647058,
+    "baseline_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        10
+      ],
+      [],
+      [
+        15
+      ],
+      [
+        9
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        16
+      ],
+      [
+        12
+      ],
+      [
+        14
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        10
+      ],
+      [
+        12
+      ],
+      [
+        6
+      ],
+      [
+        1
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        15
+      ],
+      [
+        14
+      ],
+      [
+        5
+      ],
+      [
+        2
+      ],
+      [
+        16
+      ],
+      [],
+      [
+        11
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 29.766667,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.4166666666666667,
+    "ours_R20": 0.9166666666666666,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        10
+      ],
+      [],
+      [
+        11
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [
+        10
+      ],
+      [
+        5
+      ],
+      [
+        3
+      ],
+      [
+        11
+      ],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 29.866667,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.47058823529411764,
+    "ours_R20": 0.8235294117647058,
+    "baseline_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        15
+      ],
+      [
+        16
+      ],
+      [],
+      [
+        6
+      ],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        14
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        9
+      ],
+      [
+        15
+      ],
+      [
+        6
+      ],
+      [
+        16
+      ],
+      [
+        12
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        10
+      ],
+      [],
+      [
+        11
+      ],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        14
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.1,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5833333333333334,
+    "ours_R20": 0.8333333333333334,
+    "baseline_top20_matched_GT_indices": [
+      [
+        10
+      ],
+      [
+        7
+      ],
+      [
+        11
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        10
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        11
+      ],
+      [],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.2,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > unsure > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.47058823529411764,
+    "ours_R20": 0.8235294117647058,
+    "baseline_top20_matched_GT_indices": [
+      [
+        15
+      ],
+      [
+        7
+      ],
+      [
+        16
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        14
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        15
+      ],
+      [
+        9
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        16
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        12
+      ],
+      [
+        14
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        11
+      ],
+      [
+        10
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.233333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "sofacouch > beneath > person",
+      "person > sitting on > sofacouch",
+      "person > leaning on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > leaning on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5,
+    "ours_R20": 0.875,
+    "baseline_top20_matched_GT_indices": [
+      [
+        14
+      ],
+      [
+        7
+      ],
+      [
+        15
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        13
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        14
+      ],
+      [
+        8
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [
+        15
+      ],
+      [],
+      [],
+      [],
+      [
+        11
+      ],
+      [
+        13
+      ],
+      [
+        1
+      ],
+      [
+        5
+      ],
+      [
+        10
+      ],
+      [
+        9
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.266667,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > leaning on > sofacouch",
+      "person > sitting on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5,
+    "ours_R20": 0.875,
+    "baseline_top20_matched_GT_indices": [
+      [
+        14
+      ],
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        15
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        13
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        14
+      ],
+      [
+        9
+      ],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        15
+      ],
+      [],
+      [],
+      [],
+      [
+        13
+      ],
+      [
+        12
+      ],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [
+        11
+      ],
+      [
+        10
+      ],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.933333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > beneath > person",
+      "sofacouch > behind > person",
+      "person > sitting on > sofacouch",
+      "person > not looking at > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > eating > food",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.7272727272727273,
+    "ours_R20": 0.9090909090909091,
+    "baseline_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        9
+      ],
+      [],
+      [
+        10
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        6
+      ],
+      [
+        1
+      ],
+      [
+        5
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        9
+      ],
+      [],
+      [
+        8
+      ],
+      [
+        10
+      ],
+      [
+        4
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 32.0,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "person > not contacting > sofacouch",
+      "person > unsure > food",
+      "food > in front of > person",
+      "person > holding > food",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > not contacting > chair",
+      "person > not looking at > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5833333333333334,
+    "ours_R20": 0.8333333333333334,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        11
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        10
+      ],
+      [
+        9
+      ],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        11
+      ],
+      [
+        9
+      ],
+      [],
+      [],
+      [
+        7
+      ],
+      [
+        10
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 33.033333,
+    "GT_relations": [
+      "person > not looking at > sofacouch",
+      "sofacouch > behind > person",
+      "person > not contacting > sofacouch",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > not contacting > chair",
+      "person > unsure > bag",
+      "bag > in front of > person",
+      "person > holding > bag"
+    ],
+    "baseline_R20": 0.5555555555555556,
+    "ours_R20": 0.7777777777777778,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        8
+      ],
+      [
+        7
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        6
+      ]
+    ]
+  }
+]

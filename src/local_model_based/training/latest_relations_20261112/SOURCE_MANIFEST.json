@@ -1,0 +1,57 @@
+[
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/models.py",
+    "destination": "source/b1/models.py",
+    "sha256": "e1f0ffbbd36d1815ac61256cf4cef1f003856d90868833cbd80add83dfde82df"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/prepare.py",
+    "destination": "source/b1/prepare.py",
+    "sha256": "01a8f20f2eee13579eec2ce8ee31df6b193991991a7c60bb7eae5da50297c18f"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/models.py",
+    "destination": "source/b2/models.py",
+    "sha256": "b798269e72bc5e4468a9e332c7db8948351177d3fa54b639118fe32d843fcbd3"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/train.py",
+    "destination": "source/b1/combinations_81112/train.py",
+    "sha256": "1d273981d246024ff850f8e1088d67bffb45db12958d958dc572618fd17eb5ba"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/models.py",
+    "destination": "source/b1/combinations_81112/models.py",
+    "sha256": "e05093a0ef4970dab452bfa662711c16e98409597425a9ac1545e8160031b649"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/prepare.py",
+    "destination": "source/b1/combinations_81112/prepare.py",
+    "sha256": "be99962781f40f7764f41920992db16a81da022a086b7b44dcf5a45cd5ec8095"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/evaluate.py",
+    "destination": "source/b1/combinations_81112/evaluate.py",
+    "sha256": "58983c34d950dcb49dd2a6dbd81af1e411c5defbba529e34e1fa6d3114934115"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/lock_selection.py",
+    "destination": "source/b1/combinations_81112/lock_selection.py",
+    "sha256": "b3921452730bdfa5e78e420b7ea67e44752d95287f30f5e5cc9afc968c4d4f4d"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/data/receipt.json",
+    "destination": "source/b1/combinations_81112/data/receipt.json",
+    "sha256": "fbdec6c53d72352dc24c70b6b509e8683de6f4633cede86d4a5a1e5460021a5b"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/selection_lock.json",
+    "destination": "source/b1/combinations_81112/selection_lock.json",
+    "sha256": "e1ecc4f4538f52badbe66f9cf8648a54188df040ccfffcc111ec13a7c447bc43"
+  },
+  {
+    "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/combined_selection_lock.json",
+    "destination": "source/b1/combinations_81112/combined_selection_lock.json",
+    "sha256": "e6750f4927660471a0855fd4235b94f621344267946d7b07b9a5a8165aa326bc"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "branch": "b2",
+  "family": "api",
+  "stage": "ours",
+  "method": "observation_residual_lambda1",
+  "adoption_status": "selection236_MAE_chosen",
+  "python": "/mnt/RG2/my_works/b1/envs/qwen3vl/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "selection236 MAE로 선정한 기존 observation residual Ridge; final421은 별도 보고, 새 독립 test 아님"
+}

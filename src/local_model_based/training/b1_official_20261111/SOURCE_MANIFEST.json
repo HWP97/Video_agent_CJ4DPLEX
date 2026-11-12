@@ -1,0 +1,311 @@
+{
+  "code_files": [
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/application_types.py",
+      "snapshot": "code/application_types.py",
+      "sha256": "43e64fbc81764667785321a7c718a779a59d636e0034165cc7ed6c9a47683c9a",
+      "bytes": 1371
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/compact_graph.py",
+      "snapshot": "code/compact_graph.py",
+      "sha256": "e1238f998c3d6d6ec028da2987b238a4fd29f1b60b11e9b96e5b14f174cd161e",
+      "bytes": 6199
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/eval_sweep.py",
+      "snapshot": "code/eval_sweep.py",
+      "sha256": "547713af73ec5707398e4c1a3b9c2502c7f3901b45f8be11bb12279651752456",
+      "bytes": 10381
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/forecast_adapter.py",
+      "snapshot": "code/forecast_adapter.py",
+      "sha256": "b2f88eb82fe29ac6b4a01551987af928016743487bcb6dd3f5a7bed7342e0081",
+      "bytes": 4909
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/local_extensions.py",
+      "snapshot": "code/local_extensions.py",
+      "sha256": "d7cc47c2064b76054d982e2a6568d25660d1cb3f1ae61484d5a043a901bc6305",
+      "bytes": 1695
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/log_objective.py",
+      "snapshot": "code/log_objective.py",
+      "sha256": "4e7314a0102c9e948b31be29e00f6d25083690972f7a632eb7822d694e11a06d",
+      "bytes": 1216
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/provenance.py",
+      "snapshot": "code/provenance.py",
+      "sha256": "9e9ceb121c133ae3b109a602cbc8b88505297656e30cdd220f026012ff136544",
+      "bytes": 1100
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/relation_model.py",
+      "snapshot": "code/relation_model.py",
+      "sha256": "a2febde8927208117d0e2805733209daee7528b2f6cdbd560bd1e7d83681540d",
+      "bytes": 2513
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/selector.py",
+      "snapshot": "code/selector.py",
+      "sha256": "4a9ed52ab24002f78c6fa997cff2724898e9b86fd962154b22da89bfcd8907d5",
+      "bytes": 1871
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/supervision.py",
+      "snapshot": "code/supervision.py",
+      "sha256": "197c639e6ca4dbd1ff81059965e2787a6b199d90ecf70476a37a4b7a558e645a",
+      "bytes": 3760
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/sweep_data.py",
+      "snapshot": "code/sweep_data.py",
+      "sha256": "b8f2981062e08af48af655529a234ceb94c1f28c39bcb2d191133bceb346822e",
+      "bytes": 2246
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/sweep_models.py",
+      "snapshot": "code/sweep_models.py",
+      "sha256": "b2dd22e19784723054d25958df7f766a772562deb5758eb810376cf77e2108ff",
+      "bytes": 2405
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/sweep_predict.py",
+      "snapshot": "code/sweep_predict.py",
+      "sha256": "f8757ac02cf54f93c401d32a414ca14bebaff2e28f0d6d7224801b8064033f88",
+      "bytes": 5122
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/train_sweep.py",
+      "snapshot": "code/train_sweep.py",
+      "sha256": "d82b83dbf91d99da0eb4aa4516dc52ffa16c6c9ae1ce537df217e585c7e74171",
+      "bytes": 6170
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/v2_reference.py",
+      "snapshot": "code/v2_reference.py",
+      "sha256": "fb5eb28c0ad7f42eb78e8d22fd40f030eca0b0fa0e72c0389492e6ff79a4778d",
+      "bytes": 1811
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/tests/test_log_provenance.py",
+      "snapshot": "tests/test_log_provenance.py",
+      "sha256": "101ce7b5b3aee05dfa6a98845e5529dbf9bbcb1d1c7378fcae34e2e0fbb9f9c4",
+      "bytes": 1565
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/tests/test_profile_boundary.py",
+      "snapshot": "tests/test_profile_boundary.py",
+      "sha256": "60df9322899429abdadffab4f6aed71eb95229b316408760b8bc22e58f70df98",
+      "bytes": 2921
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/tests/test_reference_reuse.py",
+      "snapshot": "tests/test_reference_reuse.py",
+      "sha256": "db4e0e950ffcf409510653e7c677f6e8e0ab2f7f3552681e5b422f5b5a7a212a",
+      "bytes": 1468
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/offline_case.py",
+      "snapshot": "offline_case.py",
+      "sha256": "3d1fd83246c40f6746fc03ec82c8ce9acbc4bc563093c1831657ba92693ee29d",
+      "bytes": 4382
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/application_types.py",
+      "snapshot": "subset500/code/application_types.py",
+      "sha256": "43e64fbc81764667785321a7c718a779a59d636e0034165cc7ed6c9a47683c9a",
+      "bytes": 1371
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/compact_graph.py",
+      "snapshot": "subset500/code/compact_graph.py",
+      "sha256": "e1238f998c3d6d6ec028da2987b238a4fd29f1b60b11e9b96e5b14f174cd161e",
+      "bytes": 6199
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/forecast_adapter.py",
+      "snapshot": "subset500/code/forecast_adapter.py",
+      "sha256": "b2f88eb82fe29ac6b4a01551987af928016743487bcb6dd3f5a7bed7342e0081",
+      "bytes": 4909
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/full_test.py",
+      "snapshot": "subset500/code/full_test.py",
+      "sha256": "97fcffd6456763614fb3afad44b316c585d72c1cde2568c63e4ecdfbbe072e97",
+      "bytes": 7608
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/local_extensions.py",
+      "snapshot": "subset500/code/local_extensions.py",
+      "sha256": "d7cc47c2064b76054d982e2a6568d25660d1cb3f1ae61484d5a043a901bc6305",
+      "bytes": 1695
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/prepare_full.py",
+      "snapshot": "subset500/code/prepare_full.py",
+      "sha256": "99e3a40f69f62b3d109074362cd6f2213cc1c883e8f83507ebcdf41435deb426",
+      "bytes": 268
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/relation_model.py",
+      "snapshot": "subset500/code/relation_model.py",
+      "sha256": "a2febde8927208117d0e2805733209daee7528b2f6cdbd560bd1e7d83681540d",
+      "bytes": 2513
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/supervision.py",
+      "snapshot": "subset500/code/supervision.py",
+      "sha256": "197c639e6ca4dbd1ff81059965e2787a6b199d90ecf70476a37a4b7a558e645a",
+      "bytes": 3760
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/test_extensions.py",
+      "snapshot": "subset500/code/test_extensions.py",
+      "sha256": "ea848d00e518114cb3bccd3ffc51468865f1f64a2f0ec0a91c16b9db0c143d93",
+      "bytes": 1480
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/code/train_and_select.py",
+      "snapshot": "subset500/code/train_and_select.py",
+      "sha256": "856b411a5f1d8a7a0aa62406ea7653d3537aa0517eeb7b63d5cea51511f8eb13",
+      "bytes": 14311
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/run_twelve.py",
+      "snapshot": "subset500/run_twelve.py",
+      "sha256": "2ae2d35d34c881bbd6c9b346ccddd23302971867a3fa53c2ca64926f987a2789",
+      "bytes": 1317
+    }
+  ],
+  "read_only_reference_modules": [
+    {
+      "module": "paths",
+      "path": "/mnt/RG2/paper_experiments_20261109/b1/legacy/paths.py",
+      "sha256": "c16c416cbe284cff8108fa488d4e8034ab8856cba2ddde76afa5b5da4c4eb318"
+    },
+    {
+      "module": "adapters",
+      "path": "/mnt/RG2/paper_experiments_20261109/b1/legacy/adapters.py",
+      "sha256": "8337833a44e7a483bd3ad7692237ad632ec8d94d72fd0f80ba122790dae55f5e"
+    },
+    {
+      "module": "contracts",
+      "path": "/mnt/RG2/paper_experiments_20261109/b1/legacy/contracts.py",
+      "sha256": "8fbc0832ab160a8e623610f5b99fac1439739575d94d67a44ab1d63479bbec9a"
+    },
+    {
+      "module": "dataloader",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/dataloader/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "dataloader.action_genome",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/dataloader/action_genome/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "constants",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/constants.py",
+      "sha256": "6133413ff29d6780ecc29c397319ad81278e612eb233e5ff416b9208a97091c7"
+    },
+    {
+      "module": "fasterRCNN.lib.model",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/fasterRCNN/lib/model/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "fasterRCNN.lib.model.utils",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/fasterRCNN/lib/model/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "fasterRCNN.lib.model.utils.blob",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/fasterRCNN/lib/model/utils/blob.py",
+      "sha256": "b9d6cf6371bbbce59187a0ab86f4bc8ee1cdb8d1f442147b272288dc465b8f01"
+    },
+    {
+      "module": "dataloader.action_genome.ag_dataset",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/dataloader/action_genome/ag_dataset.py",
+      "sha256": "9dac681427510d3e56a248c38d387501544be7a15a137e7f689af8dbee95a789"
+    },
+    {
+      "module": "lib",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "lib.supervised",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/lib/supervised/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "lib.pytorch_misc",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/lib/pytorch_misc.py",
+      "sha256": "a7aeb93e2577583c8021478571829a82b226ee6316b34ba5a15c8e2353be74cc"
+    },
+    {
+      "module": "lib.supervised.evaluation_recall",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/SceneSayer/lib/supervised/evaluation_recall.py",
+      "sha256": "c0e2679068272d0fcda3f912be99894c9c2dc71bf75924485b86263525e9cf1a"
+    },
+    {
+      "module": "eval_ag",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/code/eval_ag.py",
+      "sha256": "9c06062e9b9ef922a5331ed2a55d441998ad6734d57f4d27c58d38ed7e31d7a3"
+    },
+    {
+      "module": "sol_ag_adapter",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/code/sol_ag_adapter.py",
+      "sha256": "bd604648e6194e8d5ff9b4dbf1fa06d302459bc3287d60d625e9931197c36e5a"
+    },
+    {
+      "module": "eval_replay",
+      "path": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/code/eval_replay.py",
+      "sha256": "b5b75df185bfb0db843fec5c43d04d51d19eb715d00297700a675cd714349911"
+    },
+    {
+      "module": "scoring",
+      "path": "/mnt/RG2/paper_experiments_20261109/b1/legacy/scoring.py",
+      "sha256": "eb10522be9a01fb159f073734ce22ade812a3c78f3d8c7d066c31f5636179c44"
+    },
+    {
+      "module": "forecasting",
+      "path": "/mnt/RG2/my_works/forecasting/__init__.py",
+      "sha256": "12187f8638ac1c39bbe7df7e82c0cb828552b44c17fa1335fade1332ac9affbe"
+    },
+    {
+      "module": "forecasting.ag_vlm",
+      "path": "/mnt/RG2/my_works/forecasting/ag_vlm/__init__.py",
+      "sha256": "449739739291ddda86953e449d99bcf0df7327e7e6fc3316c371e82f29319d3d"
+    },
+    {
+      "module": "forecasting.ag_vlm.evaluate",
+      "path": "/mnt/RG2/my_works/forecasting/ag_vlm/evaluate.py",
+      "sha256": "036ce50fae01066cb703ab4c38c5fddc8d4dd298ff67acc70454c3f4ba6d1893"
+    }
+  ],
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "experiment_root": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3",
+  "read_only_test_assets": "/mnt/RG2/HWP_CJ4DPLEX_AI/src/local_model_based/data/b1",
+  "read_only_train_assets": "/mnt/RG2/paper_experiments_20261109/combinations/assets",
+  "checkpoint_origin": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v2",
+  "checkpoint_identity_evidence": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/evidence/weights_unchanged.json",
+  "frozen_manifest": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/protocol/test_freeze.json",
+  "frozen_manifest_sha256": "a53ef4abb0247592e7184cae506acfeaa345cb41a14904e8e92edda562a28450",
+  "first_phase_frozen_manifest": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/subset500/protocol/test_frozen.json",
+  "first_phase_frozen_sha256": "d835547136ee207f21c52eb692e70263eff0e24e9d2e82850dc156a62a42a6ca",
+  "development_selection": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/FINAL_DEV_SELECTION.json",
+  "API_calls": 0,
+  "reused_v2_methods_per_case": 33,
+  "newly_official_scored_methods_per_case": 21,
+  "results_remain_external": true,
+  "commands": [
+    "B1_EVAL_WORKERS=24 /mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python -B /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/code/eval_sweep.py test",
+    "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python -B /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/verified_code_v3/offline_case.py predict predcls:00607.mp4_0.5 /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/qa_snapshot_predict /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3 /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/verified_code_v3/code",
+    "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python -B /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/verified_code_v3/offline_case.py score /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/qa_snapshot_predict /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3/qa_snapshot_score /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/config_sweep_v3 /mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b1/verified_code_v3/code"
+  ]
+}

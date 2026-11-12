@@ -1,0 +1,16 @@
+{
+  "branch": "b2",
+  "family": "api",
+  "stage": "baseline",
+  "method": "raw_sol",
+  "adoption_status": "baseline_retained",
+  "python": "/mnt/RG2/my_works/b1/envs/qwen3vl/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "저장된 raw Sol 미래 VA; 보정 없음"
+}

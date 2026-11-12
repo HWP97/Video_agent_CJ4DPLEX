@@ -1,0 +1,106 @@
+{
+  "configs": [
+    {
+      "name": "B2-C01",
+      "mtp": false,
+      "gate": false,
+      "correction": false,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C02",
+      "mtp": true,
+      "gate": false,
+      "correction": false,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C03",
+      "mtp": false,
+      "gate": true,
+      "correction": false,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C04",
+      "mtp": false,
+      "gate": false,
+      "correction": true,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C05",
+      "mtp": true,
+      "gate": true,
+      "correction": false,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C06",
+      "mtp": true,
+      "gate": false,
+      "correction": true,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C07",
+      "mtp": false,
+      "gate": true,
+      "correction": true,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C08",
+      "mtp": true,
+      "gate": true,
+      "correction": true,
+      "fixed_gate": 1.0,
+      "smooth": false
+    },
+    {
+      "name": "B2-C09",
+      "mtp": true,
+      "gate": false,
+      "correction": true,
+      "fixed_gate": 0.5,
+      "smooth": false
+    },
+    {
+      "name": "B2-C10",
+      "mtp": true,
+      "gate": true,
+      "correction": true,
+      "fixed_gate": 1.0,
+      "smooth": true
+    }
+  ],
+  "seed": 20261111,
+  "sources": {
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/followup_reasoned_combinations/models.py": "16050a4402d7a9118451cfbd37e5d8972b0f17f5c5bf2c1f0a3743309141348f",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/followup_reasoned_combinations/engine.py": "1529dd0664c9e1ab053423aaa1ab7cf3a15020f49fbb036d6d0e9bec8f5b6a91",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/followup_reasoned_combinations/run.py": "74e1edbc968d25b9e286fd2ab67e202a575cb7d7fc59695299372a13c1b48f9a",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/followup_common.py": "e8d4b0e20f2aa5588dcb4e63ef937c9962757ef3cbb390ea2617d74cc88d7d2c"
+  },
+  "inputs": {
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/inputs.npz": "7d5179e458ed5f3b4a3416002fb58a1589380c256440be2d7d514bfc8adf992e",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/manifest.json": "61780b4815544e4f17a0d7b85c8a3ac7922e9dd08c2090921368af63c97429f7",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b2/attempt_fp32/labels_train.json": "3cf44f07ff594042910c172273f21d5b7a17aa47febdae268f3be7422a68ee2f"
+  },
+  "split": "4b94e3c6be51100c24a3bb0eee8b8d8625b64874cac48dc20dec43a8d34555fa",
+  "selection_rule": "hold 대비 MAE<= 및 CCC>= 중 MAE 최소, 없으면 hold",
+  "expert_epochs": 20,
+  "combiner_epochs": 100,
+  "optional_followups": 0,
+  "small_batch_shape": [
+    3,
+    4,
+    2
+  ]
+}

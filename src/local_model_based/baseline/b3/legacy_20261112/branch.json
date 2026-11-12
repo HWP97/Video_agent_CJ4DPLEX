@@ -1,0 +1,16 @@
+{
+  "branch": "b3",
+  "family": "local",
+  "stage": "baseline",
+  "method": "direct_unshared4_d4",
+  "adoption_status": "baseline_retained",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "기존 좌표 benchmark: 관측9점·미래12점·0.4초·nominal meter. 관측 특징과 고정 attention 가중치로 실제 로컬 추론. 최종은 baseline 유지."
+}

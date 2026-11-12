@@ -1,0 +1,16 @@
+{
+  "branch": "b3",
+  "family": "local",
+  "stage": "ours",
+  "method": "local_static_r1.0",
+  "adoption_status": "best_existing_ADE_posthoc",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "predict",
+    "evaluate",
+    "verify"
+  ],
+  "description": "기존 attention+train-only 동결static residual. 공개validation 사후선정, 추가학습없음."
+}

@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-11-10T17:07:48.529103+00:00",
+  "official_metric_source": "/mnt/RG2/my_works/experiments/benchmarks/2026-11-06/001_frozen_full/sources/trajnetplusplustools/code/trajnetplusplustools/metrics.py",
+  "official_metric_sha256": "dfddb1e259b60c1d3031da2601ccfeb9383f61caebba10d60940ce96f2d26f75",
+  "radius": 0.1,
+  "inter_parts": 2,
+  "GT_metrics": [
+    "ColI_all_GT",
+    "ColI_observed_GT"
+  ],
+  "dev_selection_collision": "ColI_observed_GT",
+  "ColII_predicted_neighbors": null,
+  "document_sha256": "db844c206923225f3439c2b93498c5c4c39c38661e83c02e72b63c0764a8be3f",
+  "prior_runplan_sha256": "7f34d01c47d989de45a8769f0d1b788e579d69714551c989ad46b45c6d533fac"
+}

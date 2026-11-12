@@ -1,0 +1,7 @@
+# 기존 b1 환경에서 확인한 CPU 데모 렌더링 의존성
+numpy==1.23.5
+Pillow==12.3.0
+opencv-python-headless==4.11.0.86
+pydantic==2.11.10
+# b1 동결 head 로드는 requirements/ag_b3.txt의 PyTorch 환경 필요
+# 시스템 FFmpeg(libx264), ffprobe와 DejaVu Sans 글꼴 필요

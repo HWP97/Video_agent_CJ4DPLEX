@@ -1,0 +1,382 @@
+[
+  {
+    "sample_id": "predcls:X2IUY.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "23.066667",
+      "nb_frames": "346"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 2,
+    "source_cutoff_s": 8.88,
+    "source_end_s": 15.96,
+    "expected_playback_duration_s": 23.04,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:U588C.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "30.600000",
+      "nb_frames": "459"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 3,
+    "source_cutoff_s": 29.36,
+    "source_end_s": 29.96,
+    "expected_playback_duration_s": 30.560000000000002,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:9SJZ9.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "39.400000",
+      "nb_frames": "591"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 2,
+    "source_cutoff_s": 15.159236,
+    "source_end_s": 27.261146,
+    "expected_playback_duration_s": 39.363056,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:KOQGE.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "42.133333",
+      "nb_frames": "632"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 11,
+    "source_cutoff_s": 15.333333,
+    "source_end_s": 28.7,
+    "expected_playback_duration_s": 42.066666999999995,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:KOVTR.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "51.600000",
+      "nb_frames": "774"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 27,
+    "source_cutoff_s": 17.017438,
+    "source_end_s": 34.275406,
+    "expected_playback_duration_s": 51.533373999999995,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:V1BX9.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "21.600000",
+      "nb_frames": "324"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 14,
+    "source_cutoff_s": 6.18,
+    "source_end_s": 13.86,
+    "expected_playback_duration_s": 21.54,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:YDWIW.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "24.066667",
+      "nb_frames": "361"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 11,
+    "source_cutoff_s": 4.8,
+    "source_end_s": 14.4,
+    "expected_playback_duration_s": 24.000000000000004,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:OPMF7.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "16.333333",
+      "nb_frames": "245"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 4,
+    "source_cutoff_s": 9.3,
+    "source_end_s": 12.8,
+    "expected_playback_duration_s": 16.3,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:WC5QK.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "42.133333",
+      "nb_frames": "632"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 20,
+    "source_cutoff_s": 15.8158,
+    "source_end_s": 28.962267,
+    "expected_playback_duration_s": 42.108734,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:0UPBN.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "37.466667",
+      "nb_frames": "562"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 7,
+    "source_cutoff_s": 21.12,
+    "source_end_s": 29.28,
+    "expected_playback_duration_s": 37.44,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:J48N6.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "37.400000",
+      "nb_frames": "561"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 17,
+    "source_cutoff_s": 22.966667,
+    "source_end_s": 30.166667,
+    "expected_playback_duration_s": 37.366667,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:L2502.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "37.933333",
+      "nb_frames": "569"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 12,
+    "source_cutoff_s": 28.666667,
+    "source_end_s": 33.266667,
+    "expected_playback_duration_s": 37.86666699999999,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:DL6HP.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "50.133333",
+      "nb_frames": "752"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 2,
+    "source_cutoff_s": 19.266667,
+    "source_end_s": 34.666667,
+    "expected_playback_duration_s": 50.066666999999995,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:1QP1S.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "46.066667",
+      "nb_frames": "691"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 27,
+    "source_cutoff_s": 20.022472,
+    "source_end_s": 33.033708,
+    "expected_playback_duration_s": 46.044943999999994,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:FYYFX.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "42.933333",
+      "nb_frames": "644"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 18,
+    "source_cutoff_s": 15.5,
+    "source_end_s": 29.2,
+    "expected_playback_duration_s": 42.9,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:E6DLK.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "40.800000",
+      "nb_frames": "612"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 10,
+    "source_cutoff_s": 9.8098,
+    "source_end_s": 25.291933,
+    "expected_playback_duration_s": 40.774066000000005,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:LGJAR.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "39.600000",
+      "nb_frames": "594"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 8,
+    "source_cutoff_s": 21.860724,
+    "source_end_s": 30.718663,
+    "expected_playback_duration_s": 39.576601999999994,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:K1QIV.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "42.866667",
+      "nb_frames": "643"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 11,
+    "source_cutoff_s": 16.249567,
+    "source_end_s": 29.5295,
+    "expected_playback_duration_s": 42.809433,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "sgcls:O1PD3.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "35.066667",
+      "nb_frames": "526"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 8,
+    "source_cutoff_s": 12.007685,
+    "source_end_s": 23.535062,
+    "expected_playback_duration_s": 35.062439,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  },
+  {
+    "sample_id": "predcls:2ZDFA.mp4_0.5",
+    "probe": {
+      "codec_name": "h264",
+      "width": 1600,
+      "height": 900,
+      "r_frame_rate": "15/1",
+      "duration": "49.000000",
+      "nb_frames": "735"
+    },
+    "score_match_atol": 1e-10,
+    "future_frames": 5,
+    "source_cutoff_s": 13.44,
+    "source_end_s": 31.2,
+    "expected_playback_duration_s": 48.959999999999994,
+    "observation_speed": 1.0,
+    "future_speed": 0.5,
+    "matching": "unchanged official NC evaluator; IoU=0"
+  }
+]

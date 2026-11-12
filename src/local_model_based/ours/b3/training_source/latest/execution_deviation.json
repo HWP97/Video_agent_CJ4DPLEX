@@ -1,0 +1,32 @@
+{
+  "event": "동일 fold1 D04 두 writer가 동시에 진입",
+  "main_pid_terminated": 2734056,
+  "helper_completed_exit0": true,
+  "duplicate_completed_epochs_observed": 3,
+  "additional_partial_epoch_possible": true,
+  "quarantine": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/quarantine/fold1_D04_writer_race",
+  "quarantine_hashes": {
+    "epoch0.pt": "2e47367a5f118a24e222ff0952ca9f9f382bab9c525c9ae5c6bf3c3fba3e2469",
+    "best.pt": "7f78ce3fcf318fd75b41aefdc6f41d6169cd3e2e8710093d756e35b06ff0946c",
+    "validation_epoch0.npz": "df0faa8cd974e2b7602d8c48517a479a5d080bb66568d7c3d63a40c4da5610c6",
+    "epoch1.pt": "7693eb9c43198f0007664b3be7a640b52d102aab300232bc4fdb3f7b42740884",
+    "validation_epoch1.npz": "cbfa538a19d83dc2afc33bee3e9921ee1e2787d16a2f7fbcab58c755abf29b90",
+    "validation_epoch2.npz": "f35ac510d0973420ce9821a86b083af92b4a232fabfad753d5f239236171c6b3",
+    "epoch3.pt": "b302ce07c69e42984693cdf41073eac979726b70e7f994ca27bc427aecc93118",
+    "validation_epoch3.npz": "a8b64e43f15befab830c03c2f895a5fdfbae7099f3039956ca6a42f62904d528",
+    "epoch5.pt": "a9bff45fd53e86923ef2c80462e937053f3a7e1deb660f624eb598895ce2423f",
+    "validation_epoch5.npz": "7e98e910187917752aa94d2f7e3f43ae01c8464688487bdfb1ae366f5a201e03",
+    "epoch10.pt": "1e0f6ce6b8c4f07d7c357bb66da17693c170464b2bae1e9927119b77cc970aa2",
+    "validation_epoch10.npz": "2f03c8960f2d5debe4dd318965d04b2430ac697e30cc289ad34fb56b5988309e",
+    "receipt.json": "89df6dcdca35d559a1c5ee3893ac2a07b29cf2bd9f52c885f33af50f5febbacc"
+  },
+  "recovery": "helper 정상 epoch5 snapshot을 best로 복구, 전체10epoch trace와 실제 내부 재생을 검증",
+  "selected_epoch": 5,
+  "actual_ADE": 0.8827027082443237,
+  "actual_FDE": 1.7974040508270264,
+  "validation_outputs_bitwise_equal": true,
+  "new_training_for_recovery": 0,
+  "future_parallel_full_runners_disabled": true,
+  "original_files_modified": 0,
+  "best_snapshot_byte_equal_including_optimizer_RNG": true
+}

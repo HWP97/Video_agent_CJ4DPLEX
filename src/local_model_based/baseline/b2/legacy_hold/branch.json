@@ -1,0 +1,16 @@
+{
+  "branch": "b2",
+  "family": "local",
+  "stage": "baseline",
+  "method": "recognition_hold",
+  "adoption_status": "baseline_retained",
+  "python": "/mnt/RG2/my_works/b1/envs/qwen3vl/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "공식 현재 VA 인식 후 hold 유지"
+}

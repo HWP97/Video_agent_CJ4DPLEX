@@ -1,0 +1,151 @@
+[
+  {
+    "pts_s": 26.966667,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > shelf",
+      "shelf > in front of > person",
+      "person > touching > shelf",
+      "person > looking at > closetcabinet",
+      "closetcabinet > in front of > person",
+      "person > touching > closetcabinet"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 34.666667,
+    "baseline_R20": 0.2222222222222222,
+    "ours_R20": 0.6666666666666666,
+    "GT_relations": [
+      "person > looking at > shelf",
+      "shelf > in front of > person",
+      "person > touching > shelf",
+      "person > looking at > closetcabinet",
+      "closetcabinet > in front of > person",
+      "person > touching > closetcabinet",
+      "person > looking at > groceries",
+      "groceries > in front of > person",
+      "person > holding > groceries"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  }
+]

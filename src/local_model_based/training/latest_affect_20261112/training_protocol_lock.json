@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/prepare.py": "91a29fe9191b7e2ed214fec69b40e20e1dd8a70d2fd028f4b42ced6d0f91f258",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/check_input.py": "9b00f4bb787dc6b454159d13eb229a918252a5e3e1ca21f93b641bc30d2f5cbf",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/head.py": "641bb401b21698501300d986e15871256a7b40b270ef098dd975122c0a619583",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/train.py": "34cf967895879542bdfa74a4d7fc41f7174c7c93531859edf91cc673d1422dc4",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/infer.py": "ee24bfb7b0cd559e783cb5e96e75a9ab335d47e62f1c12fd747c8d78f2c2dea5",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/score.py": "706f6a2a405ad08c691f867acfa6ce034668a52530874cec12cee9eaa122e538",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/localize.py": "f3afaf710280de630aecb4bc86ce769a4aa3550d12d25ac2e73f7696d509fb25",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/correct_metadata.py": "bc322247c4b9b4db2289ec5a85a53d5a8f120e5b901c0d64c9628e4755aae1e3",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/verify_math.py": "77aae9f879b2286029a95fa26a1535e7686e8562e49344b7be77564af91f1460",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b2/diagnosis_targeted_experiments/decode_pixels.py": "b6e1fd1c271e7c73e5391944da643cd1b181f314e933c58f16e5140fdd13819a"
+  },
+  "registration": "af842f6593beff6b28e1583eeb71347ce5e97338173140130e8ff6c20761c1c5",
+  "input_amendment_sha256": "b1efc6122f62e62525bc5371e93c8c3d64e0d0f000b3cb4cb9077f2026de431a",
+  "input_check_sha256": "6ac7d94926453cae71b0371a31fff2afe7f8d03e191147da72490aeac3eb80c3",
+  "external_labels_read": false
+}

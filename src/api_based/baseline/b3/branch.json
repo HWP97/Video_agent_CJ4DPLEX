@@ -1,0 +1,16 @@
+{
+  "branch": "b3",
+  "family": "api",
+  "stage": "baseline",
+  "method": "raw_sol",
+  "adoption_status": "baseline_retained",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "기존 좌표 benchmark: 관측9점·미래12점·0.4초·nominal meter. 최종은 baseline 유지. API는 저장 응답 전용."
+}

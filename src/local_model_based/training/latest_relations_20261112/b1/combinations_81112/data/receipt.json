@@ -1,0 +1,39 @@
+{
+  "records": {
+    "sgcls": {
+      "rows": 11842,
+      "videos": 492,
+      "split_rows": {
+        "inner_train": 7382,
+        "inner_validation": 2120,
+        "outer_dev": 2340
+      }
+    },
+    "predcls": {
+      "rows": 13704,
+      "videos": 500,
+      "split_rows": {
+        "inner_train": 8564,
+        "inner_validation": 2516,
+        "outer_dev": 2624
+      }
+    }
+  },
+  "manifest_sha256": "a8a8d6779e68dd28b8eee3dfcfc42cb085b8c0f4ae0bd748a40a55e42e0b4281",
+  "source_sha256": "01a8f20f2eee13579eec2ce8ee31df6b193991991a7c60bb7eae5da50297c18f",
+  "upstream_sources": {
+    "supervision.py": "197c639e6ca4dbd1ff81059965e2787a6b199d90ecf70476a37a4b7a558e645a",
+    "compact_graph.py": "e1238f998c3d6d6ec028da2987b238a4fd29f1b60b11e9b96e5b14f174cd161e",
+    "sweep_data.py": "b8f2981062e08af48af655529a234ceb94c1f28c39bcb2d191133bceb346822e"
+  },
+  "outputs": {
+    "sgcls.npz": "e5408139f5d6e4032766b512361e597916fe05249f5ef4cabe808cf0f254a14a",
+    "sgcls_memory.npz": "727aedb2b0f572785caa3487b651b965e548772d5089ad0979471a32d4a1576f",
+    "predcls.npz": "4254bbe0541ee9064508e9e2c52baf12306c6cf2d622ff643277570f01161548",
+    "predcls_memory.npz": "40dca293659033a0fefa3ad55c8dcd0e7c23c5324aa9cb63dc106d9466e29148"
+  },
+  "test_labels_read": false,
+  "outer_dev_used_only_after_selection_for_full_refit": true,
+  "seconds": 12.964932918548584,
+  "API_calls": 0
+}

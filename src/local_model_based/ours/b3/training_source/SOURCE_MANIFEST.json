@@ -1,0 +1,155 @@
+{
+  "training_executed": false,
+  "files": [
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/train.py",
+      "installed": "ours/b3/training_source/latest/train.py",
+      "sha256": "432b6556e7bb3548509f89a839875d0c68ab2bf19c5ccfcbf693e92d4a81c55d"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/common.py",
+      "installed": "ours/b3/training_source/latest/common.py",
+      "sha256": "4e78c4f684989bcb6bf0c24876c5e2271149187ef972ca2c8cf440a688d49362"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/register.py",
+      "installed": "ours/b3/training_source/latest/register.py",
+      "sha256": "15ed4f3457e1c252efaa6ade73bc31d1c79bdcfe46d1789a8993e6f1df748002"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/infer.py",
+      "installed": "ours/b3/training_source/latest/infer.py",
+      "sha256": "769d7a602e1561cd43512c34045843c529fcc4c188b171016b84c0eb78322dfc"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/score.py",
+      "installed": "ours/b3/training_source/latest/score.py",
+      "sha256": "70352d81747cd4abccb38bed8bdf8ca05737fc0a5887ca8082e4e84ab5689528"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/finalize.py",
+      "installed": "ours/b3/training_source/latest/finalize.py",
+      "sha256": "728cf91ae86950f416211d2ebeaf64184da5a62706e9c0fd74f8e1a486d956f5"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/DECISIONS.md",
+      "installed": "ours/b3/training_source/latest/DECISIONS.md",
+      "sha256": "fd9086c19ec83cdeeaf129e592d62a093a0a018d978ce4810a3a14ed0712f530"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/RESULTS.md",
+      "installed": "ours/b3/training_source/latest/RESULTS.md",
+      "sha256": "4fb1083c2279bb6c5599ef286ccaee363126388ecd0fafffb67a43e76cdd1b11"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/registration.json",
+      "installed": "ours/b3/training_source/latest/registration.json",
+      "sha256": "70449d30a2763a6dfc9ee083f4f6af56dbaac66ece2f68d82a2b11804787ab87"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/training_source_lock.json",
+      "installed": "ours/b3/training_source/latest/training_source_lock.json",
+      "sha256": "4ef332658e7cb005a4634afba57f093b7daaddf35b9ec08241d84ae79ba50252"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/inference_source_lock.json",
+      "installed": "ours/b3/training_source/latest/inference_source_lock.json",
+      "sha256": "57e2c01b75ae3942b74ad9cfad0fce754de82e0dac31f66e05eefac23b8fa465"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/execution_deviation.json",
+      "installed": "ours/b3/training_source/latest/execution_deviation.json",
+      "sha256": "95c5ec1c31b7623b5dd845fb2d7bad3a8de3d4f0eccad6365ab2c9470bc0166d"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/followup_reasoned_combinations/models.py",
+      "installed": "ours/b3/training_source/parent/models.py",
+      "sha256": "4db078278268c914b3b7d2590e0aa93fcee602735bf02b52cc35520a6cbe87c0"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/followup_reasoned_combinations/engine.py",
+      "installed": "ours/b3/training_source/parent/engine.py",
+      "sha256": "5e255030e9522d5e92849c3f9ff70bc639c79dbec34886fa14dcec8e44249c4d"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/followup_common.py",
+      "installed": "ours/b3/training_source/followup_common.py",
+      "sha256": "e8d4b0e20f2aa5588dcb4e63ef937c9962757ef3cbb390ea2617d74cc88d7d2c"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/full/fold1/B3-D04/receipt.json",
+      "installed": "ours/b3/training_source/receipts/fold1.json",
+      "sha256": "82b40bf3b6a1d1ce85cf08911d192c94b4738cbf0aa6b996980813ae108c93ad"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/full/fold2/B3-D04/receipt.json",
+      "installed": "ours/b3/training_source/receipts/fold2.json",
+      "sha256": "e2d535e0cf987fb825f5f80ca72e6330af794f969fde874463c396e46535b58a"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b3/diagnosis_targeted_experiments/full/fold3/B3-D04/receipt.json",
+      "installed": "ours/b3/training_source/receipts/fold3.json",
+      "sha256": "94d91c364c11cc3631580c468d79d805e4e78f707c668aa78118351ac33537df"
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/adapter_io.py",
+      "installed": "training/b3_official_20261111/code/adapter_io.py",
+      "sha256": "9d2addf01fd93a6f68017cbefebb4932d73cd32e4b5149e8794b279f54381a6e",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/features.py",
+      "installed": "training/b3_official_20261111/code/features.py",
+      "sha256": "8ead9cff13f0fdbb42c80a5d5342811edecc53a13ef9412d1be96a27141f4b78",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/data.py",
+      "installed": "training/b3_official_20261111/code/data.py",
+      "sha256": "0ee35b884d4d3980e758a9cfb50994fcf2258bdede5194167f9f023f40ee2f92",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/common.py",
+      "installed": "training/b3_official_20261111/code/common.py",
+      "sha256": "0e7b55c10cfec49ad64f75c8b73f34f226487f08c58b4e649462d445f395400d",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/model.py",
+      "installed": "training/b3_official_20261111/code/model.py",
+      "sha256": "271e4ded61a10250d59d8c1c087e0cd6fa7327bfbee449cffed2a553b167aefc",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/prepare_full.py",
+      "installed": "training/b3_official_20261111/code/prepare_full.py",
+      "sha256": "3c9f57281d8abc797b19cbf7eb02e9d95f3a9e64458ce8b9e0d1eb1fd2ad5042",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/prepare_auxiliary.py",
+      "installed": "training/b3_official_20261111/code/prepare_auxiliary.py",
+      "sha256": "73fae4f749c9b3e049a606f05592fffd50f28b72bf8d142ea587af6da130f439",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/train_attention.py",
+      "installed": "training/b3_official_20261111/code/train_attention.py",
+      "sha256": "405530f0381bc76a382d79b16541906f21358d575bb6b71c200fb95b94c0f477",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/code/trajectory_baselines.py",
+      "installed": "training/b3_official_20261111/code/trajectory_baselines.py",
+      "sha256": "3b0bef5916b6d6643acd7de8771d026d30bac606e828a6acad4a4fa3322437db",
+      "already_bundled": true
+    },
+    {
+      "source": "/mnt/RG2/HWP_CJ4DPLEX_AI_support/official_local_train_20261111/b3/adapters/fast/model.py",
+      "installed": "data/b3/latest/source/fast_model.py",
+      "sha256": "fc60e31b48b015ea41a48fb9e86632466c223b4b7cdbb1d61dd72b0f1944edbc",
+      "already_bundled": true
+    }
+  ]
+}

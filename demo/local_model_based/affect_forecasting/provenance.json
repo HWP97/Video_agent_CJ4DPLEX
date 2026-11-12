@@ -1,0 +1,11 @@
+{
+  "src/local_model_based/data/b2/latest/manifest.json": "61780b4815544e4f17a0d7b85c8a3ac7922e9dd08c2090921368af63c97429f7",
+  "src/local_model_based/data/b2/latest/model/B2-D02.npz": "b4c24ef64bd5ed52f2c6cb42ef76544d1736042b0262123ddc412638eade356d",
+  "src/local_model_based/data/b2/latest/model/B2-D04.npz": "7688e1f3fd5240266679233db9a8b16656d9a8348664632bce16d3638d4c3002",
+  "src/local_model_based/data/b2/latest/model/c01/checkpoint.pt": "fe6a80115dd8255254a494b50eb0c83f0097360576eeea72ccf9090515d7f6ef",
+  "src/local_model_based/data/b2/latest/model/c01/transform.npz": "9b0bd51d5f276058b4cf35d46fc0387947d82e974cf0f8df56c37c5c8c55de5f",
+  "src/local_model_based/data/b2/latest/ground_truth/labels_eval.json": "41dc6b70dab61c80ecdff23e08ef34b078b81ff66b5cca82895b47168b25739b",
+  "demo/local_model_based/affect_forecasting/cases.json": "ded54169a609a8394d8ae0a319895a74fff914b37228c8b5c054d44ddbb2557b",
+  "results/local_model_based/b2/latest_c01_predictions_20261112/result.json": "337ddaeb8e3d98a84f970ab8945ec47a0dac29b035b0736d38ee57a2479c1e07",
+  "results/local_model_based/b2/latest_d04_predictions_20261112/result.json": "539ccabe3107b29006ccc8ec8f9fbf14a9684dd7dc78c9722d7a231119af6508"
+}

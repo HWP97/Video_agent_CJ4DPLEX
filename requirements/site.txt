@@ -1,0 +1,2 @@
+# 로컬 미리보기의 HTTP Range 지원
+aiohttp==3.9.5

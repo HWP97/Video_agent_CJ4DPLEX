@@ -1,0 +1,1513 @@
+[
+  {
+    "pts_s": 16.349667,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 17.2172,
+    "baseline_R20": 0.3,
+    "ours_R20": 0.7,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > carrying > towel",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > not contacting > chair",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        8
+      ],
+      [],
+      [
+        1
+      ],
+      [
+        3
+      ],
+      [
+        9
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 17.4174,
+    "baseline_R20": 0.2222222222222222,
+    "ours_R20": 0.6666666666666666,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > other relation > chair",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        7
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        8
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        6
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 17.751067,
+    "baseline_R20": 0.5714285714285714,
+    "ours_R20": 0.8571428571428571,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > carrying > towel",
+      "person > unsure > blanket",
+      "blanket > in front of > person",
+      "person > carrying > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        3
+      ],
+      [],
+      [
+        6
+      ],
+      [
+        2
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 17.8178,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 18.485133,
+    "baseline_R20": 0.42857142857142855,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > carrying > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        1
+      ],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 18.551867,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 19.552867,
+    "baseline_R20": 0.5714285714285714,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > behind > person",
+      "person > carrying > towel",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 19.953267,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 20.6206,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 21.154467,
+    "baseline_R20": 0.2,
+    "ours_R20": 0.6,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 22.756067,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 22.8228,
+    "baseline_R20": 0.42857142857142855,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > carrying > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.757067,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.090733,
+    "baseline_R20": 0.42857142857142855,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > carrying > towel",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [
+        2
+      ],
+      [],
+      [
+        6
+      ],
+      [
+        1
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 26.359667,
+    "baseline_R20": 0.2727272727272727,
+    "ours_R20": 0.6363636363636364,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > carrying > towel",
+      "person > not looking at > chair",
+      "chair > beneath > person",
+      "chair > behind > person",
+      "person > sitting on > chair",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        10
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        9
+      ],
+      [
+        3
+      ],
+      [],
+      [
+        10
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        8
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 27.761067,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 27.8278,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 28.2282,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 28.962267,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > towel",
+      "towel > in > person",
+      "person > covered by > towel",
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  }
+]

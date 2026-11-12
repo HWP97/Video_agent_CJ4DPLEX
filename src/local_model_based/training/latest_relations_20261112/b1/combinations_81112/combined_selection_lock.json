@@ -1,0 +1,39 @@
+{
+  "selection": {
+    "sgcls": {
+      "mode": "sgcls",
+      "ratio": 0.5,
+      "method": "c04_gate_positive_cap3",
+      "constraint": "no",
+      "cases": 78,
+      "R@10": 0.574289510562634,
+      "mR@10": 0.35767746689052216,
+      "R@20": 0.6778879551562209,
+      "mR@20": 0.5623165129658504,
+      "R@50": 0.7263642114362436,
+      "mR@50": 0.6979025817263286
+    },
+    "predcls": {
+      "mode": "predcls",
+      "ratio": 0.5,
+      "method": "c06_gate_positive_cap15",
+      "constraint": "no",
+      "cases": 80,
+      "R@10": 0.5900600129258715,
+      "mR@10": 0.38236203453328926,
+      "R@20": 0.7261790244891655,
+      "mR@20": 0.5743289690305907,
+      "R@50": 0.783958732532874,
+      "mR@50": 0.7285187538024324
+    }
+  },
+  "inner_summaries": {
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/evaluation/inner/summary.json": "afae0beeaa0d0e6f318dcce27114f9da74c1c26eee58f6e6906eb3985bb475a8",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/positive/evaluation/inner/summary.json": "15e70e84cc4c40c7b6778f70279e419327fedf53e1f334ee3ae5472d22da0108",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/capacity/evaluation/inner/summary.json": "e7a2067ec2287bd6a95f962e6b798579a9d278e8b29bc1aed23bfd9720f31e10",
+    "/mnt/RG2/HWP_CJ4DPLEX_AI_support/iterative_research_20261111/b1/combinations_81112/evaluation/inner/summary.json": "eaf169ed7784a9ce8eec62852e200dcd29c6e68c7e66235f970f7fe99c9980b7"
+  },
+  "test_scores_read": false,
+  "rule": "동일 내부 검증에서 R20>=baseline인 후보 중 mR20 최대",
+  "adaptive_campaign": true
+}

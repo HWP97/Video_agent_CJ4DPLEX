@@ -1,0 +1,262 @@
+[
+  {
+    "candidate": {
+      "sample_id": "predcls:X2IUY.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "X2IUY.mp4",
+      "baseline": 0.2222222222222222,
+      "ours": 1.0,
+      "baseline_wc": 0.2222222222222222,
+      "ours_wc": 0.9444444444444444
+    },
+    "category": "demo",
+    "rank": 1
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:U588C.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "U588C.mp4",
+      "baseline": 0.15873015873015872,
+      "ours": 0.8571428571428571,
+      "baseline_wc": 0.2698412698412698,
+      "ours_wc": 0.6984126984126983
+    },
+    "category": "demo",
+    "rank": 2
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:9SJZ9.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "9SJZ9.mp4",
+      "baseline": 0.3333333333333333,
+      "ours": 1.0,
+      "baseline_wc": 0.6666666666666666,
+      "ours_wc": 0.7222222222222222
+    },
+    "category": "demo",
+    "rank": 3
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:KOQGE.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "KOQGE.mp4",
+      "baseline": 0.3093593275411458,
+      "ours": 0.9503990958536412,
+      "baseline_wc": 0.4360175178356997,
+      "ours_wc": 0.6676802994984814
+    },
+    "category": "demo",
+    "rank": 4
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:KOVTR.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "KOVTR.mp4",
+      "baseline": 0.345679012345679,
+      "ours": 0.9814814814814815,
+      "baseline_wc": 0.6728395061728395,
+      "ours_wc": 0.6543209876543209
+    },
+    "category": "demo",
+    "rank": 5
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:V1BX9.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "V1BX9.mp4",
+      "baseline": 0.1353174603174603,
+      "ours": 0.7540816326530614,
+      "baseline_wc": 0.26547619047619053,
+      "ours_wc": 0.7438775510204082
+    },
+    "category": "demo",
+    "rank": 6
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:YDWIW.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "YDWIW.mp4",
+      "baseline": 0.24935853620064147,
+      "ours": 0.866527770475139,
+      "baseline_wc": 0.3815766835503677,
+      "ours_wc": 0.8105761928130348
+    },
+    "category": "demo",
+    "rank": 7
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:OPMF7.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "OPMF7.mp4",
+      "baseline": 0.41666666666666663,
+      "ours": 1.0,
+      "baseline_wc": 0.41666666666666663,
+      "ours_wc": 0.8333333333333333
+    },
+    "category": "demo",
+    "rank": 8
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:WC5QK.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "WC5QK.mp4",
+      "baseline": 0.35450937950937944,
+      "ours": 0.9230086580086582,
+      "baseline_wc": 0.43530303030303036,
+      "ours_wc": 0.5801875901875901
+    },
+    "category": "demo",
+    "rank": 9
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:0UPBN.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "0UPBN.mp4",
+      "baseline": 0.4149659863945578,
+      "ours": 0.9761904761904762,
+      "baseline_wc": 0.227891156462585,
+      "ours_wc": 0.19047619047619044
+    },
+    "category": "demo",
+    "rank": 10
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:J48N6.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "J48N6.mp4",
+      "baseline": 0.4411764705882353,
+      "ours": 1.0,
+      "baseline_wc": 0.21568627450980393,
+      "ours_wc": 0.6715686274509804
+    },
+    "category": "demo",
+    "rank": 11
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:L2502.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "L2502.mp4",
+      "baseline": 0.41468253968253954,
+      "ours": 0.9722222222222222,
+      "baseline_wc": 0.5486111111111112,
+      "ours_wc": 0.7281746031746031
+    },
+    "category": "demo",
+    "rank": 12
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:DL6HP.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "DL6HP.mp4",
+      "baseline": 0.2777777777777778,
+      "ours": 0.8333333333333333,
+      "baseline_wc": 0.3611111111111111,
+      "ours_wc": 0.0
+    },
+    "category": "demo",
+    "rank": 13
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:1QP1S.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "1QP1S.mp4",
+      "baseline": 0.4190476190476191,
+      "ours": 0.9671957671957672,
+      "baseline_wc": 0.20317460317460312,
+      "ours_wc": 0.7798941798941802
+    },
+    "category": "demo",
+    "rank": 14
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:FYYFX.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "FYYFX.mp4",
+      "baseline": 0.31922398589065254,
+      "ours": 0.865520282186949,
+      "baseline_wc": 0.47354497354497344,
+      "ours_wc": 0.4642857142857143
+    },
+    "category": "demo",
+    "rank": 15
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:E6DLK.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "E6DLK.mp4",
+      "baseline": 0.4071428571428572,
+      "ours": 0.9523809523809523,
+      "baseline_wc": 0.39047619047619053,
+      "ours_wc": 0.5380952380952382
+    },
+    "category": "demo",
+    "rank": 16
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:LGJAR.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "LGJAR.mp4",
+      "baseline": 0.39598214285714284,
+      "ours": 0.9151785714285714,
+      "baseline_wc": 0.1767857142857143,
+      "ours_wc": 0.5526785714285714
+    },
+    "category": "demo",
+    "rank": 17
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:K1QIV.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "K1QIV.mp4",
+      "baseline": 0.45454545454545453,
+      "ours": 0.9696969696969698,
+      "baseline_wc": 0.7575757575757575,
+      "ours_wc": 0.33333333333333337
+    },
+    "category": "demo",
+    "rank": 18
+  },
+  {
+    "candidate": {
+      "sample_id": "sgcls:O1PD3.mp4_0.5",
+      "mode": "sgcls",
+      "video_id": "O1PD3.mp4",
+      "baseline": 0.4880952380952381,
+      "ours": 1.0,
+      "baseline_wc": 0.5535714285714285,
+      "ours_wc": 0.7351190476190477
+    },
+    "category": "demo",
+    "rank": 19
+  },
+  {
+    "candidate": {
+      "sample_id": "predcls:2ZDFA.mp4_0.5",
+      "mode": "predcls",
+      "video_id": "2ZDFA.mp4",
+      "baseline": 0.26222222222222225,
+      "ours": 0.7644444444444444,
+      "baseline_wc": 0.33777777777777773,
+      "ours_wc": 0.4688888888888889
+    },
+    "category": "demo",
+    "rank": 20
+  }
+]

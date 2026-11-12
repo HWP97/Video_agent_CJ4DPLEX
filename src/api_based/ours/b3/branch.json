@@ -1,0 +1,16 @@
+{
+  "branch": "b3",
+  "family": "api",
+  "stage": "ours",
+  "method": "cv_blend_0.75",
+  "adoption_status": "best_existing_ADE_posthoc",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "predict",
+    "evaluate",
+    "verify"
+  ],
+  "description": "기존 비학습0.75Sol+0.25CV. 공개validation 사후선정, 충돌률+0.257865pp."
+}

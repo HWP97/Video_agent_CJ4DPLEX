@@ -1,0 +1,1037 @@
+{
+  "runplan_sha256": "7f34d01c47d989de45a8769f0d1b788e579d69714551c989ad46b45c6d533fac",
+  "catalog_source_sha256": "b323c72fda26e8789ab5a2b4235a7e2d8e01efac413ff8bd6819f1336b7aadb0",
+  "baseline": "loop/direct_unshared4_d4",
+  "gate": "current fold dev ADE strictly lower, FDE no higher, ColI_observed_GT_percent no higher; then minimum dev ADE, FDE, collision, method name; none passing => baseline 유지/개선없음",
+  "excluded": "raw hold/CV/KF/Chronos/official pretrained Re, same-baseline aliases, deliberate shuffled/identity/disabled/zero/random controls; no oracle best-of-K",
+  "input_policy": "evaluation GT may have been read for data preparation and metric QA; never model input or selection metric; final eval scoring locked until all-fold selection freeze",
+  "methods": [
+    {
+      "canonical": "analytic/constant_velocity",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "analytic/damped_velocity",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "analytic/hold",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "analytic/kalman",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "analytic/selector_early",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "analytic/selector_final",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/chronos_independent",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/chronos_joint",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/direct_continuous",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/direct_dct_bpe",
+      "eligible_for_ours": true,
+      "method_type": "독립 토큰 모델",
+      "ablation_comparators": [
+        "fast_trm/direct_continuous",
+        "fast_trm/direct_raw_bpe"
+      ]
+    },
+    {
+      "canonical": "fast_trm/direct_raw_bpe",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/direct_single_state",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/direct_two_state_deep",
+      "eligible_for_ours": true,
+      "method_type": "독립 토큰 모델",
+      "ablation_comparators": [
+        "fast_trm/direct_single_state",
+        "fast_trm/direct_two_state_last"
+      ]
+    },
+    {
+      "canonical": "fast_trm/direct_two_state_last",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/local_continuous",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/local_dct_bpe",
+      "eligible_for_ours": true,
+      "method_type": "attention 기준 잔차 토큰 모델",
+      "ablation_comparators": [
+        "fast_trm/local_continuous",
+        "fast_trm/local_raw_bpe"
+      ]
+    },
+    {
+      "canonical": "fast_trm/local_raw_bpe",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/local_single_state",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/local_two_state_deep",
+      "eligible_for_ours": true,
+      "method_type": "attention 기준 잔차 토큰 모델",
+      "ablation_comparators": [
+        "fast_trm/local_single_state",
+        "fast_trm/local_two_state_last"
+      ]
+    },
+    {
+      "canonical": "fast_trm/local_two_state_last",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/selected_fast",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "fast_trm/selected_trm",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/development_selected",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/direct_dynamic_d1",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_dynamic_d2",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_dynamic_d4",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_dynamic_d8",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared2_d1",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared2_d2",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared2_d4",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared2_d8",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared4_d1",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared4_d2",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared4_d4",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_shared4_d8",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/direct_single_d1",
+        "loop/direct_unshared4_d4",
+        "loop/direct_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/direct_single_d1",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/direct_unshared4_d4",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/direct_unshared4_small_d4",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/idea_diagnostic",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/idea_diagnostic_no_neighbors",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/kf_dynamic_d1",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_dynamic_d2",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_dynamic_d4",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_dynamic_d8",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared2_d1",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared2_d2",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared2_d4",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared2_d8",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared4_d1",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared4_d2",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared4_d4",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_shared4_d8",
+      "eligible_for_ours": true,
+      "method_type": "attention 반복 구조 변경",
+      "ablation_comparators": [
+        "loop/kf_single_d1",
+        "loop/kf_unshared4_d4",
+        "loop/kf_unshared4_small_d4"
+      ]
+    },
+    {
+      "canonical": "loop/kf_single_d1",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/kf_unshared4_d4",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "loop/kf_unshared4_small_d4",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_adapted_r0.001",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.001",
+        "memory_ttt/direct_prefix_ordinaryfit_updated_r0.001",
+        "memory_ttt/direct_prefix_update_disabled_r0.001"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_adapted_r0.01",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.01",
+        "memory_ttt/direct_prefix_ordinaryfit_updated_r0.01",
+        "memory_ttt/direct_prefix_update_disabled_r0.01"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_adapted_r0.1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.1",
+        "memory_ttt/direct_prefix_ordinaryfit_updated_r0.1",
+        "memory_ttt/direct_prefix_update_disabled_r0.1"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.001",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.01",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_ordinaryfit_unadapted_r0.1",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.001",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.01",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_ordinaryfit_updated_r0.1",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_update_disabled_r0.001",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_update_disabled_r0.01",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/direct_prefix_update_disabled_r0.1",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/kalman_adapt_r0.001",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_adapt_r0.1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_adapt_r1.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_adapt_r10.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_adapt_r1e-05",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_identity_update",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/kalman_memory_k1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_memory_k20",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_memory_k5",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_static_r0.1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_static_r1.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_static_r10.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/kalman_update_disabled",
+        "memory_ttt/kalman_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/kalman_update_disabled",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/local_adapt_r0.001",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_adapt_r0.1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_adapt_r1.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_adapt_r10.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_adapt_r1e-05",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_identity_update",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/local_memory_k1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_memory_k20",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_memory_k5",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_memory_shuffled_k5",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/local_static_r0.1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_static_r1.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_static_r10.0",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "memory_ttt/local_update_disabled",
+        "memory_ttt/local_identity_update"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/local_update_disabled",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/memory_direct_uniform_k1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "C/constant_velocity",
+        "C/kalman"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/memory_direct_uniform_k20",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "C/constant_velocity",
+        "C/kalman"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/memory_direct_uniform_k5",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "C/constant_velocity",
+        "C/kalman"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/memory_direct_weighted_k1",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "C/constant_velocity",
+        "C/kalman"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/memory_direct_weighted_k20",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "C/constant_velocity",
+        "C/kalman"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/memory_direct_weighted_k5",
+      "eligible_for_ours": true,
+      "method_type": "관측 prefix 적응 또는 train-only 기억/정적 잔차",
+      "ablation_comparators": [
+        "C/constant_velocity",
+        "C/kalman"
+      ]
+    },
+    {
+      "canonical": "memory_ttt/selected_adapt",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "memory_ttt/selected_memory",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "new/direct_ar",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "new/direct_masked",
+      "eligible_for_ours": true,
+      "method_type": "독립 masked/MTP 모델",
+      "ablation_comparators": [
+        "new/direct_parallel"
+      ]
+    },
+    {
+      "canonical": "new/direct_mtp",
+      "eligible_for_ours": true,
+      "method_type": "독립 masked/MTP 모델",
+      "ablation_comparators": [
+        "new/direct_ar"
+      ]
+    },
+    {
+      "canonical": "new/direct_parallel",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "new/local_ar",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "new/local_masked",
+      "eligible_for_ours": true,
+      "method_type": "attention 기준 masked/MTP 잔차 모델",
+      "ablation_comparators": [
+        "new/local_parallel"
+      ]
+    },
+    {
+      "canonical": "new/local_mtp",
+      "eligible_for_ours": true,
+      "method_type": "attention 기준 masked/MTP 잔차 모델",
+      "ablation_comparators": [
+        "new/local_ar"
+      ]
+    },
+    {
+      "canonical": "new/local_parallel",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "new/selected_masked",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "new/selected_mtp",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/constant_velocity_8obs",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/kalman_8obs",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/moif_default",
+      "eligible_for_ours": true,
+      "method_type": "축소 논문 구조 독립 모델",
+      "ablation_comparators": [
+        "papers/self_control"
+      ]
+    },
+    {
+      "canonical": "papers/moif_selected",
+      "eligible_for_ours": true,
+      "method_type": "축소 논문 구조 독립 모델",
+      "ablation_comparators": [
+        "papers/self_control"
+      ]
+    },
+    {
+      "canonical": "papers/official_re_default_mean20",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/official_re_default_sample0",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/official_re_history_reversed_mean20",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/official_re_history_reversed_sample0",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/official_re_no_neighbors_mean20",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/official_re_no_neighbors_sample0",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "papers/re_default",
+      "eligible_for_ours": true,
+      "method_type": "축소 논문 구조 독립 모델",
+      "ablation_comparators": [
+        "papers/self_control"
+      ]
+    },
+    {
+      "canonical": "papers/re_selected",
+      "eligible_for_ours": true,
+      "method_type": "축소 논문 구조 독립 모델",
+      "ablation_comparators": [
+        "papers/self_control"
+      ]
+    },
+    {
+      "canonical": "papers/self_control",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "residual/cv_random_self",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "residual/cv_zero_self",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "residual/kalman_self",
+      "eligible_for_ours": true,
+      "method_type": "독립 KF 잔차 MLP",
+      "ablation_comparators": [
+        "residual/kalman_zero"
+      ]
+    },
+    {
+      "canonical": "residual/kalman_social",
+      "eligible_for_ours": true,
+      "method_type": "독립 KF 잔차 MLP",
+      "ablation_comparators": [
+        "residual/kalman_zero",
+        "residual/kalman_self"
+      ]
+    },
+    {
+      "canonical": "residual/kalman_social_collision",
+      "eligible_for_ours": true,
+      "method_type": "독립 KF 잔차 MLP",
+      "ablation_comparators": [
+        "residual/kalman_zero",
+        "residual/kalman_self"
+      ]
+    },
+    {
+      "canonical": "residual/kalman_zero",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "residual/local_best_dev_diagnostic",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    },
+    {
+      "canonical": "residual/local_selected",
+      "eligible_for_ours": false,
+      "method_type": "대조군 또는 별도 선택 별칭",
+      "ablation_comparators": []
+    }
+  ],
+  "eligible_count": 70
+}

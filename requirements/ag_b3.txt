@@ -1,0 +1,18 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.5.1+cu118
+torchvision==0.20.1+cu118
+numpy==1.23.5
+scipy==1.15.3
+pandas==2.3.3
+Pillow==12.3.0
+opencv-python-headless==4.11.0.86
+einops==0.8.1
+torchdiffeq==0.2.5
+pycocotools==2.0.10
+tqdm==4.70.1
+easydict==1.13
+dill==0.4.1
+pytest==8.4.2
+typing_extensions==4.15.0
+six==1.17.0
+PyYAML==6.0.3

@@ -1,0 +1,81 @@
+{
+  "signature": {
+    "seed": 20261111,
+    "epochs": 5,
+    "train": "6e0f1130b13d18edd5037b8db6dc80f2a935b3c7301b21ae1870d8cd4aac1220",
+    "validation": "5ccf19f4f2c0424bb9636387a42e899d136172cb5e410c08d271cedf5925f25d",
+    "parent": "2b6bee56506ba8094f368c9aac61691440984a3937e76a730afcf71bc4e35228",
+    "moments": true,
+    "final": true,
+    "source": "432b6556e7bb3548509f89a839875d0c68ab2bf19c5ccfcbf693e92d4a81c55d"
+  },
+  "trace": [
+    {
+      "epoch": 0,
+      "ADE": 0.8741787075996399,
+      "FDE": 1.7719464302062988,
+      "loss": null,
+      "batch_order_sha256": null
+    },
+    {
+      "epoch": 1,
+      "ADE": 0.8558564186096191,
+      "FDE": 1.7433178424835205,
+      "loss": 0.8602944493696496,
+      "batch_order_sha256": "205747e8e1837b0bb64ce446630e17f29cc07acdd792c0ed4252f515b95bc6d6"
+    },
+    {
+      "epoch": 2,
+      "ADE": 0.8538675904273987,
+      "FDE": 1.7387146949768066,
+      "loss": 0.8578743952083158,
+      "batch_order_sha256": "1653f32f1e5f2d2ee729a0abf602134789946beb7224e766fa79b66a039c4c0e"
+    },
+    {
+      "epoch": 3,
+      "ADE": 0.8537746071815491,
+      "FDE": 1.7383897304534912,
+      "loss": 0.857048065208637,
+      "batch_order_sha256": "cbf9fb84324b0a1fa6c5b896cee54228d447eb2a39442e0a616e30acc69538d4"
+    },
+    {
+      "epoch": 4,
+      "ADE": 0.8512213826179504,
+      "FDE": 1.7360572814941406,
+      "loss": 0.8562641694202079,
+      "batch_order_sha256": "f09a9c71b26b0753ee2c5a1dda5dcc08f6b81d691d53a0cbc6f32f04e869f785"
+    },
+    {
+      "epoch": 5,
+      "ADE": 0.8543534278869629,
+      "FDE": 1.7416462898254395,
+      "loss": 0.855800622419731,
+      "batch_order_sha256": "16f379fbf138573a6d2a59cd3a1e504ed780b328840ccae38b28dc5c256bbb29"
+    }
+  ],
+  "selected_epoch": 5,
+  "checkpoints": {
+    "epoch0.pt": "96113cda4458bfe9aef127dfe2c0c1298a67054c468d451576a701226ba3911d",
+    "epoch1.pt": "3aa44ec787cfa27eab25780bd275d66cbb8b8cead6f55ae739cf91bf9d2a5f67",
+    "epoch3.pt": "29762d3317dab5ac75a4e57061f007b4116572ca77e0d6f698936dab055d9ade",
+    "epoch5.pt": "9ca3cf5ca1ccc03d29625487255fcdc8313ea69cbe9a8ee581e89b00b3bd2a29",
+    "best.pt": "e6564b1d93530ffbe850d27c44afb3aac6688b3dbd36598afb4970774287ec72"
+  },
+  "initial_ADE": 0.8741787075996399,
+  "moment_steps_restored": [
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0,
+    19536.0
+  ],
+  "seconds": 111.52784560341388,
+  "epoch0_candidate": true,
+  "API_calls": 0,
+  "Kalman_ADE": 1.1602020263671875
+}

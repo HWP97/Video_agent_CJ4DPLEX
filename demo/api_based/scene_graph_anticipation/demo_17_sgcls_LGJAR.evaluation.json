@@ -1,0 +1,588 @@
+[
+  {
+    "pts_s": 22.896936,
+    "baseline_R20": 0.42857142857142855,
+    "ours_R20": 0.8571428571428571,
+    "GT_relations": [
+      "person > unsure > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket",
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "bed > behind > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.899721,
+    "baseline_R20": 0.375,
+    "ours_R20": 0.875,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket",
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "bed > behind > person",
+      "bed > on the side of > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        7
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        6
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 23.966574,
+    "baseline_R20": 0.42857142857142855,
+    "ours_R20": 0.8571428571428571,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket",
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "bed > on the side of > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.401114,
+    "baseline_R20": 0.25,
+    "ours_R20": 0.875,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket",
+      "person > not looking at > bed",
+      "bed > on the side of > person",
+      "bed > beneath > person",
+      "bed > behind > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        7
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        5
+      ],
+      [
+        3
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.802228,
+    "baseline_R20": 0.2857142857142857,
+    "ours_R20": 0.8571428571428571,
+    "GT_relations": [
+      "person > not looking at > blanket",
+      "blanket > in > person",
+      "person > covered by > blanket",
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "bed > behind > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 27.743733,
+    "baseline_R20": 0.4,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "bed > behind > person",
+      "bed > on the side of > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 29.415042,
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "bed > on the side of > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 30.718663,
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > unsure > bed",
+      "bed > beneath > person",
+      "bed > behind > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        1
+      ],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      []
+    ]
+  }
+]

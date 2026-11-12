@@ -1,0 +1,186 @@
+[
+  {
+    "pts_s": 21.625,
+    "GT_relations": [
+      "person > not looking at > pillow",
+      "pillow > in front of > person",
+      "person > touching > pillow",
+      "person > carrying > pillow",
+      "person > looking at > phonecamera",
+      "phonecamera > in front of > person",
+      "person > holding > phonecamera",
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_R20": 0.7,
+    "ours_R20": 0.9,
+    "baseline_top20_matched_GT_indices": [
+      [
+        9
+      ],
+      [],
+      [],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        9
+      ],
+      [
+        8
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        7
+      ],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [
+        5
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 27.791667,
+    "GT_relations": [
+      "person > not looking at > pillow",
+      "pillow > in front of > person",
+      "person > touching > pillow",
+      "person > carrying > pillow",
+      "person > looking at > phonecamera",
+      "phonecamera > in front of > person",
+      "person > holding > phonecamera",
+      "person > not looking at > bed",
+      "bed > beneath > person",
+      "person > sitting on > bed"
+    ],
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [
+        7
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        9
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [
+        7
+      ],
+      [
+        9
+      ],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [
+        8
+      ],
+      [
+        6
+      ],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  }
+]

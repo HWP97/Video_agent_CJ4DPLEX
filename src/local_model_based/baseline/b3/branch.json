@@ -1,0 +1,16 @@
+{
+  "branch": "b3",
+  "family": "local",
+  "stage": "baseline",
+  "method": "baseline_attention",
+  "adoption_status": "latest_same_fold_reference",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "predict",
+    "evaluate",
+    "verify"
+  ],
+  "description": "최신 D04와 같은3fold240890장면의 동결 attention. 기존1943장면 배포는 legacy_20261112에 보존."
+}

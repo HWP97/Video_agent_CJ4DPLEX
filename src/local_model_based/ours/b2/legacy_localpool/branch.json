@@ -1,0 +1,16 @@
+{
+  "branch": "b2",
+  "family": "local",
+  "stage": "ours",
+  "method": "localpool_ridge",
+  "adoption_status": "posthoc_seen_final_MAE_choice",
+  "python": "/mnt/RG2/my_works/b1/envs/qwen3vl/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "기존 localpool Ridge; Sol 입력 없는 동결 head, 이미 본 final 사후 선택이며 selection 악화"
+}

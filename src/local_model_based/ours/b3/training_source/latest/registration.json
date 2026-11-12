@@ -1,0 +1,131 @@
+{
+  "seeds": [
+    20261111,
+    20261110
+  ],
+  "epoch_candidates": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    25
+  ],
+  "folds": {
+    "1": {
+      "groups": {
+        "cff_06": 23751,
+        "cff_07": 24100,
+        "cff_08": 23070,
+        "cff_09": 11433,
+        "cff_10": 9702,
+        "cff_12": 23936,
+        "cff_13": 22355,
+        "cff_14": 23376,
+        "cff_15": 22657,
+        "cff_16": 10771,
+        "cff_17": 10000,
+        "cff_18": 22021
+      },
+      "validation_groups": [
+        "cff_07",
+        "cff_06"
+      ],
+      "splits": [
+        {
+          "train": 203072,
+          "validation": 24100,
+          "train_sha": "8b8117b3b805e0ae58e92879f2160cd618d8a51abf2356cb7729fe9bd3fb682f",
+          "validation_sha": "0575f65636ee8df06f5ca0af9ead1e1f351ff26d835f6d6e48584b80fd9e6262",
+          "disjoint_groups": true
+        },
+        {
+          "train": 203421,
+          "validation": 23751,
+          "train_sha": "720e6ba48a61a7afe7dced358bf195c82c0114f5b3d5f7af4798f1986f9d12ca",
+          "validation_sha": "18d7fd48c85a7a9cec645947a4b15f1cfa6639aa035ea76c9330667092119164",
+          "disjoint_groups": true
+        }
+      ],
+      "input_sha256": "dd768eca4d6788844603ed1db1c7c8059c68bfbc5914cb2f9716287cf3e59e58"
+    },
+    "2": {
+      "groups": {
+        "crowds_students001": 5265,
+        "crowds_students003": 4262,
+        "crowds_zara01": 1017,
+        "crowds_zara03": 955
+      },
+      "validation_groups": [
+        "crowds_zara01",
+        "crowds_students001"
+      ],
+      "splits": [
+        {
+          "train": 10482,
+          "validation": 1017,
+          "train_sha": "20d18ab8ee679b9534141710c186f99123a51682e6b61ffbec7ce2fdd2eed53b",
+          "validation_sha": "347913de28575c9d4870f8740e03fac4514f5e14e66741e48adea485dc15034d",
+          "disjoint_groups": true
+        },
+        {
+          "train": 6234,
+          "validation": 5265,
+          "train_sha": "523cfe4dda462d0f8e76343503390c33fdb31149bb651b4c2658d88b3c5fbd99",
+          "validation_sha": "28dce51b71199d513f630faf0db988e3da1e02f85dca7bae374c805d123feb14",
+          "disjoint_groups": true
+        }
+      ],
+      "input_sha256": "4f67beb902eef7b1887bbd04889c8e8fa3d6763d0fd3748f9bfbe429de7e15fb"
+    },
+    "3": {
+      "groups": {
+        "biwi_hotel": 229,
+        "lcas": 889,
+        "wildtrack": 1101
+      },
+      "validation_groups": [
+        "biwi_hotel",
+        "lcas"
+      ],
+      "splits": [
+        {
+          "train": 1990,
+          "validation": 229,
+          "train_sha": "4340d13b20bd5e9a06039ad5311fe13684a77ca2e4a50691b89bfab5297cc07a",
+          "validation_sha": "3185880e71c684caa3ec01c96060cf653500be0b5f0093cdb9a56db967585e9c",
+          "disjoint_groups": true
+        },
+        {
+          "train": 1330,
+          "validation": 889,
+          "train_sha": "6020bce327d0ac4585a02365ff171699176d4563e86dab2525e60e5fc8f08565",
+          "validation_sha": "143e9912ca1136ea06cbffc8022cfa4efe5966419caa90ef044e172fcd2698a2",
+          "disjoint_groups": true
+        }
+      ],
+      "input_sha256": "90c71e08127efbbc95e72bc5c4c541b66ae1b172d5d1d05ae7ad01e37852660f"
+    }
+  },
+  "batch": 256,
+  "base_lr": 0.001,
+  "finetune_lr": 0.0001,
+  "max_additional_epochs": 10,
+  "selection": "within fold and seed: minimum worst held-out-group ADE/Kalman ratio; tie shorter epoch",
+  "comparison_policy": "same candidates, minimum original inner split ADE",
+  "device": "GPU0",
+  "cpu_threads": 1,
+  "sources": {
+    "common.py": "4e78c4f684989bcb6bf0c24876c5e2271149187ef972ca2c8cf440a688d49362",
+    "train.py": "950d3604e57150e36a9d9a10dda6699e0901173b8b49204cddb34c6d1dcc0e32",
+    "register.py": "15ed4f3457e1c252efaa6ade73bc31d1c79bdcfe46d1789a8993e6f1df748002",
+    "infer.py": "3e23bea77d9032fda7ea93c55468965c916b8669cf153afbdeeb8974b7cd0d50"
+  },
+  "decisions": "fd9086c19ec83cdeeaf129e592d62a093a0a018d978ce4810a3a14ed0712f530",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "torch": "2.5.1+cu118",
+  "numpy": "1.23.5",
+  "API_calls": 0,
+  "downloads": 0,
+  "eval_count": 240890
+}

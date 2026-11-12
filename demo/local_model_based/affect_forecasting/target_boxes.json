@@ -1,0 +1,25 @@
+{
+  "description": "C01/D04 새선정20개의 cutoff target_review_0~2.jpg 직접 검토. 확실한9개 머리/얼굴만 표시용 정규화 xywh를 지정했고 가림·다른 인물·대상 미확정11개는 null. 예측/평가에는 쓰지 않는다.",
+  "boxes": {
+    "v003_official_test_t00139.0400": [0.338, 0.24, 0.055, 0.16],
+    "v067_official_test_t00074.0000": [0.15, 0.18, 0.23, 0.58],
+    "v094_official_test_t00074.7600": null,
+    "v060_official_test_t00046.6000": [0.36, 0.10, 0.18, 0.49],
+    "v058_official_test_t00054.6800": [0.335, 0.11, 0.37, 0.60],
+    "v039_official_test_t00111.0800": null,
+    "v088_official_test_t00095.2800": null,
+    "v043_official_test_t00067.4000": null,
+    "v015_official_test_t00066.4000": [0.22, 0.07, 0.53, 0.79],
+    "v062_official_test_t00038.2400": null,
+    "v053_official_test_t00047.2800": null,
+    "v022_official_test_t00071.1200": null,
+    "v028_official_test_t00045.2400": [0.48, 0.08, 0.22, 0.54],
+    "v055_official_test_t00041.6000": null,
+    "v065_official_test_t00049.2400": [0.80, 0.37, 0.18, 0.22],
+    "v037_official_test_t00061.4000": [0.28, 0.07, 0.18, 0.35],
+    "v093_official_test_t00074.2000": null,
+    "v089_official_test_t00131.3600": null,
+    "v097_official_test_t00054.8400": [0.515, 0.12, 0.23, 0.49],
+    "v011_official_test_t00102.2000": null
+  }
+}

@@ -1,0 +1,1200 @@
+[
+  {
+    "pts_s": 23.092216,
+    "GT_relations": [
+      "person > unsure > table",
+      "table > in front of > person",
+      "person > not contacting > table",
+      "person > unsure > towel",
+      "towel > on the side of > person",
+      "person > holding > towel",
+      "person > not looking at > mirror",
+      "mirror > in front of > person",
+      "person > not contacting > mirror"
+    ],
+    "baseline_R20": 0.8888888888888888,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        7
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [
+        7
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.009787,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > not contacting > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel",
+      "person > not looking at > mirror",
+      "mirror > in front of > person",
+      "person > not contacting > mirror"
+    ],
+    "baseline_R20": 0.8888888888888888,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        7
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [
+        7
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        3
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.162716,
+    "GT_relations": [
+      "person > unsure > table",
+      "table > in front of > person",
+      "person > not contacting > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel",
+      "person > not looking at > mirror",
+      "mirror > in front of > person",
+      "person > not contacting > mirror"
+    ],
+    "baseline_R20": 0.8888888888888888,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        7
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [
+        7
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        3
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 24.468573,
+    "GT_relations": [
+      "person > unsure > table",
+      "table > in front of > person",
+      "person > not contacting > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel",
+      "person > not looking at > mirror",
+      "mirror > in front of > person",
+      "person > not contacting > mirror"
+    ],
+    "baseline_R20": 0.8888888888888888,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        7
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        8
+      ],
+      [
+        7
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        3
+      ],
+      [
+        1
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        4
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 25.080288,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "pts_s": 25.386145,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > holding > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 0.8333333333333334,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ]
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        4
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 25.692002,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        4
+      ],
+      [],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "pts_s": 26.150788,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        5
+      ]
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        4
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "pts_s": 26.609573,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel"
+    ],
+    "baseline_R20": 0.5,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        4
+      ],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "pts_s": 27.068359,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > holding > table",
+      "person > not looking at > towel",
+      "towel > on the side of > person",
+      "person > not contacting > towel"
+    ],
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 0.8333333333333334,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        4
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 28.750573,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > holding > table"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 0.6666666666666666,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 29.668145,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > holding > table"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 0.6666666666666666,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 31.656217,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      []
+    ]
+  },
+  {
+    "pts_s": 32.267931,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > holding > table"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 0.6666666666666666,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 34.56186,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        2
+      ]
+    ]
+  },
+  {
+    "pts_s": 34.867717,
+    "GT_relations": [
+      "person > looking at > table",
+      "table > in front of > person",
+      "person > touching > table"
+    ],
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      []
+    ]
+  }
+]

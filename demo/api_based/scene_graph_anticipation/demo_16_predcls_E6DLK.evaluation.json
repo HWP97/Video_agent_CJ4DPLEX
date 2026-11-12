@@ -1,0 +1,662 @@
+[
+  {
+    "pts_s": 10.844167,
+    "baseline_R20": 0.6666666666666666,
+    "ours_R20": 0.8333333333333334,
+    "GT_relations": [
+      "person > not looking at > window",
+      "window > on the side of > person",
+      "person > not contacting > window",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > not contacting > chair"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 10.9109,
+    "baseline_R20": 0.5,
+    "ours_R20": 0.8333333333333334,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > not contacting > window",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > not contacting > chair"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 11.077733,
+    "baseline_R20": 0.5714285714285714,
+    "ours_R20": 0.8571428571428571,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "window > on the side of > person",
+      "person > not contacting > window",
+      "person > not looking at > chair",
+      "chair > behind > person",
+      "person > not contacting > chair"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        4
+      ],
+      [],
+      [],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 11.845167,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > not contacting > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 12.846167,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > touching > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 13.880533,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > touching > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 14.647967,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > touching > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 18.184833,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > touching > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 21.7217,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > not contacting > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "pts_s": 25.291933,
+    "baseline_R20": 0.3333333333333333,
+    "ours_R20": 1.0,
+    "GT_relations": [
+      "person > looking at > window",
+      "window > in front of > person",
+      "person > not contacting > window"
+    ],
+    "baseline_top20_matched_GT_indices": [
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "ours_top20_matched_GT_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        2
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [],
+      []
+    ]
+  }
+]

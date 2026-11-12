@@ -1,0 +1,16 @@
+{
+  "branch": "b3",
+  "family": "local",
+  "stage": "ours",
+  "method": "B3-D04",
+  "adoption_status": "latest_condition_deployment_choice_not_global_experiment_winner",
+  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
+  "actions": [
+    "status",
+    "replay",
+    "predict",
+    "evaluate",
+    "verify"
+  ],
+  "description": "최신 F 두 상태 반복 모델 D04. 사용자 요청에 따른 배포 선택이며 전역 사전 winner나 성능 회복을 주장하지 않는다. 동일3fold240890장면."
+}
