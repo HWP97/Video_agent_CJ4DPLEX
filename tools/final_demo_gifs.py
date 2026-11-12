@@ -7,9 +7,9 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 SELECTION = {
-    'affect_forecasting': [2, 4, 6, 12, 18],
-    'scene_graph_anticipation': [4, 6, 7, 9, 10],
-    'trajectory_forecasting_reselected': [1, 2, 5, 7, 13],
+    'affect_forecasting': [1, 2, 3, 4, 5],
+    'scene_graph_anticipation': [1, 2, 3, 4, 5],
+    'trajectory_forecasting_reselected': [1, 2, 3, 4, 5],
 }
 
 

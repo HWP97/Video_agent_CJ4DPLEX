@@ -1,10 +1,10 @@
 # 로컬 궤적 예측 Demo
 
-아래 번호로 새로 선정한20개 영상이다. 기존 영상과 분리한 이 폴더에서 확인하면 된다.
+아래 번호로 새로 선정한 영상이다 (최종 5개). 기존 영상과 분리한 이 폴더에서 확인하면 된다.
 
 - 실제 원영상은 **UCY zara01·students003 두 개**이며 각각10사례다. 두 원영상을 번갈아 배치했다.
 - 같은 인물은 한 번만 선택했고, 같은 원영상 안의8초 구간은 서로 겹치지 않는다.
-- 원720×576 기준 ours 평균/끝/최대 오차12/20/25px 이하를 먼저 적용했다. 실제 선정20개의 최대치는 각각 **5.37/13.12/13.12px**다.
+- 원720×576 기준 ours 평균/끝/최대 오차12/20/25px 이하를 먼저 적용했다. 실제 선정 상위 세트의 최대치는 각각 **5.37/13.12/13.12px**다.
 - GT 이동길이와 시작→끝 변위가30px 이상이며 GT·ours 미래점은 전부 원영상 안에 있다. 정지 궤적만 모은 목록이 아니다.
 - 관측3.2초는1배속, 미래4.8초는0.5배속이다. 파랑은 ours D04, 빨강은 GT, 주황은 baseline attention이다.
 - GT를 이용한 Demo 선별이며 전체 평가 점수나 모델을 바꾸지 않았다. 좋은 예시 목록을 전체 성능 개선으로 해석하지 않는다.
@@ -32,5 +32,5 @@
 |19|crowds_zara01_888|[영상](demo_19_crowds_zara01_888.mp4)|[브라우저용](demo_19_crowds_zara01_888.webm)|5.37 / 4.14|
 |20|crowds_students003_2297|[영상](demo_20_crowds_students003_2297.mp4)|[브라우저용](demo_20_crowds_students003_2297.webm)|4.56 / 3.45|
 
-선정 기준과 실제 값은 [selection_manifest.json](selection_manifest.json), 원주석420점 대조는 [projection_verification.json](projection_verification.json), 영상 검증은 [verification.json](verification.json)을 참고한다. 이전20개는 support의 `submission_preparation_20261111/trajectory_before_accuracy_selection/local_model_based/`에 보존했다.
+선정 기준과 실제 값은 [selection_manifest.json](selection_manifest.json), 원주석420점 대조는 [projection_verification.json](projection_verification.json), 영상 검증은 [verification.json](verification.json)을 참고한다. 이전 세트는 support의 `submission_preparation_20261111/trajectory_before_accuracy_selection/local_model_based/`에 보존했다.
 

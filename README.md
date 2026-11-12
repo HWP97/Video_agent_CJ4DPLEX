@@ -46,7 +46,7 @@ API 캐시 → Demo 지표 재검증:
 ```bash
 python tools/api_demo/replay_cache.py                              # 15개 전체
 python tools/api_demo/replay_cache.py --task affect_forecasting    # head 단위
-python tools/api_demo/replay_cache.py --task affect_forecasting --rank 2  # 사례 단위
+python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사례 단위 (1~5)
 ```
 
 240k 전수 평가용 모델 가중치·전체 Sol 캐시 같은 대형 자산만 외부 보관 대상이며, 접근은 [Resources](docs/RESOURCES.md)에 안내합니다.
@@ -57,9 +57,9 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 2  # 사�
 
 관측 이후의 관계를 예측하고 공식 평가에서 GT와 일치하는 관계를 연두색으로 표시합니다.
 
-| Demo 04 | Demo 06 |
+| Demo 01 | Demo 02 |
 |---|---|
-| ![Scene Graph Demo 04](assets/readme/scene_graph_anticipation_demo_04.gif) | ![Scene Graph Demo 06](assets/readme/scene_graph_anticipation_demo_06.gif) |
+| ![Scene Graph Demo 01](assets/readme/scene_graph_anticipation_demo_01.gif) | ![Scene Graph Demo 02](assets/readme/scene_graph_anticipation_demo_02.gif) |
 
 ### Affection Forecasting
 
@@ -67,9 +67,9 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 2  # 사�
 
 미래 네 시점의 Valence/Arousal과 GT 오차를 비교하며, 확인 가능한 대상 위치에 결과를 표시합니다.
 
-| Demo 02 | Demo 04 |
+| Demo 01 | Demo 02 |
 |---|---|
-| ![Affection Demo 02](assets/readme/affect_forecasting_demo_02.gif) | ![Affection Demo 04](assets/readme/affect_forecasting_demo_04.gif) |
+| ![Affection Demo 01](assets/readme/affect_forecasting_demo_01.gif) | ![Affection Demo 02](assets/readme/affect_forecasting_demo_02.gif) |
 
 ### Trajectory Forecasting
 
