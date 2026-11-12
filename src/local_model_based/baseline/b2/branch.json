@@ -4,7 +4,6 @@
   "stage": "baseline",
   "method": "B2-C01",
   "adoption_status": "posthoc_primary_baseline_designation",
-  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
   "actions": [
     "status",
     "replay",

@@ -4,7 +4,6 @@
   "stage": "ours",
   "method": "cv_blend_0.75",
   "adoption_status": "best_existing_ADE_posthoc",
-  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
   "actions": [
     "status",
     "replay",

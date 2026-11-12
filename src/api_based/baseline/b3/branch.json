@@ -4,7 +4,6 @@
   "stage": "baseline",
   "method": "raw_sol",
   "adoption_status": "baseline_retained",
-  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
   "actions": [
     "status",
     "replay",

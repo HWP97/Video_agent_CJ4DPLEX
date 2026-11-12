@@ -1,1 +1,15 @@
-{"branch":"b1","family":"local","stage":"ours","method":"impartail_selected","adoption_status":"baseline_retained_no_accepted_improvement","python":"/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python","actions":["status","replay","evaluate","verify","predict"],"description":"기존 head는 공식 train 개발에서 R비감소+mR상승 동시기준을 충족하지 못해 선정 ImparTail 유지. 새 개선 주장 없음. 관측 GT bbox/class와 미래 annotation 시각 schedule을 사용하는 benchmark."}
+{
+  "branch": "b1",
+  "family": "local",
+  "stage": "ours",
+  "method": "impartail_selected",
+  "adoption_status": "baseline_retained_no_accepted_improvement",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "기존 head는 공식 train 개발에서 R비감소+mR상승 동시기준을 충족하지 못해 선정 ImparTail 유지. 새 개선 주장 없음. 관측 GT bbox/class와 미래 annotation 시각 schedule을 사용하는 benchmark."
+}

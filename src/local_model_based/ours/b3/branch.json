@@ -4,7 +4,6 @@
   "stage": "ours",
   "method": "B3-D04",
   "adoption_status": "latest_condition_deployment_choice_not_global_experiment_winner",
-  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
   "actions": [
     "status",
     "replay",

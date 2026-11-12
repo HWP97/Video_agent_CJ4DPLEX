@@ -4,7 +4,6 @@
   "stage": "ours",
   "method": "localpool_ridge",
   "adoption_status": "posthoc_seen_final_MAE_choice",
-  "python": "/mnt/RG2/my_works/b1/envs/qwen3vl/bin/python",
   "actions": [
     "status",
     "replay",

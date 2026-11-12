@@ -41,7 +41,7 @@ def main() -> int:
     if not entry.is_file() or not metadata.is_file():
         parser.error(f"branch 준비 파일이 없습니다: {entry}")
     config = json.loads(metadata.read_text(encoding="utf-8"))
-    executable = Path(args.python_path or config["python"])
+    executable = Path(args.python_path or config.get("python") or sys.executable)
     if not executable.is_file():
         parser.error(f"호환 Python이 없습니다. --python으로 지정하세요: {executable}")
     arguments = args.arguments or ["status"]

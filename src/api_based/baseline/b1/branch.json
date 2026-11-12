@@ -1,1 +1,15 @@
-{"branch":"b1","family":"api","stage":"baseline","method":"raw_sol","adoption_status":"baseline_retained","python":"/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python","actions":["status","replay","evaluate","verify","predict"],"description":"범용 raw Sol 유지. final의 --research rank_residual은 WC 이득과 NC 손실을 함께 공개하는 연구 옵션. 새 API 호출 없음."}
+{
+  "branch": "b1",
+  "family": "api",
+  "stage": "baseline",
+  "method": "raw_sol",
+  "adoption_status": "baseline_retained",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "범용 raw Sol 유지. final의 --research rank_residual은 WC 이득과 NC 손실을 함께 공개하는 연구 옵션. 새 API 호출 없음."
+}

@@ -4,7 +4,6 @@
   "stage": "ours",
   "method": "B2-D04",
   "adoption_status": "preselected_before_official_test_joint_improvement_failed",
-  "python": "/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python",
   "actions": [
     "status",
     "replay",

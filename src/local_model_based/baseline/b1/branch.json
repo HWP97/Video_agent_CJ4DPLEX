@@ -1,1 +1,15 @@
-{"branch":"b1","family":"local","stage":"baseline","method":"impartail_selected","adoption_status":"baseline_retained","python":"/mnt/RG2/my_works/b1/benchmarks/action_genome_20261106/model/env/bin/python","actions":["status","replay","evaluate","verify","predict"],"description":"선정 pretrained ImparTail 유지. PGAGS 관측 GT bbox, GAGS 관측 GT bbox/class 및 미래 annotation 시각 schedule을 사용하는 benchmark."}
+{
+  "branch": "b1",
+  "family": "local",
+  "stage": "baseline",
+  "method": "impartail_selected",
+  "adoption_status": "baseline_retained",
+  "actions": [
+    "status",
+    "replay",
+    "evaluate",
+    "verify",
+    "predict"
+  ],
+  "description": "선정 pretrained ImparTail 유지. PGAGS 관측 GT bbox, GAGS 관측 GT bbox/class 및 미래 annotation 시각 schedule을 사용하는 benchmark."
+}

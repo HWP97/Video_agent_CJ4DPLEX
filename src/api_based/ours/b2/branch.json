@@ -4,7 +4,6 @@
   "stage": "ours",
   "method": "observation_residual_lambda1",
   "adoption_status": "selection236_MAE_chosen",
-  "python": "/mnt/RG2/my_works/b1/envs/qwen3vl/bin/python",
   "actions": [
     "status",
     "replay",
