@@ -38,10 +38,6 @@ def main(start_rank: int = 1) -> None:
             assert ok and cv2.imwrite(str(poster), frame)
         finally:
             capture.release()
-        webm = video.with_suffix(".webm")
-        subprocess.run(["/usr/bin/ffmpeg", "-v", "error", "-y", "-i", str(video), "-an", "-c:v", "libvpx-vp9",
-                        "-deadline", "realtime", "-cpu-used", "8", "-threads", "2", "-row-mt", "1",
-                        "-crf", "33", "-b:v", "0", str(webm)], check=True)
         rows.append({"branch": "trajectory_forecasting", "task": "궤적 예측",
                      "sample_id": case.sample_id, "rank": rank, "category": "demo", "metric": "ADE",
                      "baseline_metric": case.baseline_score.ade, "ours_metric": case.ours_score.ade,

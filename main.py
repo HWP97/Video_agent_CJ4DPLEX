@@ -38,7 +38,7 @@ def main() -> int:
             *environment_option, *arguments], cwd=ROOT, env=env, check=False).returncode
     if not arguments or arguments[0] not in ("b1", "b2", "b3"):
         parser.error("demo 다음에 relations, affect 또는 trajectories 를 지정하세요")
-    python = args.python or json.loads((ROOT / "src/api_based/baseline/b1/branch.json").read_text())["python"]
+    python = args.python or json.loads((ROOT / "src/api_based/baseline/b1/branch.json").read_text()).get("python") or sys.executable
     script_name = {"b1": "b1_demo", "b2": "b2", "b3": "b3"}[arguments[0]]
     script = ROOT / "tools/api_demo" / (script_name + ".py")
     return subprocess.run([python, "-B", str(script), *arguments[1:]], cwd=ROOT, env=env, check=False).returncode

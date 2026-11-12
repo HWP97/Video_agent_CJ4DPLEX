@@ -59,7 +59,7 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
 
 <header class="hero">
   <h1>Video Forecasting Agent</h1>
-  <p class="sub">Scene Graph Anticipation · Affection Forecasting · Trajectory Forecasting</p>
+  <p class="sub">Scene Graph Anticipation · Affect Forecasting · Trajectory Forecasting</p>
   <p class="meta">CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent · 2026-11-12</p>
   <div class="badges">
     <a class="badge primary" href="TECHNICAL_REPORT.pdf">Technical Report (PDF)</a>
@@ -88,10 +88,10 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
   <h2>Agent 전체 구성</h2>
   <figure>
     <img src="assets/readme/overall_architecture.svg" alt="Agent overall architecture">
-    <figcaption>관측 프레임 → 세 head(Scene graph · Affection · Trajectory) → 미래 예측 → 실제 미래와 비교</figcaption>
+    <figcaption>관측 프레임 → 세 head(Scene graph · Affect · Trajectory) → 미래 예측 → 실제 미래와 비교</figcaption>
   </figure>
   <p>
-    관측 프레임을 입력받아 세 head가 병렬 동작한다. Scene graph head는 미래 사람·물체 관계를, Affection head는 미래 Valence/Arousal을, Trajectory head는 미래 2D 좌표를 예측한다.
+    관측 프레임을 입력받아 세 head가 병렬 동작한다. Scene graph head는 미래 사람·물체 관계를, Affect head는 미래 Valence/Arousal을, Trajectory head는 미래 2D 좌표를 예측한다.
     각 head는 독립적 benchmark 평가 규약에 연결되며 공통 평가기와 원영상 오버레이로 결과를 확인할 수 있다.
   </p>
 </section>
@@ -113,7 +113,7 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
       <h3>API 경로</h3>
       <ul>
         <li><strong>Scene graph:</strong> Sol 관계 예측 + 관측 문맥 → Relation score head → 미래 scene graph</li>
-        <li><strong>Affection:</strong> Sol 미래 VA + Local recognition 관측 VA → Frozen Ridge 보정</li>
+        <li><strong>Affect:</strong> Sol 미래 VA + Local recognition 관측 VA → Frozen Ridge 보정</li>
         <li><strong>Trajectory:</strong> Sol 궤적 + Constant velocity → 0.75:0.25 Fixed blend</li>
       </ul>
     </div>
@@ -121,13 +121,13 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
       <h3>로컬 경로</h3>
       <ul>
         <li><strong>Scene graph:</strong> ImparTail ODE prior + Training memory retrieval → Gate &amp; capped correction</li>
-        <li><strong>Affection:</strong> Visual encoder + Affect recognizer → D02 current correction + D04 future delta</li>
+        <li><strong>Affect:</strong> Visual encoder + Affect recognizer → D02 current correction + D04 future delta</li>
         <li><strong>Trajectory:</strong> Motion features + Neighbor mask → Two-state model iterative updates</li>
       </ul>
     </div>
   </div>
   <p class="note">
-    내부 식별자는 <code>b1</code>=Scene graph, <code>b2</code>=Affection, <code>b3</code>=Trajectory. 폴더·CLI 슬러그는 과거 호환성으로 <code>relations</code>·<code>affect</code>·<code>trajectories</code>를 유지한다.
+    내부 식별자는 <code>b1</code>=Scene graph, <code>b2</code>=Affect, <code>b3</code>=Trajectory. 폴더·CLI 슬러그는 과거 호환성으로 <code>relations</code>·<code>affect</code>·<code>trajectories</code>를 유지한다.
   </p>
 </section>
 
@@ -138,10 +138,10 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
     <thead><tr><th>경로 · head</th><th>Baseline → Ours</th><th>함께 보고하는 한계</th></tr></thead>
     <tbody>
       <tr><td>API Scene graph</td><td class="num">GAGS NC R@20 47.37% → 61.77%</td><td>WC R@20 43.81% → 42.17%</td></tr>
-      <tr><td>API Affection</td><td class="num">final 421 MAE 0.2227 → 0.1916</td><td>CCC 0.5337 → 0.4858</td></tr>
+      <tr><td>API Affect</td><td class="num">final 421 MAE 0.2227 → 0.1916</td><td>CCC 0.5337 → 0.4858</td></tr>
       <tr><td>API Trajectory</td><td class="num">공통 1,939 ADE 0.5883 → 0.5715</td><td>충돌률 18.88% → 19.13%</td></tr>
       <tr><td>Local Scene graph</td><td class="num">SGCLS R20/mR20 0.4803/0.3365 → 0.4911/0.4186</td><td>직전 유망 후보 대비 R20 하락</td></tr>
-      <tr><td>Local Affection</td><td class="num">official_test 438 MAE 0.2217 → 0.2188, CCC 0.5658 → 0.5774</td><td>과거 GRU 수준 미회복</td></tr>
+      <tr><td>Local Affect</td><td class="num">official_test 438 MAE 0.2217 → 0.2188, CCC 0.5658 → 0.5774</td><td>과거 GRU 수준 미회복</td></tr>
       <tr><td>Local Trajectory</td><td class="num">240,890 장면 FDE 2.1705 → 2.1575</td><td>ADE 1.0522 → 1.0590, 충돌률 22.05% → 22.15%</td></tr>
     </tbody>
   </table>
@@ -165,13 +165,13 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
     <figure><img loading="lazy" src="assets/demos/scene_graph_anticipation_demo_05.gif" alt="Scene graph demo 10"><figcaption><span class="id">predcls:0UPBN.mp4_0.5</span>NC R@20 (%) · Baseline 41.50 → Ours 97.62</figcaption></figure>
   </div>
 
-  <h3>Affection Forecasting</h3>
+  <h3>Affect Forecasting</h3>
   <div class="gallery">
-    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_01.gif" alt="Affection demo 02"><figcaption><span class="id">v099_t0071.00</span>MAE · Baseline 0.5193 → Ours 0.2606</figcaption></figure>
-    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_02.gif" alt="Affection demo 04"><figcaption><span class="id">v110_t0029.00</span>MAE · Baseline 0.3775 → Ours 0.1464</figcaption></figure>
-    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_03.gif" alt="Affection demo 06"><figcaption><span class="id">v034_t0071.00</span>MAE · Baseline 0.3706 → Ours 0.1740</figcaption></figure>
-    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_04.gif" alt="Affection demo 12"><figcaption><span class="id">v050_t0068.00</span>MAE · Baseline 0.3813 → Ours 0.2141</figcaption></figure>
-    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_05.gif" alt="Affection demo 18"><figcaption><span class="id">v038_t0104.00</span>MAE · Baseline 0.1848 → Ours 0.0448</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_01.gif" alt="Affect demo 02"><figcaption><span class="id">v099_t0071.00</span>MAE · Baseline 0.5193 → Ours 0.2606</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_02.gif" alt="Affect demo 04"><figcaption><span class="id">v110_t0029.00</span>MAE · Baseline 0.3775 → Ours 0.1464</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_03.gif" alt="Affect demo 06"><figcaption><span class="id">v034_t0071.00</span>MAE · Baseline 0.3706 → Ours 0.1740</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_04.gif" alt="Affect demo 12"><figcaption><span class="id">v050_t0068.00</span>MAE · Baseline 0.3813 → Ours 0.2141</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_05.gif" alt="Affect demo 18"><figcaption><span class="id">v038_t0104.00</span>MAE · Baseline 0.1848 → Ours 0.0448</figcaption></figure>
   </div>
 
   <h3>Trajectory Forecasting</h3>
@@ -197,7 +197,7 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
     <figure><img loading="lazy" src="assets/demos/local_scene_graph_anticipation_demo_05.gif" alt="Local scene graph demo 05"><figcaption><span class="id">predcls:NDDHA.mp4_0.5</span>NC R@20 (%) · Baseline 47.46 → Ours 80.24</figcaption></figure>
   </div>
 
-  <h3>Affection Forecasting</h3>
+  <h3>Affect Forecasting</h3>
   <div class="gallery">
     <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_01.gif" alt="Local affection demo 01"><figcaption><span class="id">v003_official_test_t00139.0400</span>MAE · Baseline 0.3731 → Ours 0.1037</figcaption></figure>
     <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_01.gif" alt="Local affection demo 02"><figcaption><span class="id">v067_official_test_t00074.0000</span>MAE · Baseline 0.3396 → Ours 0.1181</figcaption></figure>

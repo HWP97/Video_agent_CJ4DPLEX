@@ -1,7 +1,12 @@
-"""demo/data/api_cache 의 15개 Sol 응답을 catalog 와 매칭해 재검증한다.
+"""demo/data/api_cache 의 15개 Sol 응답 파일 존재·형식·catalog 매칭을 확인한다.
 
-재학습·새 API 호출 없이 "저장된 Sol 응답 → 저장된 Demo 지표" 흐름을 확인한다.
-각 head의 Ours 후처리 전체를 재구현하지 않고, 응답 자체의 존재·구조·대응 catalog 지표만 요약한다.
+**이 도구는 지표를 재계산하지 않는다.** 각 entry 에 대해:
+  1) input/request/response.json 세 파일 존재 여부
+  2) response.status == 'completed'
+  3) response.output[*].content 중 output_text 의 JSON 파싱 가능 여부
+  4) index.json 의 sample_id 와 catalog 의 sample_id 일치 여부
+를 확인하고, 보고에는 **catalog 에 이미 저장된 baseline_metric / ours_metric 을 그대로 출력**한다.
+수치 재계산·채점·저장값 대조는 각 head 의 ours 파이프라인(src/api_based/ours/...)에서 수행한다.
 """
 from __future__ import annotations
 
@@ -77,11 +82,10 @@ def main() -> int:
     override = args.dataset or os.environ.get('VFA_DATASET_DIR')
     if override:
         candidate = Path(override) / 'api_cache'
-        if (candidate / 'index.json').is_file():
-            CACHE = candidate
-            print(f'[CACHE] {CACHE}\n', file=sys.stderr)
-        else:
-            print(f'[warn] {candidate}/index.json 없음 → 내장 서브셋 사용', file=sys.stderr)
+        if not (candidate / 'index.json').is_file():
+            raise SystemExit(f'지정한 --dataset 에 {candidate}/index.json 가 없습니다. 외부 묶음의 index.json 경로를 확인하세요.')
+        CACHE = candidate
+        print(f'[CACHE] {CACHE}\n', file=sys.stderr)
     index = json.loads((CACHE / 'index.json').read_text())
     if args.task:
         index = [e for e in index if e['task'] == args.task]
@@ -95,7 +99,7 @@ def main() -> int:
         flag = 'OK ' if passed else 'FAIL'
         print(f'{flag}  {entry["task"]:28s} rank {entry["rank"]:2d}  {entry["sample_id"]:40s}  {detail}')
         if passed: ok += 1
-    print(f'\n{ok}/{len(index)} 재검증 통과')
+    print(f'\n{ok}/{len(index)} entries 검증 통과 (지표 재계산 아님, catalog 매칭만)')
     return 0 if ok == len(index) else 2
 
 

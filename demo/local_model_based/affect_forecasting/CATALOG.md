@@ -1,4 +1,4 @@
-# Affection Forecasting (Local) — Demo Catalog
+# Affect Forecasting (Local) — Demo Catalog
 
 최종 선정 **5개** 사례. 각 사례의 Baseline → Ours 지표 비교와 sample ID. 관측 1x · cutoff 이후 0.5x 재생. 원본 MP4·포스터는 외부 저장소에 있으며 본 Repository에는 catalog·평가·예측 metadata만 포함한다.
 

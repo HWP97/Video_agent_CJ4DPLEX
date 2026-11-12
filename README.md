@@ -4,7 +4,7 @@
 
 ### 관측에서 예측으로, 예측에서 실제 미래와의 비교로
 
-**Scene Graph Anticipation · Affection Forecasting · Trajectory Forecasting**
+**Scene Graph Anticipation · Affect Forecasting · Trajectory Forecasting**
 
 CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent
 
@@ -33,7 +33,7 @@ CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent
 
 ![Agent 전체 구성](assets/readme/overall_architecture.svg)
 
-관측 프레임을 Agent에 입력하면 Scene graph head · Affection head · Trajectory head가 각각 미래 관계 · Valence/Arousal · 좌표를 예측합니다. 현재 구현은 관측 특징·객체 정보·좌표를 사용하는 benchmark 재현 경로입니다. 임의의 새 영상에서 검출·추적·예측을 모두 자동 실행하는 서비스와는 범위를 구분합니다. 자세한 입력 조건은 [System Architecture](docs/SYSTEM_ARCHITECTURE.md)에 설명합니다.
+관측 프레임을 Agent에 입력하면 Scene graph head · Affect head · Trajectory head가 각각 미래 관계 · Valence/Arousal · 좌표를 예측합니다. 현재 구현은 관측 특징·객체 정보·좌표를 사용하는 benchmark 재현 경로입니다. 임의의 새 영상에서 검출·추적·예측을 모두 자동 실행하는 서비스와는 범위를 구분합니다. 자세한 입력 조건은 [System Architecture](docs/SYSTEM_ARCHITECTURE.md)에 설명합니다.
 
 ## Demo
 
@@ -41,7 +41,7 @@ CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent
 
 **Demo 원영상·관측 입력·Sol API 캐시는 Repository에 포함되어 있습니다** — `demo/data/` 아래에 3 head × 선정 15개 사례의 원영상, 프레임, cutoff/horizon, 미래 GT, baseline·Ours 예측이 모여 있고, `demo/data/api_cache/` 에는 같은 15개의 원본 Sol 요청·응답 JSON 이 signature(SHA256) 기반으로 보존되어 있습니다. 평가자는 외부 다운로드·새 API 호출 없이 재현에 필요한 모든 입력을 받을 수 있습니다. 구성은 [`demo/data/README.md`](demo/data/README.md)와 [`demo/data/api_cache/README.md`](demo/data/api_cache/README.md) 를 참고하세요.
 
-API 캐시 → Demo 지표 재검증:
+Sol 응답 캐시 **형식 확인** (지표 재계산이 아닌 파일 존재·구조·catalog 매칭 확인):
 
 ```bash
 python tools/api_demo/replay_cache.py                              # 15개 전체
@@ -49,7 +49,7 @@ python tools/api_demo/replay_cache.py --task affect_forecasting    # head 단위
 python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사례 단위 (1~5)
 ```
 
-240k 전수 평가용 모델 가중치·전체 Sol 캐시 같은 대형 자산만 외부 보관 대상이며, 접근은 [Resources](docs/RESOURCES.md)에 안내합니다.
+**재현 범위 안내:** 본 Repository + `demo/data/` 로 가능한 것은 (1) 위 Sol 응답 형식 확인, (2) 각 head catalog 의 저장값 조회, (3) `assets/demos/` 및 `assets/readme/` GIF 로 15개 사례 시각 확인 — 세 가지입니다. **전체 벤치마크(13k Scene Graph · 2,740 Affect · 240k Trajectory) 재채점에는 외부 가중치·관측 입력(`inputs.npz`/`manifest.json`)·평가 GT 가 추가로 필요**하며, 현재 외부 OneDrive 묶음에는 **가중치(`weights/`)와 API Sol 캐시(`api_cache/`)만 포함**되어 있습니다. 로컬 모델 전수 forward 재현에 필요한 입력 자산·manifest·GT 는 제출 시점에 외부 제공되지 않습니다. 재현 범위와 외부 자산 상태는 [Resources](docs/RESOURCES.md) 를 참고하세요.
 
 ### Scene Graph Anticipation
 
@@ -61,7 +61,7 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사�
 |---|---|
 | ![Scene Graph Demo 01](assets/readme/scene_graph_anticipation_demo_01.gif) | ![Scene Graph Demo 02](assets/readme/scene_graph_anticipation_demo_02.gif) |
 
-### Affection Forecasting
+### Affect Forecasting
 
 **API · Raw Sol → 관측 잔차 보정**
 
@@ -69,7 +69,7 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사�
 
 | Demo 01 | Demo 02 |
 |---|---|
-| ![Affection Demo 01](assets/readme/affect_forecasting_demo_01.gif) | ![Affection Demo 02](assets/readme/affect_forecasting_demo_02.gif) |
+| ![Affect Demo 01](assets/readme/affect_forecasting_demo_01.gif) | ![Affect Demo 02](assets/readme/affect_forecasting_demo_02.gif) |
 
 ### Trajectory Forecasting
 
@@ -92,10 +92,10 @@ git clone https://github.com/HWP97/Video_agent_CJ4DPLEX.git
 cd Video_agent_CJ4DPLEX
 ```
 
-**최소 체크 (설치 전):** 저장소 안의 `demo/data/api_cache/` + `demo/api_based/*/catalog.json` 만으로도 15개 Demo 재검증이 가능합니다.
+**최소 체크 (설치 전):** 저장소 안의 `demo/data/api_cache/` + `demo/api_based/*/catalog.json` 만으로도 15개 Sol 응답의 **형식·구조·catalog 매칭** 을 확인할 수 있습니다. (지표 재계산 아님 — catalog 저장값을 그대로 출력합니다.)
 
 ```bash
-python3 tools/api_demo/replay_cache.py   # 외부 리소스 없이 15/15 재검증 통과 확인
+python3 tools/api_demo/replay_cache.py   # 15/15 entries 통과 (파일 존재 + response.status=completed + output_text JSON 유효 + sample_id 매칭)
 ```
 
 ### 1. 실행 환경
@@ -196,7 +196,7 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
 | 데이터셋 | head | 다운로드 | 라이선스 |
 |---|---|---|---|
 | **Action Genome / Charades** | Scene Graph | [공식 안내](https://github.com/JingweiJ/ActionGenome) → Charades 동영상·주석 다운로드 폼 제출 → Action Genome annotation `.pkl` zip 별도 수령 | Charades Non-Commercial Use (License `licenses/CHARADES_LICENSE.txt` 포함) |
-| **VEATIC** | Affection | [프로젝트 사이트](https://veatic.github.io/) · [공식 저장소 CC BY-NC 4.0](https://github.com/AlbusPeter/VEATIC/blob/master/LICENSE) · 원영상 ZIP SHA `7c314f398c…` | CC BY-NC 4.0 (연구 목적) |
+| **VEATIC** | Affect | [프로젝트 사이트](https://veatic.github.io/) · [공식 저장소 CC BY-NC 4.0](https://github.com/AlbusPeter/VEATIC/blob/master/LICENSE) · 원영상 ZIP SHA `7c314f398c…` | CC BY-NC 4.0 (연구 목적) |
 | **TrajNet++ v4.0** | Trajectory | [vita-epfl/trajnetplusplusdata v4 release](https://github.com/vita-epfl/trajnetplusplusdata/releases/tag/v4.0) 의 실사 train 번들 | 원천별 조건 (CFF / UCY / hotel / LCAS / WildTrack 각각 확인) |
 | **UCY** (`students003`, `zara01`) | Trajectory demo 원영상 | [OpenTraj UCY 폴더](https://github.com/crowdbotp/OpenTraj/tree/master/datasets/UCY) 의 `video.avi` | 원 배포자 출처 표시 조건 자유 이용 (Lerner et al., Crowds by Example, 2007) |
 
@@ -208,8 +208,8 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
 
 | 묶음 | 크기 | 내용 | 다운로드 |
 |---|---:|---|---|
-| `weights/` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affection (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgDptH9MI9yvTKxTwzwdF-EbAfI_kUCpaA8WyF9_tJ-Gv7M?e=O5KWD4) |
-| `api_cache/` | ~763MB | Scene Graph · Affection · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgCB1E-PamCETIEKFPwZRaMDAQuNo1iZvAHRsYC9PyCHhQg?e=6PYX9u) |
+| `weights/` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affect (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgDptH9MI9yvTKxTwzwdF-EbAfI_kUCpaA8WyF9_tJ-Gv7M?e=O5KWD4) |
+| `api_cache/` | ~763MB | Scene Graph · Affect · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgCB1E-PamCETIEKFPwZRaMDAQuNo1iZvAHRsYC9PyCHhQg?e=6PYX9u) |
 
 **다운로드 위치와 실행 방법:**
 
@@ -376,14 +376,18 @@ python -B -m pytest -q -p no:cacheprovider \
 
 | 명령 | 출력 위치 | 확인 방법 |
 |---|---|---|
-| `python tools/api_demo/replay_cache.py` | 콘솔 출력 (`OK` / `FAIL` + 지표) | 터미널에 15/15 재검증 통과 메시지 |
-| `python main.py api <head> <baseline|ours> evaluate` | `results/api_based/<branch>/<action>-<id>/` | `scores.json` · `per_case.jsonl` + stdout 경로 안내 |
-| `python main.py local <head> <baseline|ours> evaluate` | `results/local_model_based/<branch>/<action>-<id>/` | 동일 구조. 감정은 `results/local_model_based/b2/` 하위에 `predictions/` + `scores.json` |
-| `python main.py api <head> <baseline|ours> predict --sample-id X` | `results/.../<action>-<id>/predict/` | 미래 예측 numpy / JSON 저장 + 콘솔에 파일 경로 출력 |
-| `python main.py api <head> <baseline|ours> verify` | `results/.../<action>-<id>/verify/` | 동결 자산 SHA 비교 결과 (`status.json`) + 콘솔 요약 |
-| `python main.py demo <head>` | `demo/api_based/<head>/` (MP4 신규 렌더 시) | `catalog.json` + poster JPG + 영상 파일 |
+| `python tools/api_demo/replay_cache.py` | 콘솔 출력 (`OK` / `FAIL`) | 15/15 entries 통과 메시지 (지표 재계산이 아님) |
+| `python main.py api relations <baseline\|ours> evaluate` | `results/api_based/b1/<action>-<id>/` | `scores.json` · `per_case.jsonl` + stdout 경로 |
+| `python main.py api affect <baseline\|ours> evaluate` | `results/api_based/b2/<action>-<id>/` | `result.json` + stdout 경로 (scores.json 아님) |
+| `python main.py api trajectories <baseline\|ours> evaluate` | `results/api_based/b3/<action>-<id>/` | `scores.json` |
+| `python main.py local affect <baseline\|ours> evaluate` | `results/local_model_based/b2/<action>-<id>/` | `result.json` |
+| `python main.py local trajectories ours evaluate --prediction <path>` | `results/local_model_based/b3/<action>-<id>/` | `--prediction` 인자 **필수** (Ours 저장 예측 경로) |
+| `python main.py api relations ours predict --sample predcls:X.mp4_0.5` | `results/.../predict/` | Scene Graph 는 `--sample` (sample-id 아님) |
+| `python main.py api affect ours predict --sample-id v099_t0071.00` | `results/.../predict/` | Affect / Trajectory 는 `--sample-id` |
+| `python main.py api <head> <baseline\|ours> verify` | `results/.../<action>-<id>/verify/` | 동결 자산 SHA 비교 (`status.json`) |
+| `python main.py demo <head>` ⚠️ | `demo/api_based/<head>/` | **덮어쓰기 주의** — 현재 렌더러는 선정 20개를 다시 쓰고 cases.json/catalog.json 을 교체합니다. 최종 5개 정리본을 유지하려면 실행 전 백업 또는 미실행 권장 |
 
-`results/` 는 `.gitignore` 로 제외되어 있으며, 각 실행은 UUID 를 붙인 새 하위 디렉터리에 결과를 저장합니다. 동일 명령을 다시 실행해도 이전 결과를 덮어쓰지 않습니다. 상위 집계(예: 전체 평가 요약)는 각 디렉터리의 `scores.json` 을 비교해 확인합니다.
+`results/` 는 `.gitignore` 로 제외되어 있으며, 각 실행은 UUID 를 붙인 새 하위 디렉터리에 결과를 저장합니다. 동일 명령을 다시 실행해도 이전 결과를 덮어쓰지 않습니다. **단 `demo` 하위명령은 예외로 기존 catalog 를 덮어씁니다.** 상위 집계는 각 디렉터리의 결과 JSON 을 비교해 확인합니다.
 
 ## Project Structure
 
