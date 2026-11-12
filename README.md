@@ -226,8 +226,8 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
 
 | 묶음 | 크기 | 내용 | 다운로드 |
 |---|---:|---|---|
-| `weights.tar.gz` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affect (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive 다운로드](https://1drv.ms/u/c/0a24ba0a8dd2be30/IQBV0p8RZI8aTZSsMeTUeYTNAXEMG59-BnzFMzEklPTu09g) |
-| `api_cache.tar.gz` | ~763MB | Scene Graph · Affect · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive 다운로드](https://1drv.ms/u/c/0a24ba0a8dd2be30/IQAjfbOHiWmMQb-xSszdLq4tAcnlSVj91gNKxu4lnsZV4jk) |
+| `weights.tar.gz` | ~2.2GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affect (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive 다운로드](https://1drv.ms/u/c/0a24ba0a8dd2be30/IQBV0p8RZI8aTZSsMeTUeYTNAXEMG59-BnzFMzEklPTu09g) |
+| `api_cache.tar.gz` | ~277MB | Scene Graph · Affect · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive 다운로드](https://1drv.ms/u/c/0a24ba0a8dd2be30/IQAjfbOHiWmMQb-xSszdLq4tAcnlSVj91gNKxu4lnsZV4jk) |
 
 **다운로드 위치와 실행 방법:**
 
