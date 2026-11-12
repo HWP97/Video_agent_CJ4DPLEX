@@ -153,25 +153,35 @@ python3.10 -m venv .venv_api_affect
 
 API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합니다. API 경로는 저장 응답의 재현이므로 API key 없이 동작하며 누락 응답을 자동으로 재호출하지 않습니다.
 
-### 3. 모델과 데이터 준비
+### 3. 데이터셋·모델 가중치 다운로드
 
-모델·관측 입력·평가 GT는 코드 저장소와 분리합니다. [리소스 안내](docs/RESOURCES.md)의 파일명·경로·SHA에 맞춰 준비합니다.
+본 Agent는 세 개의 공개 데이터셋을 사용합니다. **데모 15개 재검증에는 외부 리소스 없이 Repository의 `demo/data/` 로 충분**하며, 아래 다운로드는 전체 벤치마크 재채점을 원할 때만 필요합니다.
 
-| 리소스 | 배치 위치 |
-|---|---|
-| API 요청·응답 캐시, 관측 입력, 평가 GT | `src/api_based/data/` |
-| 로컬 동결 모델, 관측 특징·좌표, 평가 GT | `src/local_model_based/data/` |
-| 전체 Demo 영상·포스터 (외부 보관) | [Resources](docs/RESOURCES.md) 참조. Repository에는 catalog JSON과 Cosmos 비교 MP4만 포함 |
-| README 미리보기 GIF | `assets/readme/` |
+#### 3-1. 공개 데이터셋 원출처
 
-**자체 학습 가중치와 원본 Demo MP4·Cosmos 보조 자산은 Repository에 포함되지 않습니다.** 과제원문 2.4 ("용량이 큰 파일은 제출 Repository에 직접 포함하지 않는다")에 따른 조치이며, 다음 두 종류의 자산을 외부 저장소에 보관합니다:
+| 데이터셋 | head | 다운로드 | 라이선스 |
+|---|---|---|---|
+| **Action Genome / Charades** | Scene Graph | [공식 안내](https://github.com/JingweiJ/ActionGenome) → Charades 동영상·주석 다운로드 폼 제출 → Action Genome annotation `.pkl` zip 별도 수령 | Charades Non-Commercial Use (License `licenses/CHARADES_LICENSE.txt` 포함) |
+| **VEATIC** | Affection | [프로젝트 사이트](https://veatic.github.io/) · [공식 저장소 CC BY-NC 4.0](https://github.com/AlbusPeter/VEATIC/blob/master/LICENSE) · 원영상 ZIP SHA `7c314f398c…` | CC BY-NC 4.0 (연구 목적) |
+| **TrajNet++ v4.0** | Trajectory | [vita-epfl/trajnetplusplusdata v4 release](https://github.com/vita-epfl/trajnetplusplusdata/releases/tag/v4.0) 의 실사 train 번들 | 원천별 조건 (CFF / UCY / hotel / LCAS / WildTrack 각각 확인) |
+| **UCY** (`students003`, `zara01`) | Trajectory demo 원영상 | [OpenTraj UCY 폴더](https://github.com/crowdbotp/OpenTraj/tree/master/datasets/UCY) 의 `video.avi` | 원 배포자 출처 표시 조건 자유 이용 (Lerner et al., Crowds by Example, 2007) |
 
-| 자산 | 외부 보관 사유 |
-|---|---|
-| 자체 학습 동결 가중치, 관측 입력 캐시, 평가 GT | 과제원문 2.4 — 모델 가중치는 Repository 직접 포함 금지. 평가자가 다운로드 가능한 별도 저장 위치 제공 요건. |
-| Demo 원본 MP4·포스터 JPG, Cosmos 보조 시각화 자산 | GitHub 권장 리포 용량 초과 (약 600MB). README의 저용량 미리보기 GIF 6개로 사례 확인 가능. |
+데이터셋 다운로드 후 배치 경로·파일명·SHA256은 [`docs/RESOURCES.md`](docs/RESOURCES.md) 를 따르며, 평가자용 다운로드 안내는 아래 3-2를 참고합니다.
 
-**평가자용 외부 다운로드 URL은 제출 시점에 확정되지 않았습니다.** 확정 후 [Resources](docs/RESOURCES.md)의 표에 각 자산의 다운로드 경로·SHA256 체크섬을 기재해 README와 함께 전달할 예정입니다. 확정 전에는 작업 서버의 `HWP_CJ4DPLEX_AI_support/submission_cleanup_20261112/` 아래에서 평가자 접근을 수동으로 안내합니다. 공개 모델 원출처와 데이터 이용 조건은 [사용 내역 및 구현 범위](docs/USAGE_AND_SCOPE.md)를 참고해 주세요.
+#### 3-2. 자체 학습 가중치·API 캐시 (외부 저장소)
+
+과제원문 2.4 ("용량이 큰 파일은 제출 Repository에 직접 포함하지 않는다") 에 따라 자체 학습 동결 가중치와 전체 API Sol 캐시는 외부 저장소(OneDrive)로 분리합니다. 평가자용 다운로드 링크:
+
+| 묶음 | 크기 | 내용 | 다운로드 |
+|---|---:|---|---|
+| `weights/` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affection (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | *링크 확정 예정* |
+| `api_cache/` | ~763MB | Scene Graph · Affection · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | *링크 확정 예정* |
+
+다운로드 후 각 자산의 배치 경로·SHA256 체크섬은 묶음 내부의 `FILES_SHA256.jsonl` 과 Repository 측 [`docs/RESOURCES.md`](docs/RESOURCES.md) 로 대조합니다. **Repository의 `demo/data/` 에는 선정 15개 재현에 필요한 Sol 응답 서브셋이 이미 포함**되어 있어 외부 저장소 없이도 `python tools/api_demo/replay_cache.py` 로 즉시 재검증 가능합니다.
+
+#### 3-3. Demo 데이터 (Repository 포함)
+
+재현에 필요한 모든 Demo 입력은 Repository 안 `demo/data/` 에 이미 들어 있습니다 — 세 head × 15개 선정 사례의 원영상, 프레임, cutoff/horizon, 미래 GT, baseline/Ours 예측 + Sol API 요청·응답 캐시 서브셋 (`demo/data/api_cache/`). 구성은 [`demo/data/README.md`](demo/data/README.md) · [`demo/data/api_cache/README.md`](demo/data/api_cache/README.md) 참조.
 
 ## Quick Start
 
