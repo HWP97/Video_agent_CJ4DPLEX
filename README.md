@@ -135,7 +135,7 @@ python3 tools/api_demo/replay_cache.py   # 15/15 entries 통과 (파일 존재 +
 
 #### 2-A. Docker 경로 (권장)
 
-베이스 이미지 `pytorch/pytorch:2.5.1-cuda11.8-cudnn9-runtime` (Python 3.11 + Torch 2.5.1+cu118 포함) 위에 ffmpeg · DejaVu 글꼴 · 로컬 의존성이 자동 설치됩니다. **빌드/실행 테스트 완료** — 컨테이너 안에서 `python tools/api_demo/replay_cache.py` 가 15/15 통과를 확인했습니다.
+베이스 이미지 `pytorch/pytorch:2.5.1-cuda11.8-cudnn9-runtime` (Python 3.11 + Torch 2.5.1+cu118 포함) 위에 ffmpeg · DejaVu 글꼴 · 로컬 의존성이 자동 설치됩니다. **클린 빌드·실행 재검증은 수행하지 않았습니다** — Dockerfile 과 `.dockerignore` 는 구성해 두었으나, 평가자 환경에서 `docker build` 가 처음 성공할지는 별도 확인이 필요합니다.
 
 **Docker Engine 설치** (호스트 OS에 아직 Docker가 없다면):
 - Ubuntu/Debian: `curl -fsSL https://get.docker.com | sh` → `sudo usermod -aG docker $USER` → 재로그인
@@ -256,8 +256,8 @@ tar xzf api_cache.tar.gz
 
 **외부 묶음 활용 범위 (중요):**
 
-- OneDrive 의 `weights.tar.gz` 는 `src/{api,local}_based/data/...` 아래 기대 경로로 복사·심링크해야 각 head 의 동결 모델이 로드됩니다. 세부 매핑은 각 head 의 ours/entry.py 와 `docs/RESOURCES.md` 를 따릅니다.
-- OneDrive 의 `api_cache.tar.gz` 는 전체 Sol 요청·응답 원본(`<head>/raw/<signature>/...` + `index.final.jsonl`) 으로, `src/api_based/data/b{1,2,3}/sol/` 에 매핑합니다. **`tools/api_demo/replay_cache.py` 는 이 전체 캐시와 호환되지 않습니다** — replay_cache 는 Repository 내장 15개 서브셋(`demo/data/api_cache/` 의 `index.json` + `<head>/<sig>/response.json` 구조) 전용입니다.
+- OneDrive 의 `weights.tar.gz` · `api_cache.tar.gz` 를 압축 해제한 뒤 **각 묶음 내부의 `FILES_SHA256.jsonl` 에 적힌 `repo_path` 를 따라** Repository 안으로 복사·심링크 합니다. 묶음별로 폴더 구조가 다르고 head 별 매핑도 차이가 있으므로 (예: Trajectory 는 `sol/` 이 아니라 `sol_cache/` 하위), 수동 추정 대신 `FILES_SHA256.jsonl` 의 경로를 그대로 사용하는 것이 안전합니다.
+- **`tools/api_demo/replay_cache.py` 는 외부 전체 캐시와 호환되지 않습니다** — replay_cache 는 Repository 내장 15개 서브셋(`demo/data/api_cache/` 의 `index.json` + `<head>/<sig>/response.json` 구조) 전용이고, 외부 전체 캐시는 head 별로 다른 구조(`<head>/raw/...` 또는 `<head>/cache/...`)를 사용합니다.
 - 로컬 모델 전수 forward 재채점에 필요한 **입력 특징(`inputs.npz`)·manifest·평가 GT** 는 외부 묶음에 포함되지 않아 완전 재추론은 보장되지 않습니다.
 
 ```bash
