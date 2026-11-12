@@ -38,7 +38,7 @@ Cosmos [공식 저장소](https://github.com/nvidia-cosmos/cosmos-predict2.5)는
 | TrajNet++ tools | commit `39d56e0ee64ad85b71584e48819042aecd3ca434`, 번들 `TRAJNET_LICENSE` 보존 | 보행 궤적 예측 ADE/FDE/Col-II 공식 채점 |
 | PyTorch·NumPy·Pillow·OpenCV·FFmpeg | 실행별 버전은 requirements와 검증 기록 | 텐서·배열 계산, 영상 읽기·오버레이·MP4 인코딩 |
 | Codex (OpenAI) | 본 과제 수행 기간의 세션 (과제 수행 10/30~11/11 전반) | **구현 전반을 담당**: API 경로의 Sol 호출 코드·관계 점수 head·관측 잔차 Ridge·등속도 혼합·평가 연결, 로컬 경로의 세 head(Scene graph c04/c06, Affection C01/D02/D04, Trajectory F/D04) 아키텍처 비교·학습 스크립트·evaluate 파이프라인·동결 체크포인트 선택 로직, 데모 렌더러와 Cosmos 보조 시각화의 프롬프트 변환 코드를 작성·실행 |
-| Claude Code (Anthropic) | 제출 마감일 2026-11-12의 제출 정리 세션 | 저장소 디렉터리 정리(지원자 지시의 support 이동), 아키텍처 Figure 배선, 공개 명칭 통일(Scene Graph Anticipation · Affection Forecasting · Trajectory Forecasting), 과제원문 요건 대조, Technical Report·Executive Summary·System Architecture·Usage &amp; Scope의 서사 다듬기, README·프로젝트 페이지(`index.html`)·Dockerfile 작성, 외부 보관 경로 및 깨진 참조 정리, PDF 재생성 |
+| Claude Code (Anthropic) | 제출 마감일 2026-11-12의 제출 정리 세션 | 저장소 디렉터리 정리(지원자 지시의 support 이동), 아키텍처 Figure 배선, 공개 명칭 통일(Scene Graph Anticipation · Affection Forecasting · Trajectory Forecasting), 과제원문 요건 대조, Technical Report·Executive Summary·System Architecture·Usage &amp; Scope의 서사 다듬기, README·Dockerfile 작성, 외부 보관 경로 및 깨진 참조 정리, PDF 재생성 |
 | 생성형 AI 개발 도구 공통 | 설치된 Ponytail·OMO 스킬을 포함한 보조 플러그인 | 코드·문서 작성, 자료 탐색, 실행·검증 보조 |
 
 모든 코드가 사람이 단독 작성한 것처럼 표현하지 않는다. 지원자가 **문제 정의·과제 분해(세 head)·실험 방향 선택(API 우선 → API 비용 제약 대응으로 로컬 추가)·평가 집합·최종 Demo·제출 범위**를 결정하고, Codex가 그 안에서 세부 구현·학습 루프·평가 코드를 작성·반복 실행했다. 로컬 경로의 평가 프로토콜은 Codex 세션 중 공개 데이터셋 가용 범위에 맞춰 조정되었으며, 그 선택과 결과 해석·보고의 책임은 지원자가 유지한다. Claude Code는 과제 수행이 아니라 **제출 마감일의 산출물 정리**에 한정한다. 과거 작업의 모든 도구 버전을 이 세션에서 소급 추정하지 않는다.

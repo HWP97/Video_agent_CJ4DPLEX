@@ -14,8 +14,6 @@ CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent
 
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.5.1%20%7C%202.8.0-EE4C2C?logo=pytorch&logoColor=white)
-![Heads](https://img.shields.io/badge/Heads-3-287351)
-![Demos](https://img.shields.io/badge/Selected_Demos-15-287351)
 
 [Demo](#demo) · [Installation](#installation) · [Quick Start](#quick-start) · [Usage](#usage) · [Results](#results) · [Documentation](#documentation)
 
@@ -168,7 +166,7 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
 | 자산 | 외부 보관 사유 |
 |---|---|
 | 자체 학습 동결 가중치, 관측 입력 캐시, 평가 GT | 과제원문 2.4 — 모델 가중치는 Repository 직접 포함 금지. 평가자가 다운로드 가능한 별도 저장 위치 제공 요건. |
-| Demo 원본 MP4·포스터 JPG, Cosmos 보조 시각화 자산 | GitHub 권장 리포 용량 초과 (약 600MB). README·프로젝트 페이지의 저용량 GIF는 Repository에 포함되어 Repository 열람만으로 사례 확인 가능. |
+| Demo 원본 MP4·포스터 JPG, Cosmos 보조 시각화 자산 | GitHub 권장 리포 용량 초과 (약 600MB). README의 저용량 미리보기 GIF 6개로 사례 확인 가능. |
 
 **평가자용 외부 다운로드 URL은 제출 시점에 확정되지 않았습니다.** 확정 후 [Resources](docs/RESOURCES.md)의 표에 각 자산의 다운로드 경로·SHA256 체크섬을 기재해 README와 함께 전달할 예정입니다. 확정 전에는 작업 서버의 `HWP_CJ4DPLEX_AI_support/submission_cleanup_20261112/` 아래에서 평가자 접근을 수동으로 안내합니다. 공개 모델 원출처와 데이터 이용 조건은 [사용 내역 및 구현 범위](docs/USAGE_AND_SCOPE.md)를 참고해 주세요.
 
@@ -295,7 +293,6 @@ python -B -m pytest -q -p no:cacheprovider \
 ```text
 .
 ├── README.md                 # 본 문서
-├── index.html                # 정적 프로젝트 페이지 (GitHub Pages 호환)
 ├── Dockerfile                # 재현용 컨테이너 (PyTorch 2.5.1 + CUDA 11.8 + ffmpeg)
 ├── main.py                   # API / Local / Demo 진입점
 ├── *.pdf                     # 제출 산출물 4종 PDF
@@ -303,7 +300,7 @@ python -B -m pytest -q -p no:cacheprovider \
 │   ├── api_based/            # 저장 API 응답 기반 추론·평가
 │   └── local_model_based/    # 동결 로컬 모델·평가·학습 소스
 ├── requirements/             # 실행 계열별 의존성
-├── assets/                   # README/프로젝트 페이지용 Figure·GIF
+├── assets/readme/            # README Figure·미리보기 GIF
 ├── demo/                     # 과제별 catalog·평가·예측 metadata (원본 MP4는 외부 보관)
 ├── results/                  # 실행 결과와 평가 기록 (.gitignore)
 ├── tools/                    # 영상 렌더링·GIF·문서 빌드 도구
@@ -319,13 +316,6 @@ python -B -m pytest -q -p no:cacheprovider \
 | [Executive Summary](EXECUTIVE_SUMMARY.pdf) · [원문 MD](docs/EXECUTIVE_SUMMARY.md) | 문제·접근·핵심 결과를 정리한 2쪽 요약 |
 | [사용 내역 및 구현 범위](USAGE_AND_SCOPE.pdf) · [원문 MD](docs/USAGE_AND_SCOPE.md) | 데이터·모델·OSS·AI 도구와 직접 구현 범위 |
 | [Resources](docs/RESOURCES.md) | 가중치·관측 입력·GT의 준비 경로와 무결성 정보 |
-
-### Project Page
-
-Repository 루트의 [`index.html`](index.html)은 정적 프로젝트 페이지입니다. 로컬에서 바로 열거나 GitHub Pages를 활성화하면 공개 URL로 접근할 수 있습니다. 포트 번호가 노출되는 로컬 개발 서버는 제공하지 않습니다.
-
-- **로컬 열기:** 브라우저에서 `index.html`을 직접 엽니다.
-- **GitHub Pages 배포:** 저장소 Settings → Pages → `Deploy from a branch` → `main` / `/ (root)` 선택. 기본 URL은 `https://<user>.github.io/<repo>/` 형식입니다.
 
 ## Acknowledgements & Usage
 
