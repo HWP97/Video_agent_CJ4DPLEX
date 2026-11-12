@@ -35,9 +35,6 @@ def main() -> None:
             continue
         if not video.exists():
             render(scene,video)
-        webm = video.with_suffix('.webm')
-        if not webm.exists():
-            subprocess.run(['/usr/bin/ffmpeg','-v','error','-y','-i',str(video),'-an','-c:v','libvpx-vp9','-deadline','realtime','-cpu-used','8','-threads','2','-row-mt','1','-crf','33','-b:v','0',str(webm)],check=True)
         catalog.append({'branch':'scene_graph_anticipation','family':'local_model_based','sample_id':candidate.sample_id,'rank':rank,'category':'demo','metric':'NC R@20 (%)','baseline_metric':candidate.baseline*100,'ours_metric':candidate.ours*100,'metric_delta':(candidate.ours-candidate.baseline)*100,'video':str(video.relative_to(PROJECT)),'poster':str(video.with_suffix('.jpg').relative_to(PROJECT)),'prediction':str((out/f'{stem}.prediction.json').relative_to(PROJECT)),'note':'최신 로컬 ImparTail+메모리 gate. 관측1x·미래0.5x. 연두색은 공식 GT 일치, IoU=0. GT 박스는 평가용 위치다.'})
         (out/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2))
     if catalog:

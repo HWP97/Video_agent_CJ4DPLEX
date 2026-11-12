@@ -34,13 +34,13 @@
 - **API와 Local의 평가집합·cutoff가 달라 직접 성능 비교가 성립하지 않는다.** 통합 지표로 환산하지 않는다.
 - **평가 자료의 반복 열람·선택 편향**이 있어 독립 hidden test 성적이 아니다. Affect Ridge 분할은 과거 응답 재사용에 의존한다.
 - **로컬 head의 지표 상충.** Trajectory의 ADE↑/FDE↓, Affect의 CCC 미회복 등 특정 지표의 악화가 공존한다.
-- **외부 자산 제공 미확정.** 학습 가중치·관측 입력·평가 GT·원영상의 평가자용 외부 저장소 URL은 제출 시점에 확정되지 않았다. Repository만으로는 전체 추론이 보장되지 않는다.
+- **외부 자산 제공 범위.** 학습 가중치와 전체 API Sol 캐시는 OneDrive 로 제공된다(README 3-2 링크). 그러나 로컬 모델 전수 재추론에 필요한 입력 특징(`inputs.npz`·`manifest.json`) 과 평가 GT 는 외부 묶음에 포함되지 않아, Repository + OneDrive 만으로는 240k 전수 forward 재채점을 보장하지 않는다.
 
 ## 향후 개선 방향
 
 - API cutoff와 Local cutoff를 통일한 공정 비교 체계 구축. 기존 Ridge를 동일 cutoff에서 재채점.
 - Trajectory의 ADE·충돌률 악화 해소를 위한 상호작용 손실·가중치 재탐색, Affect CCC 회복을 위한 시계열 상관 손실 도입.
 - 임의 영상 입력의 검출·추적·대상 식별 파이프라인 연결로 benchmark 재현 범위를 영상 서비스까지 확장.
-- 평가자용 외부 저장소와 원영상 이용 조건 확정 후 README·Resources에 반영.
+- 로컬 모델 전수 재추론 입력(`inputs.npz`·`manifest.json`·GT) 외부 제공, 원영상 재배포 조건 확정 후 README·Resources 에 추가 반영.
 
 이 과제의 평가는 최고 점수 제시가 아니라 **문제 분해·비용/데이터 제약 공개·재현 가능한 결과와 명시된 한계를 함께 보고**하는 데 중점을 두었다.

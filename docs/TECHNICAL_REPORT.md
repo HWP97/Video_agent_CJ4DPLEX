@@ -98,13 +98,13 @@ ADE는 미래 12시점의 2D 유클리드 거리 평균, FDE는 마지막 시점
 
 최종 15개는 모두 Ours 가 개선된 사례라 실패 분석에 사용할 수 없다. 대신 **모집단 평가에서 확인된 Ours 가 악화된 대표 사례 3개**를 명시한다. 각 사례의 원 예측과 평가 결과는 `results/api_based/<branch>/frozen/` 기록에서 확인 가능하며, Ours 의 역방향 지표 변화를 catalog JSON 검색으로 재현할 수 있다.
 
-| 사례 ID | baseline → ours | 실패 원인·해석 |
+| 사례 ID | baseline → ours | 관찰 |
 |---|---|---|
-| `predcls:HSEH1.mp4_0.5` (Scene Graph) | NC R@20 93.75% → 69.79% | raw Sol 이 이미 잘 맞춘 관계를 macro_direct 보정이 희석. NC 평균 개선을 위한 공통 보정이 "원래 잘 맞던" 사례를 되돌림. 4장 WC R@20 1.64%p 감소와 같은 원인 |
-| `v094_t0074.00` (Affect) | MAE 0.1016 → 0.3518 | baseline Sol V/A 가 이미 GT 근처에 있어 잔차 보정이 크기 오차를 키움. 대상 가림으로 영상 확인도 제한. 4장 final421 CCC 0.534→0.486 하락과 같은 원인 |
-| `crowds_students001_3563` (Trajectory) | ADE 0.0215 → 2.1848 | 원 Sol 궤적이 거의 완벽한 사례에서 고정 0.25 CV 혼합이 평균 궤적 쪽으로 끌어당기며 100배 악화. 4장 1,939 충돌률 18.88→19.13% 상승과 같은 원인 — 고정 비율의 한계 |
+| `predcls:HSEH1.mp4_0.5` (Scene Graph) | NC R@20 93.75% → 69.79% | raw Sol 이 이미 잘 맞춘 사례에서 NC 보정이 관계 순위를 흔든다. 같은 사례의 WC R@20 은 30.21% → 33.33% 로 오히려 개선되어, 지표별 반응이 반대 방향으로 나타난다. 4장 모집단 WC 하락과 **동일 원인으로 단정하지 않는다** |
+| `v094_t0074.00` (Affect) | MAE 0.1016 → 0.3518 | baseline Sol V/A 가 이미 GT 근처여서 잔차 보정이 크기 오차를 키운다. 대상 가림으로 영상 확인에도 제약이 있다. 4장 CCC 하락과 같은 원인으로 묶기 전에 horizon 별 요인 분석이 필요하다 |
+| `crowds_students001_3563` (Trajectory) | ADE 0.0215 → 2.1848, 충돌 0 → 0 | 원 Sol 궤적이 거의 완벽한 사례에서 고정 0.25 CV 혼합이 평균 궤적 쪽으로 끌어당기며 거리 오차가 100배 커진다. 충돌 수는 두 방법 모두 0 — 거리 악화와 충돌 증가는 서로 다른 축이므로 4장 충돌률 상승과 **동일 원인으로 단정하지 않는다** |
 
-세 사례는 head 별 최악 개악 사례로, 4장의 집계 지표 상충(WC R@20 감소, CCC 하락, 충돌률 증가)의 원인을 공유한다. 전체 선정 Demo 목록은 `demo/api_based/scene_graph_anticipation/CATALOG.md`, `demo/api_based/affect_forecasting/CATALOG.md`, `demo/api_based/trajectory_forecasting_reselected/CATALOG.md` 를 따른다.
+세 사례는 head 별 Ours 가 특정 조건에서 손해를 보는 대표 예시다. 4장 모집단 집계(WC R@20 감소·CCC 하락·충돌률 증가) 와의 인과 연결은 추가 분석이 필요하며 현 단계에서는 결론짓지 않는다. 전체 선정 Demo 목록은 `demo/api_based/scene_graph_anticipation/CATALOG.md`, `demo/api_based/affect_forecasting/CATALOG.md`, `demo/api_based/trajectory_forecasting_reselected/CATALOG.md` 를 따른다.
 
 ## 6. 실패 분석과 한계
 

@@ -60,6 +60,6 @@ Cosmos [공식 저장소](https://github.com/nvidia-cosmos/cosmos-predict2.5)는
 
 최신 보행의 배포 출처는 [TrajNet++ v4.0 release](https://github.com/vita-epfl/trajnetplusplusdata/releases/tag/v4.0)의 실사 train이다. CFF·UCY·hotel·LCAS·WildTrack을 사용자 정의3fold로 나눈 결과이며 공개 challenge test 재현이 아니다. 원 배포 metadata와 ZIP 내부 목록은 `official_local_train_20261111/b3/provenance`에 보존돼 있다. 원천별 연구·제출·재배포 조건이 확정되지 않은 자료는 공개 Repository에 포함하지 않는다.
 
-동결 모델·입력·GT는 오프라인 실행 경계 안에 독립 복사하고 SHA를 대조한다. 복사본이 로컬에 존재한다는 사실은 제출 Repository에 대용량 자산을 넣으라는 뜻이 아니다. 원문2.4에 따라 자체 head와 checkpoint에도 평가자가 접근할 별도 저장 위치가 필요하다. 외부 위치와 제출 권리 미확정 항목은 기존 조건표에 남긴다.
+동결 모델·입력·GT는 오프라인 실행 경계 안에 독립 복사하고 SHA를 대조한다. 복사본이 로컬에 존재한다는 사실은 제출 Repository에 대용량 자산을 넣으라는 뜻이 아니다. 원문2.4에 따라 자체 head와 checkpoint 는 별도 저장 위치(OneDrive, README 3-2) 로 제공했다. 로컬 모델 전수 재추론에 필요한 입력 특징(`inputs.npz`·`manifest.json`) 과 평가 GT 는 외부 묶음에 포함하지 않았고, 원영상 재배포 권리 미확정 항목은 기존 조건표에 남긴다.
 
-대용량 모델과 데이터는 Repository에 넣지 않고 이름·원출처·준비 경로·무결성 정보를 제공해야 한다. 자체 동결 head·API 캐시·provenance의 평가자 접근 가능한 외부 위치는 아직 확정되지 않았다. URL을 만들거나 업로드하지 않은 상태를 배포 완료로 표시하지 않는다.
+대용량 모델과 데이터는 Repository에 넣지 않고 이름·원출처·준비 경로·무결성 정보를 제공해야 한다. 자체 동결 head·API Sol 캐시의 평가자 접근 외부 위치(OneDrive) 는 README 3-2 에 제공했다. 로컬 모델 전수 forward 재채점에 필요한 입력 특징·GT 는 외부 묶음에 포함되지 않는다.

@@ -87,15 +87,13 @@ def main() -> None:
         assert projection_error <= .005000001
         source = sources[case.dataset]
         stem = f"demo_{rank:02d}_{case.sample_id}"
-        video, poster, webm = [DEST / (stem+suffix) for suffix in (".mp4", ".jpg", ".webm")]
+        video, poster = [DEST / (stem+suffix) for suffix in (".mp4", ".jpg")]
         if rank == 1:
-            for suffix in (".mp4", ".jpg", ".webm"):
+            for suffix in (".mp4", ".jpg"):
                 shutil.copy2(OUTPUT / (stem+suffix), DEST / (stem+suffix))
                 assert hashlib.sha256((DEST/(stem+suffix)).read_bytes()).hexdigest() == prior_hashes[stem+suffix]
         else:
             write_video(case, source, video)
-            subprocess.run(["/usr/bin/ffmpeg", "-v", "error", "-i", str(video), "-an", "-c:v", "libvpx-vp9",
-                "-deadline", "realtime", "-cpu-used", "8", "-threads", "2", "-row-mt", "1", "-crf", "33", "-b:v", "0", str(webm)], check=True)
         capture = cv2.VideoCapture(str(video))
         try:
             capture.set(cv2.CAP_PROP_POS_FRAMES, 320)
@@ -139,10 +137,10 @@ def main() -> None:
     (DEST / "verification.json").write_text(json.dumps({"videos":decoded,"full_decode":20,"new_videos":19,"first_preserved":True,
         "previous_directory_unchanged":True,"previous_file_sha256":prior_hashes,"projection_points_checked":420},indent=2))
     sheet.save(DEST / "alignment_future.jpg", quality=95)
-    lines=["# API 궤적 예측 Demo 재선정", "", "기존1번은 파일 그대로 유지하고 기존2~20번19개 sample ID를 제외했다. GT 평균/끝/최대 오차12/20/25px 기준을 유지하면서, 새19개는 baseline보다 평균오차1px 초과 감소·두 예측의 평균거리4px 이상·최대거리8px 이상을 만족한다. 모든 값은 원720×576 기준이다.", "", "Scene과 시간 구간 중복은 허용한다. 가능한 다른 인물을 먼저 선정한 후 수량을 채웠으며20개 독립 원영상이 아니다. 관측1배속·미래0.5배속, 원 예측과 전체 평가 점수는 변경하지 않았다. 기존20개 폴더는 그대로 보존했다.", "", "|번호|사례|MP4|WebM|GT 평균오차(px)|평균 예측 간 거리(px)|", "|---|---|---|---|---:|---:|"]
+    lines=["# API 궤적 예측 Demo 재선정", "", "기존1번은 파일 그대로 유지하고 기존2~20번19개 sample ID를 제외했다. GT 평균/끝/최대 오차12/20/25px 기준을 유지하면서, 새19개는 baseline보다 평균오차1px 초과 감소·두 예측의 평균거리4px 이상·최대거리8px 이상을 만족한다. 모든 값은 원720×576 기준이다.", "", "Scene과 시간 구간 중복은 허용한다. 가능한 다른 인물을 먼저 선정한 후 수량을 채웠으며 독립 원영상이 아니다. 관측1배속·미래0.5배속, 원 예측과 전체 평가 점수는 변경하지 않았다. 기존 폴더는 그대로 보존했다.", "", "|번호|사례|MP4|GT 평균오차(px)|평균 예측 간 거리(px)|", "|---|---|---|---:|---:|"]
     for row in records:
         stem=f"demo_{row['rank']:02d}_{row['sample_id']}"
-        lines.append(f"|{row['rank']:02d}|{row['sample_id']}|[영상]({stem}.mp4)|[브라우저용]({stem}.webm)|{row['ours_mean_error_px']:.2f}|{row['prediction_separation_mean_px']:.2f}|")
+        lines.append(f"|{row['rank']:02d}|{row['sample_id']}|[영상]({stem}.mp4)|{row['ours_mean_error_px']:.2f}|{row['prediction_separation_mean_px']:.2f}|")
     (DEST / "README.md").write_text("\n".join(lines)+"\n")
 
 

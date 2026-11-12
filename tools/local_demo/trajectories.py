@@ -41,9 +41,6 @@ def main() -> None:
                 ImageDraw.Draw(sheets[phase]).text((x + 4, y + 3), f"Demo {rank:02d}: {case.sample_id}", font=font(11), fill="black")
         finally:
             capture.release()
-        webm = target.with_suffix(".webm")
-        if not webm.exists():
-            subprocess.run(["/usr/bin/ffmpeg", "-v", "error", "-i", str(target), "-an", "-c:v", "libvpx-vp9", "-deadline", "realtime", "-cpu-used", "8", "-threads", "2", "-row-mt", "1", "-crf", "33", "-b:v", "0", str(webm)], check=True)
         decoded = subprocess.run(["/usr/bin/ffmpeg", "-v", "error", "-i", str(target), "-f", "null", "-"], capture_output=True, check=True)
         assert not decoded.stderr
         probe = json.loads(subprocess.check_output(["/usr/bin/ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,nb_frames,r_frame_rate,duration", "-of", "json", str(target)], text=True))["streams"][0]

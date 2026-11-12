@@ -19,7 +19,7 @@
 | 감정 상태 예측 | `src/local_model_based/data/b2/latest/model/c01/`의 GRU·PCA32, `model/`의 D02·D04 계수와 transform, `inputs.npz`·`manifest.json` | 같은 latest의 `assets.json`·`assets_c01.json`·학습/추론 receipt |
 | 보행 궤적 예측 | `src/local_model_based/data/b3/latest/models/`, `inputs/`, `indices/`, 평가용 `ground_truth/` | 같은 latest의 `manifest.json`·`runplan.json`·`selection/` |
 
-최신 세 자산 묶음의 현재 로컬 크기는 대략3MB·327MB·1.2GB다. 파일별 manifest의 정확한 이름·SHA를 기준으로 준비하며 큰 데이터·가중치를 Repository에 넣지 않는다. 자체 모델과 입력 묶음의 평가자 다운로드 주소는 아직 미확정이다. 공개 원자료 링크만 제공하는 것으로 자체 head와 관측 특징 준비를 대신하지 않는다.
+최신 세 자산 묶음의 현재 로컬 크기는 대략3MB·327MB·1.2GB다. 파일별 manifest의 정확한 이름·SHA를 기준으로 준비하며 큰 데이터·가중치를 Repository에 넣지 않는다. 자체 학습 가중치와 전체 API Sol 캐시의 평가자 다운로드 주소는 README 3-2 (OneDrive) 에 제공했다. 로컬 모델 전수 재추론에 필요한 입력 특징(`inputs.npz`·`manifest.json`) 과 평가 GT 는 외부 묶음에 포함하지 않았으며, 공개 원자료 링크만 제공하는 것으로 자체 head와 관측 특징 준비를 대신하지 않는다.
 
 학습 소스는 대용량 data ignore에 가려지지 않도록 `src/local_model_based/training/latest_relations_20261112/`, `training/latest_affect_20261112/`와 `ours/b3/training_source/`에도 원문 snapshot을 보존한다. 학습·선택 코드를 제공하되 해당 snapshot만으로 새 장비 재학습을 검증했다고 주장하지 않는다.
 
@@ -31,6 +31,6 @@ ImparTail의 보존된 README와 소스 목록에서는 명시적 LICENSE를 확
 
 ## 데모 영상 원본 외부 보관
 
-GitHub 용량과 원영상 라이선스 때문에 Demo 원본 MP4·포스터 JPG, Cosmos 보조 시각화 전체 자산은 Repository에 포함하지 않았다. 원본·Cosmos 자산은 작업 서버의 `HWP_CJ4DPLEX_AI_support/submission_cleanup_20261112/demo_media/` 및 `cosmos_full/`에 원 상대 경로를 보존해 이동했다. Repository에는 각 head의 `catalog.json`·`CATALOG.md`·`cases.json`·평가/예측 JSON 등 metadata만 유지한다. 평가자용 외부 다운로드 URL은 자체 학습 가중치와 함께 확정 후 README·본 문서에 반영한다. README의 Demo 미리보기는 저용량 GIF로 제공하므로 원본 MP4 없이도 사례 확인이 가능하다.
+GitHub 용량과 원영상 라이선스 때문에 Demo 원본 MP4·포스터 JPG, Cosmos 보조 시각화 전체 자산은 Repository에 포함하지 않았다. 원본·Cosmos 자산은 작업 서버의 `HWP_CJ4DPLEX_AI_support/submission_cleanup_20261112/demo_media/` 및 `cosmos_full/`에 원 상대 경로를 보존해 이동했다. Repository에는 각 head의 `catalog.json`·`CATALOG.md`·`cases.json`·평가/예측 JSON 등 metadata만 유지한다. 자체 학습 가중치·전체 API Sol 캐시의 평가자용 외부 다운로드 URL 은 README 3-2 (OneDrive) 에 제공했다. Demo 원본 MP4·Cosmos 보조 자산의 재배포 권리는 별도 확인 대상이며 현재는 작업 서버 접근 기준이다. README의 Demo 미리보기는 저용량 GIF로 제공하므로 원본 MP4 없이도 사례 확인이 가능하다.
 
 검증은 현재 장비에서 기존 Python 환경을 재사용했다. vendor의 일부 기존 확장 바이너리는 Linux/Python ABI에 의존할 수 있어 새 장비에서는 해당 확장 빌드 또는 호환 경로 확인이 필요하다. 깨끗한 환경 재설치는 아직 검증하지 않았다.

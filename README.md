@@ -250,19 +250,17 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
     └── trajectory/
 ```
 
-실행할 때 `--dataset <DATASET_DIR>` 인자로 위치를 지정합니다:
+**현재 `--dataset` 은 `tools/api_demo/replay_cache.py` 한 도구에만 배선되어 있습니다.** `main.py api/local/demo` 서브커맨드는 `--dataset` 을 받지만 하위 렌더러·모델 로더는 Repository 내 고정 경로만 사용하므로, 외부 묶음은 **replay_cache 에만 적용**됩니다. 전수 재채점을 하려면 다운로드한 파일을 각 head 의 기대 경로(`src/{api,local}_based/data/...`)로 복사하거나 심볼릭 링크로 연결해야 하며, OneDrive 묶음에는 input features / manifest / GT 가 포함되지 않아 완전 재추론은 보장되지 않습니다.
 
 ```bash
-# API 캐시 15개 전수 재검증 (외부 api_cache 사용)
-python main.py --dataset /path/to/dataset demo relations     # scene graph head
-python main.py --dataset /path/to/dataset demo affect
-python main.py --dataset /path/to/dataset demo trajectories
-
-# 또는 tools/api_demo/replay_cache.py 직접 호출
+# OneDrive 묶음의 api_cache/ 로 15개 응답 형식 확인 (지표 재계산 아님)
 python tools/api_demo/replay_cache.py --dataset /path/to/dataset
+
+# 환경변수 사용
+VFA_DATASET_DIR=/path/to/dataset python tools/api_demo/replay_cache.py
 ```
 
-`--dataset` 을 생략하면 환경변수 `VFA_DATASET_DIR` 을 확인하고, 그것도 없으면 Repository 내장 15개 서브셋(`demo/data/api_cache/`)만 사용합니다. **Repository 만으로도 선정 15개 재검증은 즉시 가능**합니다.
+`--dataset` 을 생략하면 Repository 내장 15개 서브셋(`demo/data/api_cache/`) 만 사용합니다.
 
 다운로드 후 각 자산의 SHA256 체크섬은 묶음 내부의 `FILES_SHA256.jsonl` 과 [`docs/RESOURCES.md`](docs/RESOURCES.md) 로 대조합니다.
 
@@ -396,13 +394,13 @@ python -B -m pytest -q -p no:cacheprovider \
 |---|---|---|
 | `python tools/api_demo/replay_cache.py` | 콘솔 출력 (`OK` / `FAIL`) | 15/15 entries 통과 메시지 (지표 재계산이 아님) |
 | `python main.py api relations <baseline\|ours> evaluate` | `results/api_based/b1/<action>-<id>/` | `scores.json` · `per_case.jsonl` + stdout 경로 |
-| `python main.py api affect <baseline\|ours> evaluate` | `results/api_based/b2/<action>-<id>/` | `result.json` + stdout 경로 (scores.json 아님) |
-| `python main.py api trajectories <baseline\|ours> evaluate` | `results/api_based/b3/<action>-<id>/` | `scores.json` |
+| `python main.py api affect <baseline\|ours> evaluate` | `results/api_based/b2/<action>-<id>/` | `result.json` (scores.json 아님) |
+| `python main.py api trajectories <baseline\|ours> evaluate --prediction <path>` | `results/api_based/b3/<action>-<id>/` | `scores.json`. **`--prediction` 인자 필수** (저장 예측 경로) |
 | `python main.py local affect <baseline\|ours> evaluate` | `results/local_model_based/b2/<action>-<id>/` | `result.json` |
-| `python main.py local trajectories ours evaluate --prediction <path>` | `results/local_model_based/b3/<action>-<id>/` | `--prediction` 인자 **필수** (Ours 저장 예측 경로) |
+| `python main.py local trajectories ours evaluate --prediction <path>` | `results/local_model_based/b3/<action>-<id>/` | `--prediction` 인자 **필수** |
 | `python main.py api relations ours predict --sample predcls:X.mp4_0.5` | `results/.../predict/` | Scene Graph 는 `--sample` (sample-id 아님) |
-| `python main.py api affect ours predict --sample-id v099_t0071.00` | `results/.../predict/` | Affect / Trajectory 는 `--sample-id` |
-| `python main.py api <head> <baseline\|ours> verify` | `results/.../<action>-<id>/verify/` | 동결 자산 SHA 비교 (`status.json`) |
+| `python main.py api affect ours predict --sample-id v099_t0071.00` | `results/.../predict/` | Affect 는 `--sample-id`. Trajectory 는 전체 평가 집합 단위라 사례별 predict 옵션 없음 |
+| `python main.py api <head> <baseline\|ours> verify` | `results/.../<action>-<id>/verify/` | 동결 자산 SHA 비교 결과 (head 별 파일명·내용은 다름 — 콘솔에 요약 출력됨) |
 | `python main.py demo <head>` ⚠️ | `demo/api_based/<head>/` | **덮어쓰기 주의** — 현재 렌더러는 선정 20개를 다시 쓰고 cases.json/catalog.json 을 교체합니다. 최종 5개 정리본을 유지하려면 실행 전 백업 또는 미실행 권장 |
 
 `results/` 는 `.gitignore` 로 제외되어 있으며, 각 실행은 UUID 를 붙인 새 하위 디렉터리에 결과를 저장합니다. 동일 명령을 다시 실행해도 이전 결과를 덮어쓰지 않습니다. **단 `demo` 하위명령은 예외로 기존 catalog 를 덮어씁니다.** 상위 집계는 각 디렉터리의 결과 JSON 을 비교해 확인합니다.
