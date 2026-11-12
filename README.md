@@ -61,6 +61,12 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사�
 |---|---|
 | ![Scene Graph Demo 01](assets/readme/scene_graph_anticipation_demo_01.gif) | ![Scene Graph Demo 02](assets/readme/scene_graph_anticipation_demo_02.gif) |
 
+**Local · ImparTail ODE → 메모리 gate · 보정 head**
+
+| Local Demo 01 | Local Demo 02 |
+|---|---|
+| ![Local Scene Graph Demo 01](assets/readme/local_scene_graph_anticipation_demo_01.gif) | ![Local Scene Graph Demo 02](assets/readme/local_scene_graph_anticipation_demo_02.gif) |
+
 ### Affect Forecasting
 
 **API · Raw Sol → 관측 잔차 보정**
@@ -71,6 +77,12 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사�
 |---|---|
 | ![Affect Demo 01](assets/readme/affect_forecasting_demo_01.gif) | ![Affect Demo 02](assets/readme/affect_forecasting_demo_02.gif) |
 
+**Local · C01 GRU → D02 현재 보정 + D04 미래 변화량**
+
+| Local Demo 01 | Local Demo 02 |
+|---|---|
+| ![Local Affect Demo 01](assets/readme/local_affect_forecasting_demo_01.gif) | ![Local Affect Demo 02](assets/readme/local_affect_forecasting_demo_02.gif) |
+
 ### Trajectory Forecasting
 
 **API · Raw Sol → Sol + Constant Velocity**
@@ -80,6 +92,12 @@ python tools/api_demo/replay_cache.py --task affect_forecasting --rank 1  # 사�
 | Demo 01 | Demo 02 |
 |---|---|
 | ![Trajectory Demo 01](assets/readme/trajectory_forecasting_demo_01.gif) | ![Trajectory Demo 02](assets/readme/trajectory_forecasting_demo_02.gif) |
+
+**Local · Attention → Two-state D04**
+
+| Local Demo 01 | Local Demo 02 |
+|---|---|
+| ![Local Trajectory Demo 01](assets/readme/local_trajectory_forecasting_demo_01.gif) | ![Local Trajectory Demo 02](assets/readme/local_trajectory_forecasting_demo_02.gif) |
 
 GIF는 사례 설명용입니다. 선정 사례의 지표 차이를 전체 성능으로 일반화하지 않습니다. 원영상의 이용 조건은 GIF에도 그대로 적용됩니다.
 
