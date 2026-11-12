@@ -174,10 +174,45 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
 
 | 묶음 | 크기 | 내용 | 다운로드 |
 |---|---:|---|---|
-| `weights/` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affection (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | *링크 확정 예정* |
-| `api_cache/` | ~763MB | Scene Graph · Affection · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | *링크 확정 예정* |
+| `weights/` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affection (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgDptH9MI9yvTKxTwzwdF-EbAfI_kUCpaA8WyF9_tJ-Gv7M?e=O5KWD4) |
+| `api_cache/` | ~763MB | Scene Graph · Affection · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgCB1E-PamCETIEKFPwZRaMDAQuNo1iZvAHRsYC9PyCHhQg?e=6PYX9u) |
 
-다운로드 후 각 자산의 배치 경로·SHA256 체크섬은 묶음 내부의 `FILES_SHA256.jsonl` 과 Repository 측 [`docs/RESOURCES.md`](docs/RESOURCES.md) 로 대조합니다. **Repository의 `demo/data/` 에는 선정 15개 재현에 필요한 Sol 응답 서브셋이 이미 포함**되어 있어 외부 저장소 없이도 `python tools/api_demo/replay_cache.py` 로 즉시 재검증 가능합니다.
+**다운로드 위치와 실행 방법:**
+
+두 폴더를 임의의 디렉터리 하나에 **그대로** 받아 아래 구조를 만듭니다:
+
+```
+<DATASET_DIR>/
+├── weights/        ← OneDrive weights 링크에서 받은 내용 그대로
+│   ├── local/
+│   │   ├── scene_graph/
+│   │   ├── affect/
+│   │   └── trajectory/
+│   ├── api/
+│   │   ├── scene_graph/
+│   │   └── affect/
+│   └── FILES_SHA256.jsonl
+└── api_cache/      ← OneDrive api_cache 링크에서 받은 내용 그대로
+    ├── scene_graph/
+    ├── affect/
+    └── trajectory/
+```
+
+실행할 때 `--dataset <DATASET_DIR>` 인자로 위치를 지정합니다:
+
+```bash
+# API 캐시 15개 전수 재검증 (외부 api_cache 사용)
+python main.py --dataset /path/to/dataset demo relations     # scene graph head
+python main.py --dataset /path/to/dataset demo affect
+python main.py --dataset /path/to/dataset demo trajectories
+
+# 또는 tools/api_demo/replay_cache.py 직접 호출
+python tools/api_demo/replay_cache.py --dataset /path/to/dataset
+```
+
+`--dataset` 을 생략하면 환경변수 `VFA_DATASET_DIR` 을 확인하고, 그것도 없으면 Repository 내장 15개 서브셋(`demo/data/api_cache/`)만 사용합니다. **Repository 만으로도 선정 15개 재검증은 즉시 가능**합니다.
+
+다운로드 후 각 자산의 SHA256 체크섬은 묶음 내부의 `FILES_SHA256.jsonl` 과 [`docs/RESOURCES.md`](docs/RESOURCES.md) 로 대조합니다.
 
 #### 3-3. Demo 데이터 (Repository 포함)
 

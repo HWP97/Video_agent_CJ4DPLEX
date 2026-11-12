@@ -7,16 +7,20 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CACHE = ROOT / 'demo/data/api_cache'
+DEMO_CACHE = ROOT / 'demo/data/api_cache'
 CATALOGS = {
     'affect_forecasting': ROOT / 'demo/api_based/affect_forecasting/catalog.json',
     'scene_graph_anticipation': ROOT / 'demo/api_based/scene_graph_anticipation/catalog.json',
     'trajectory_forecasting': ROOT / 'demo/api_based/trajectory_forecasting_reselected/catalog.json',
 }
+
+# 활성 CACHE 는 CLI/env 로 교체 가능하다. 기본은 Repository 내장 15개 서브셋.
+CACHE = DEMO_CACHE
 
 
 def catalog_row(task: str, rank: int) -> dict:
@@ -64,10 +68,20 @@ def check_one(entry: dict) -> tuple[bool, str]:
 
 
 def main() -> int:
+    global CACHE
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--task', choices=list(CATALOGS))
     parser.add_argument('--rank', type=int)
+    parser.add_argument('--dataset', help='외부 저장소 루트. 지정 시 <dataset>/api_cache 를 사용한다. 기본: 환경변수 VFA_DATASET_DIR, 둘 다 없으면 Repository 내장 서브셋.')
     args = parser.parse_args()
+    override = args.dataset or os.environ.get('VFA_DATASET_DIR')
+    if override:
+        candidate = Path(override) / 'api_cache'
+        if (candidate / 'index.json').is_file():
+            CACHE = candidate
+            print(f'[CACHE] {CACHE}\n', file=sys.stderr)
+        else:
+            print(f'[warn] {candidate}/index.json 없음 → 내장 서브셋 사용', file=sys.stderr)
     index = json.loads((CACHE / 'index.json').read_text())
     if args.task:
         index = [e for e in index if e['task'] == args.task]
