@@ -8,6 +8,7 @@
 
 CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent
 
+[![Project Page](https://img.shields.io/badge/Project_Page-Live-E74C3C?style=for-the-badge&logo=github)](https://hwp97.github.io/Video_agent_CJ4DPLEX/)
 [![Technical Report](https://img.shields.io/badge/Technical_Report-PDF-315D9D?style=for-the-badge)](TECHNICAL_REPORT.pdf)
 [![Architecture](https://img.shields.io/badge/System_Architecture-PDF-287351?style=for-the-badge)](SYSTEM_ARCHITECTURE.pdf)
 [![Executive Summary](https://img.shields.io/badge/Executive_Summary-PDF-6B73B0?style=for-the-badge)](EXECUTIVE_SUMMARY.pdf)
@@ -283,6 +284,7 @@ python -B -m pytest -q -p no:cacheprovider \
 ```text
 .
 ├── README.md                 # 본 문서
+├── index.html                # 프로젝트 페이지 (GitHub Pages에서 자동 서빙)
 ├── Dockerfile                # 재현용 컨테이너 (PyTorch 2.5.1 + CUDA 11.8 + ffmpeg)
 ├── main.py                   # API / Local / Demo 진입점
 ├── *.pdf                     # 제출 산출물 4종 PDF
@@ -290,7 +292,9 @@ python -B -m pytest -q -p no:cacheprovider \
 │   ├── api_based/            # 저장 API 응답 기반 추론·평가
 │   └── local_model_based/    # 동결 로컬 모델·평가·학습 소스
 ├── requirements/             # 실행 계열별 의존성
-├── assets/readme/            # README Figure·미리보기 GIF
+├── assets/
+│   ├── readme/               # README Figure·미리보기 GIF 6개
+│   └── demos/                # 프로젝트 페이지용 전체 길이 GIF 15개
 ├── demo/                     # 과제별 catalog·평가·예측 metadata (원본 MP4는 외부 보관)
 ├── results/                  # 실행 결과와 평가 기록 (.gitignore)
 ├── tools/                    # 영상 렌더링·GIF·문서 빌드 도구

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video Forecasting Agent · Motion Prediction Agent</title>
+<meta name="description" content="관측 영상에서 사람·물체 관계, 인물의 감정 상태, 보행자 궤적을 예측하는 Motion Prediction Agent. API 경로와 로컬 경로를 각각 Baseline과 비교하고 정량·정성 결과를 함께 공개한다.">
+<link rel="icon" href="data:,">
+<style>
+:root{--ink:#1e2126;--muted:#6b7380;--line:#e3e6ea;--accent:#315d9d;--accent2:#287351;--bg:#ffffff;--soft:#f6f7f9}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;color:var(--ink);background:var(--bg);font:16px/1.65 "Noto Sans KR","Noto Sans CJK KR",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:40px 24px}
+header.hero{text-align:center;padding:48px 24px 24px;border-bottom:1px solid var(--line)}
+header.hero h1{font:600 clamp(28px,4vw,42px)/1.2 "Noto Serif KR",Georgia,serif;margin:0 0 10px}
+header.hero .sub{color:var(--muted);font-size:16px;margin:0 0 18px}
+header.hero .meta{color:var(--muted);font-size:14px;margin:0 0 20px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 0}
+.badge{display:inline-block;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:500;border:1px solid var(--line);color:var(--ink);background:var(--soft)}
+.badge.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.badge.alt{background:var(--accent2);color:#fff;border-color:var(--accent2)}
+section{padding:36px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+section h2{font:600 clamp(20px,2.4vw,26px)/1.3 "Noto Serif KR",Georgia,serif;margin:0 0 16px}
+section h3{font-weight:600;margin:28px 0 10px;font-size:17px}
+section p{margin:0 0 14px;color:#2f343a}
+.lead{font-size:17px;color:#2b3036}
+figure{margin:0 0 20px;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:8px}
+figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:720px){.two-col{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 18px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--soft);font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.note{color:var(--muted);font-size:13px;background:var(--soft);border-left:3px solid var(--accent);padding:12px 14px;border-radius:4px;margin:16px 0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:16px 0}
+@media(max-width:640px){.gallery{grid-template-columns:1fr}}
+.gallery figure{border:1px solid var(--line);padding:10px;border-radius:8px;background:#fff;text-align:left}
+.gallery figure img{border-radius:4px;width:100%;display:block}
+.gallery figcaption{font-size:12px;color:#2b3036;margin-top:8px;line-height:1.45}
+.gallery figcaption .id{display:inline-block;padding:1px 6px;background:var(--soft);border-radius:3px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;margin-right:6px}
+.downloads{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+.dl{display:block;padding:14px;border:1px solid var(--line);border-radius:8px;color:var(--ink);background:var(--soft)}
+.dl:hover{background:#eef1f5;text-decoration:none}
+.dl .label{display:block;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.dl .title{display:block;font-weight:600}
+footer{color:var(--muted);font-size:13px;padding:24px 0 40px;text-align:center}
+code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
+.nav-tabs{display:flex;gap:2px;margin:0 0 16px;border-bottom:1px solid var(--line)}
+.nav-tabs a{padding:10px 14px;color:var(--muted);border-bottom:2px solid transparent;font-weight:500}
+.nav-tabs a:hover{color:var(--ink);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Video Forecasting Agent</h1>
+  <p class="sub">Scene Graph Anticipation · Affection Forecasting · Trajectory Forecasting</p>
+  <p class="meta">CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent · 2026-11-12</p>
+  <div class="badges">
+    <a class="badge primary" href="TECHNICAL_REPORT.pdf">Technical Report (PDF)</a>
+    <a class="badge alt" href="SYSTEM_ARCHITECTURE.pdf">System Architecture (PDF)</a>
+    <a class="badge" href="EXECUTIVE_SUMMARY.pdf">Executive Summary (PDF)</a>
+    <a class="badge" href="USAGE_AND_SCOPE.pdf">Usage &amp; Scope (PDF)</a>
+    <a class="badge" href="README.md">README</a>
+  </div>
+</header>
+
+<section id="abstract">
+  <h2>Abstract</h2>
+  <p class="lead">
+    영상 콘텐츠에서 "곧 무엇이 일어날지"를 알아야 하는 요구는 관계 변화, 감정 변화, 보행자 위치 변화 등 서로 성격이 다른 예측을 포함한다.
+    본 Agent는 이를 하나의 end-to-end 모델이 아니라 <strong>세 개의 forecasting head</strong>로 분해해 각각을 benchmark 조건에서 검증한다.
+  </p>
+  <p>
+    각 head는 먼저 최신 상용 Sol API와 공개 베이스라인 기반 로컬 모델을 같은 사례로 비교했다. 초기 비교에서 Sol 응답이 세 head 모두에서 우위여서
+    Sol 응답에 작은 보정(관계 점수 head · 관측 잔차 Ridge · 등속도 혼합)을 얹는 <strong>API 경로</strong>를 각 head의 1차 Ours로 채택했다.
+    API 비용·호출 승인이 제약이 되는 운영 시나리오에서도 Agent를 운영할 수 있어야 한다는 판단으로, 외부 추론 API 없이 동결 체크포인트만으로 실행하는
+    <strong>로컬 경로</strong>를 뒤이어 개발했다. 두 경로의 평가집합·cutoff는 서로 다르므로 직접 비교하지 않고 각 경로 내부의 same-set Baseline/Ours 비교로 해석한다.
+  </p>
+</section>
+
+<section id="overview">
+  <h2>Agent 전체 구성</h2>
+  <figure>
+    <img src="assets/readme/overall_architecture.svg" alt="Agent overall architecture">
+    <figcaption>관측 프레임 → 세 head(Scene graph · Affection · Trajectory) → 미래 예측 → 실제 미래와 비교</figcaption>
+  </figure>
+  <p>
+    관측 프레임을 입력받아 세 head가 병렬 동작한다. Scene graph head는 미래 사람·물체 관계를, Affection head는 미래 Valence/Arousal을, Trajectory head는 미래 2D 좌표를 예측한다.
+    각 head는 독립적 benchmark 평가 규약에 연결되며 공통 평가기와 원영상 오버레이로 결과를 확인할 수 있다.
+  </p>
+</section>
+
+<section id="method">
+  <h2>Method</h2>
+  <div class="two-col">
+    <figure>
+      <img src="assets/readme/api_based_architecture.svg" alt="API-based architecture">
+      <figcaption>API 경로 · Sol 응답 + 작은 보정</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/readme/local_model_based_architecture.svg" alt="Local-model-based architecture">
+      <figcaption>로컬 경로 · 외부 추론 API 없이 동결 체크포인트</figcaption>
+    </figure>
+  </div>
+  <div class="two-col">
+    <div>
+      <h3>API 경로</h3>
+      <ul>
+        <li><strong>Scene graph:</strong> Sol 관계 예측 + 관측 문맥 → Relation score head → 미래 scene graph</li>
+        <li><strong>Affection:</strong> Sol 미래 VA + Local recognition 관측 VA → Frozen Ridge 보정</li>
+        <li><strong>Trajectory:</strong> Sol 궤적 + Constant velocity → 0.75:0.25 Fixed blend</li>
+      </ul>
+    </div>
+    <div>
+      <h3>로컬 경로</h3>
+      <ul>
+        <li><strong>Scene graph:</strong> ImparTail ODE prior + Training memory retrieval → Gate &amp; capped correction</li>
+        <li><strong>Affection:</strong> Visual encoder + Affect recognizer → D02 current correction + D04 future delta</li>
+        <li><strong>Trajectory:</strong> Motion features + Neighbor mask → Two-state model iterative updates</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">
+    내부 식별자는 <code>b1</code>=Scene graph, <code>b2</code>=Affection, <code>b3</code>=Trajectory. 폴더·CLI 슬러그는 과거 호환성으로 <code>relations</code>·<code>affect</code>·<code>trajectories</code>를 유지한다.
+  </p>
+</section>
+
+<section id="results">
+  <h2>Results</h2>
+  <p>두 경로의 수치는 평가집합·cutoff가 서로 달라 <strong>직접 비교하지 않는다</strong>. 각 경로 내부의 same-set Baseline/Ours 비교로만 해석한다.</p>
+  <table>
+    <thead><tr><th>경로 · head</th><th>Baseline → Ours</th><th>함께 보고하는 한계</th></tr></thead>
+    <tbody>
+      <tr><td>API Scene graph</td><td class="num">GAGS NC R@20 47.37% → 61.77%</td><td>WC R@20 43.81% → 42.17%</td></tr>
+      <tr><td>API Affection</td><td class="num">final 421 MAE 0.2227 → 0.1916</td><td>CCC 0.5337 → 0.4858</td></tr>
+      <tr><td>API Trajectory</td><td class="num">공통 1,939 ADE 0.5883 → 0.5715</td><td>충돌률 18.88% → 19.13%</td></tr>
+      <tr><td>Local Scene graph</td><td class="num">SGCLS R20/mR20 0.4803/0.3365 → 0.4911/0.4186</td><td>직전 유망 후보 대비 R20 하락</td></tr>
+      <tr><td>Local Affection</td><td class="num">official_test 438 MAE 0.2217 → 0.2188, CCC 0.5658 → 0.5774</td><td>과거 GRU 수준 미회복</td></tr>
+      <tr><td>Local Trajectory</td><td class="num">240,890 장면 FDE 2.1705 → 2.1575</td><td>ADE 1.0522 → 1.0590, 충돌률 22.05% → 22.15%</td></tr>
+    </tbody>
+  </table>
+  <p class="note">
+    감정 값은 관측자가 평정한 표시 상태(Valence/Arousal)이며 임상적 내면 감정이 아니다. 지표 개선과 상충은 Technical Report 4·9장에 함께 보고한다.
+  </p>
+</section>
+
+<section id="demo">
+  <h2>Demo (최종 15개 · Head별 5개)</h2>
+  <p>각 사례의 Baseline · Ours · GT를 함께 표시했다. 관측은 1x, cutoff 이후는 0.5x로 재생한다. GIF 아래 수치는 해당 사례의 지표이며 전체 성능과 다르다.</p>
+
+  <h3>Scene Graph Anticipation</h3>
+  <div class="gallery">
+    <figure><img loading="lazy" src="assets/demos/scene_graph_anticipation_demo_04.gif" alt="Scene graph demo 04"><figcaption><span class="id">predcls:KOQGE.mp4_0.5</span>NC R@20 (%) · Baseline 30.94 → Ours 95.04</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/scene_graph_anticipation_demo_06.gif" alt="Scene graph demo 06"><figcaption><span class="id">predcls:V1BX9.mp4_0.5</span>NC R@20 (%) · Baseline 13.53 → Ours 75.41</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/scene_graph_anticipation_demo_07.gif" alt="Scene graph demo 07"><figcaption><span class="id">predcls:YDWIW.mp4_0.5</span>NC R@20 (%) · Baseline 24.94 → Ours 86.65</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/scene_graph_anticipation_demo_09.gif" alt="Scene graph demo 09"><figcaption><span class="id">predcls:WC5QK.mp4_0.5</span>NC R@20 (%) · Baseline 35.45 → Ours 92.30</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/scene_graph_anticipation_demo_10.gif" alt="Scene graph demo 10"><figcaption><span class="id">predcls:0UPBN.mp4_0.5</span>NC R@20 (%) · Baseline 41.50 → Ours 97.62</figcaption></figure>
+  </div>
+
+  <h3>Affection Forecasting</h3>
+  <div class="gallery">
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_02.gif" alt="Affection demo 02"><figcaption><span class="id">v099_t0071.00</span>MAE · Baseline 0.5193 → Ours 0.2606</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_04.gif" alt="Affection demo 04"><figcaption><span class="id">v110_t0029.00</span>MAE · Baseline 0.3775 → Ours 0.1464</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_06.gif" alt="Affection demo 06"><figcaption><span class="id">v034_t0071.00</span>MAE · Baseline 0.3706 → Ours 0.1740</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_12.gif" alt="Affection demo 12"><figcaption><span class="id">v050_t0068.00</span>MAE · Baseline 0.3813 → Ours 0.2141</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/affect_forecasting_demo_18.gif" alt="Affection demo 18"><figcaption><span class="id">v038_t0104.00</span>MAE · Baseline 0.1848 → Ours 0.0448</figcaption></figure>
+  </div>
+
+  <h3>Trajectory Forecasting</h3>
+  <div class="gallery">
+    <figure><img loading="lazy" src="assets/demos/trajectory_forecasting_demo_01.gif" alt="Trajectory demo 01"><figcaption><span class="id">crowds_zara01_576</span>ADE · Baseline 0.3357 → Ours 0.1485</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/trajectory_forecasting_demo_02.gif" alt="Trajectory demo 02"><figcaption><span class="id">crowds_students003_3349</span>ADE · Baseline 0.3406 → Ours 0.0744</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/trajectory_forecasting_demo_05.gif" alt="Trajectory demo 05"><figcaption><span class="id">crowds_students003_3499</span>ADE · Baseline 0.3545 → Ours 0.1196</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/trajectory_forecasting_demo_07.gif" alt="Trajectory demo 07"><figcaption><span class="id">crowds_students003_3679</span>ADE · Baseline 0.4006 → Ours 0.2172</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/trajectory_forecasting_demo_13.gif" alt="Trajectory demo 13"><figcaption><span class="id">crowds_students003_3343</span>ADE · Baseline 0.3291 → Ours 0.2448</figcaption></figure>
+  </div>
+  <p class="note">
+    선정 사례의 지표 차이를 전체 성능으로 일반화하지 않는다. 지표 차이와 원영상 이용 가능성을 함께 고려해 선정했다.
+  </p>
+</section>
+
+<section id="downloads">
+  <h2>Downloads</h2>
+  <div class="downloads">
+    <a class="dl" href="TECHNICAL_REPORT.pdf"><span class="label">Paper</span><span class="title">Technical Report (8p)</span></a>
+    <a class="dl" href="EXECUTIVE_SUMMARY.pdf"><span class="label">Summary</span><span class="title">Executive Summary (2p)</span></a>
+    <a class="dl" href="SYSTEM_ARCHITECTURE.pdf"><span class="label">Design</span><span class="title">System Architecture (4p)</span></a>
+    <a class="dl" href="USAGE_AND_SCOPE.pdf"><span class="label">Scope</span><span class="title">Usage &amp; Scope (4p)</span></a>
+    <a class="dl" href="README.md"><span class="label">Code</span><span class="title">README · 설치/실행</span></a>
+    <a class="dl" href="docs/RESOURCES.md"><span class="label">Resources</span><span class="title">모델·데이터 외부 저장소</span></a>
+  </div>
+</section>
+
+<footer>
+  Video Forecasting Agent · CJ 4DPLEX AI 개발 과제 Track 1 · 2026-11-12<br>
+  원영상·모델·코드는 각 원출처의 이용 조건을 따른다. 재배포 범위는 Usage &amp; Scope 문서를 확인한다.
+</footer>
+
+</div>
+</body>
+</html>
