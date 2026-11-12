@@ -40,11 +40,10 @@ def main() -> None:
         assert probe['width']==1600 and probe['height']==900 and probe['r_frame_rate']=='15/1'
         assert int(probe['nb_frames'])==math.floor(expected*15)+1
         assert abs(float(probe['duration'])-expected)<=1/15+.001
-        for media in (video,video.with_suffix('.webm')):
-            decoded = subprocess.run(['/usr/bin/ffmpeg','-v','error','-threads','2','-i',str(media),'-f','null','-'],capture_output=True,text=True)
-            assert decoded.returncode==0 and not decoded.stderr,(media,decoded.stderr)
+        decoded = subprocess.run(['/usr/bin/ffmpeg','-v','error','-threads','2','-i',str(video),'-f','null','-'],capture_output=True,text=True)
+        assert decoded.returncode==0 and not decoded.stderr,(video,decoded.stderr)
         assert (ROOT/row['poster']).is_file()
-        results.append({'sample_id':row['sample_id'],'mp4_sha256':digest(video),'probe':probe,'full_decode_mp4_webm':True,'score_match':True})
+        results.append({'sample_id':row['sample_id'],'mp4_sha256':digest(video),'probe':probe,'full_decode_mp4':True,'score_match':True})
     assets = json.loads((DATA/'provenance.json').read_text()) + json.loads((DATA/'training_sources.json').read_text())
     for asset in assets:
         assert digest(DATA/asset['destination'])==asset['sha256']

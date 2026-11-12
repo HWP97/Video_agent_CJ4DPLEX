@@ -226,25 +226,29 @@ API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합
 
 | 묶음 | 크기 | 내용 | 다운로드 |
 |---|---:|---|---|
-| `weights/` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affect (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgDptH9MI9yvTKxTwzwdF-EbAfI_kUCpaA8WyF9_tJ-Gv7M?e=O5KWD4) |
-| `api_cache/` | ~763MB | Scene Graph · Affect · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive (보기)](https://1drv.ms/f/c/0a24ba0a8dd2be30/IgCB1E-PamCETIEKFPwZRaMDAQuNo1iZvAHRsYC9PyCHhQg?e=6PYX9u) |
+| `weights.tar.gz` | ~2.4GB | 로컬 Scene Graph (ImparTail base + c04/c06 heads + memory NPZ + Faster R-CNN), 로컬 Affect (one_stream_vit.pth VEATIC backbone), 로컬 Trajectory (3 fold × baseline/ours), API 보정 가중치 (macro_direct, Ridge frozen_model) | [OneDrive 다운로드](https://1drv.ms/u/c/0a24ba0a8dd2be30/IQBV0p8RZI8aTZSsMeTUeYTNAXEMG59-BnzFMzEklPTu09g) |
+| `api_cache.tar.gz` | ~763MB | Scene Graph · Affect · Trajectory 세 head의 전체 Sol 요청·응답 원본 (raw + index + parsed) | [OneDrive 다운로드](https://1drv.ms/u/c/0a24ba0a8dd2be30/IQAjfbOHiWmMQb-xSszdLq4tAcnlSVj91gNKxu4lnsZV4jk) |
 
 **다운로드 위치와 실행 방법:**
 
-두 폴더를 임의의 디렉터리 하나에 **그대로** 받아 아래 구조를 만듭니다:
+두 tar.gz 를 임의의 디렉터리 하나에 받아 압축 해제합니다:
+
+```bash
+mkdir -p /path/to/dataset && cd /path/to/dataset
+# 두 링크를 브라우저로 받아 이 폴더에 둔 다음
+tar xzf weights.tar.gz
+tar xzf api_cache.tar.gz
+```
+
+해제 후 레이아웃:
 
 ```
 <DATASET_DIR>/
-├── weights/        ← OneDrive weights 링크에서 받은 내용 그대로
-│   ├── local/
-│   │   ├── scene_graph/
-│   │   ├── affect/
-│   │   └── trajectory/
-│   ├── api/
-│   │   ├── scene_graph/
-│   │   └── affect/
+├── weights/
+│   ├── local/{scene_graph,affect,trajectory}/
+│   ├── api/{scene_graph,affect}/
 │   └── FILES_SHA256.jsonl
-└── api_cache/      ← OneDrive api_cache 링크에서 받은 내용 그대로
+└── api_cache/
     ├── scene_graph/
     ├── affect/
     └── trajectory/
