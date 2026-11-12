@@ -2570,7 +2570,8 @@
       "v": "288 - y / 0.0239",
       "video_fps": 25,
       "frame_offset": 0
-    }
+    },
+    "api_cache_signature": "6a26597438107428e9a8c2fb62f3dc78b1d48d9610acc385e68c0b145a3af95c"
   },
   {
     "branch": "trajectory_forecasting",
@@ -6347,7 +6348,8 @@
       "v": "288 - y / 0.0239",
       "video_fps": 25,
       "frame_offset": 0
-    }
+    },
+    "api_cache_signature": "db8e2db17e6a80c5be4f719e87176fda5f3931433041d4647d9e3baef3170c1c"
   },
   {
     "branch": "trajectory_forecasting",
@@ -10388,7 +10390,8 @@
       "v": "288 - y / 0.0239",
       "video_fps": 25,
       "frame_offset": 0
-    }
+    },
+    "api_cache_signature": "f6581ee86716a33098b07722d970878a32f26f0ca2d7ee26fe844bbf9905adf5"
   },
   {
     "branch": "trajectory_forecasting",
@@ -15040,7 +15043,8 @@
       "v": "288 - y / 0.0239",
       "video_fps": 25,
       "frame_offset": 0
-    }
+    },
+    "api_cache_signature": "fdfc0373800ec61c20cd6c7ae0aa5c0992ef9ed5754533dfcb05d6a0f3002877"
   },
   {
     "branch": "trajectory_forecasting",
@@ -18953,6 +18957,7 @@
       "v": "288 - y / 0.0239",
       "video_fps": 25,
       "frame_offset": 0
-    }
+    },
+    "api_cache_signature": "111fcd7563e9c8df2d949bb02016d45dc2ba684386196082783d5813855d3681"
   }
 ]

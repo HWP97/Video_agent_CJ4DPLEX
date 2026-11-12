@@ -39,7 +39,17 @@ CJ 4DPLEX AI 개발 과제 · Track 1: Motion Prediction Agent
 
 최종 선정한 API Demo 15개 중 작업별 앞 2개입니다. GIF는 관측 종료 전 1.5초부터 7.5초를 발췌하며 관측 1배속·미래 0.5배속을 유지합니다. 선정된 15개 사례 ID와 지표는 `assets/final_demo_manifest.json`에 기록되어 있습니다. 전체 15개 GIF와 Local 경로 Demo 15개는 [프로젝트 페이지](https://hwp97.github.io/Video_agent_CJ4DPLEX/)에서 한 번에 볼 수 있습니다.
 
-**Demo 원영상·관측 입력은 Repository에 포함되어 있습니다** — `demo/data/` 아래에 3 head × 선정 15개 사례의 원영상, 프레임, cutoff/horizon, 미래 GT, baseline·Ours 예측이 모여 있습니다. 평가자가 외부 다운로드 없이 데모 재현에 필요한 모든 입력을 받을 수 있습니다. 구성은 [`demo/data/README.md`](demo/data/README.md)와 `manifest.json` · `FILES_SHA256.jsonl` 을 참고하세요. 240k 전수 평가용 모델 가중치·학습 캐시 같은 대형 자산만 외부 보관 대상이며, 그 접근은 [Resources](docs/RESOURCES.md)에 안내합니다.
+**Demo 원영상·관측 입력·Sol API 캐시는 Repository에 포함되어 있습니다** — `demo/data/` 아래에 3 head × 선정 15개 사례의 원영상, 프레임, cutoff/horizon, 미래 GT, baseline·Ours 예측이 모여 있고, `demo/data/api_cache/` 에는 같은 15개의 원본 Sol 요청·응답 JSON 이 signature(SHA256) 기반으로 보존되어 있습니다. 평가자는 외부 다운로드·새 API 호출 없이 재현에 필요한 모든 입력을 받을 수 있습니다. 구성은 [`demo/data/README.md`](demo/data/README.md)와 [`demo/data/api_cache/README.md`](demo/data/api_cache/README.md) 를 참고하세요.
+
+API 캐시 → Demo 지표 재검증:
+
+```bash
+python tools/api_demo/replay_cache.py                              # 15개 전체
+python tools/api_demo/replay_cache.py --task affect_forecasting    # head 단위
+python tools/api_demo/replay_cache.py --task affect_forecasting --rank 2  # 사례 단위
+```
+
+240k 전수 평가용 모델 가중치·전체 Sol 캐시 같은 대형 자산만 외부 보관 대상이며, 접근은 [Resources](docs/RESOURCES.md)에 안내합니다.
 
 ### Scene Graph Anticipation
 

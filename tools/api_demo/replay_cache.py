@@ -1,0 +1,89 @@
+"""demo/data/api_cache 의 15개 Sol 응답을 catalog 와 매칭해 재검증한다.
+
+재학습·새 API 호출 없이 "저장된 Sol 응답 → 저장된 Demo 지표" 흐름을 확인한다.
+각 head의 Ours 후처리 전체를 재구현하지 않고, 응답 자체의 존재·구조·대응 catalog 지표만 요약한다.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+CACHE = ROOT / 'demo/data/api_cache'
+CATALOGS = {
+    'affect_forecasting': ROOT / 'demo/api_based/affect_forecasting/catalog.json',
+    'scene_graph_anticipation': ROOT / 'demo/api_based/scene_graph_anticipation/catalog.json',
+    'trajectory_forecasting': ROOT / 'demo/api_based/trajectory_forecasting_reselected/catalog.json',
+}
+
+
+def catalog_row(task: str, rank: int) -> dict:
+    for row in json.loads(CATALOGS[task].read_text()):
+        if row.get('rank') == rank:
+            return row
+    raise SystemExit(f'catalog에 {task} rank {rank} 없음')
+
+
+def extract_model_text(response: dict) -> str | None:
+    """OpenAI Responses API v1의 출력에서 모델이 쓴 JSON 문자열을 추출."""
+    for item in response.get('output', []):
+        if item.get('type') == 'message':
+            for part in item.get('content', []):
+                if part.get('type') == 'output_text' and part.get('text'):
+                    return part['text']
+    return None
+
+
+def check_one(entry: dict) -> tuple[bool, str]:
+    task, rank, sample_id, signature = entry['task'], entry['rank'], entry['sample_id'], entry['signature']
+    folder = CACHE / task / signature
+    missing = [name for name in ('input.json', 'request.json', 'response.json') if not (folder / name).is_file()]
+    if missing:
+        return False, f'cache 누락: {missing}'
+    response = json.loads((folder / 'response.json').read_text())
+    if response.get('status') != 'completed':
+        return False, f'응답 상태={response.get("status")}'
+    text = extract_model_text(response)
+    if text is None:
+        return False, '모델 출력 텍스트 없음'
+    try:
+        json.loads(text)
+    except json.JSONDecodeError:
+        return False, '모델 출력이 유효한 JSON 아님'
+    row = catalog_row(task, rank)
+    if row.get('sample_id') != sample_id:
+        return False, f'sample_id 불일치: catalog={row.get("sample_id")}, cache={sample_id}'
+    metric = row.get('metric', '?')
+    baseline = row.get('baseline_metric')
+    ours = row.get('ours_metric')
+    if baseline is not None and ours is not None:
+        return True, f'{metric} · Baseline {baseline:.4f} → Ours {ours:.4f}'
+    return True, metric
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--task', choices=list(CATALOGS))
+    parser.add_argument('--rank', type=int)
+    args = parser.parse_args()
+    index = json.loads((CACHE / 'index.json').read_text())
+    if args.task:
+        index = [e for e in index if e['task'] == args.task]
+    if args.rank is not None:
+        index = [e for e in index if e['rank'] == args.rank]
+    if not index:
+        print('매칭되는 cache entry 없음'); return 1
+    ok = 0
+    for entry in index:
+        passed, detail = check_one(entry)
+        flag = 'OK ' if passed else 'FAIL'
+        print(f'{flag}  {entry["task"]:28s} rank {entry["rank"]:2d}  {entry["sample_id"]:40s}  {detail}')
+        if passed: ok += 1
+    print(f'\n{ok}/{len(index)} 재검증 통과')
+    return 0 if ok == len(index) else 2
+
+
+if __name__ == '__main__':
+    sys.exit(main())

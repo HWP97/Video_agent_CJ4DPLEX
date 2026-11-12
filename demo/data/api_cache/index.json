@@ -1,0 +1,167 @@
+[
+  {
+    "task": "affect_forecasting",
+    "rank": 2,
+    "sample_id": "v099_t0071.00",
+    "signature": "0bc83b443808eeea0c5f95837a5ead7b0f6743823a3691a8d3ceb142d35e10fe",
+    "files": [
+      "api_cache/affect_forecasting/0bc83b443808eeea0c5f95837a5ead7b0f6743823a3691a8d3ceb142d35e10fe/input.json",
+      "api_cache/affect_forecasting/0bc83b443808eeea0c5f95837a5ead7b0f6743823a3691a8d3ceb142d35e10fe/request.json",
+      "api_cache/affect_forecasting/0bc83b443808eeea0c5f95837a5ead7b0f6743823a3691a8d3ceb142d35e10fe/response.json"
+    ]
+  },
+  {
+    "task": "affect_forecasting",
+    "rank": 4,
+    "sample_id": "v110_t0029.00",
+    "signature": "8cd8291a889e6163f8518341080e5563b2b6f6d1126a64a1ba7861f90073e804",
+    "files": [
+      "api_cache/affect_forecasting/8cd8291a889e6163f8518341080e5563b2b6f6d1126a64a1ba7861f90073e804/input.json",
+      "api_cache/affect_forecasting/8cd8291a889e6163f8518341080e5563b2b6f6d1126a64a1ba7861f90073e804/request.json",
+      "api_cache/affect_forecasting/8cd8291a889e6163f8518341080e5563b2b6f6d1126a64a1ba7861f90073e804/response.json"
+    ]
+  },
+  {
+    "task": "affect_forecasting",
+    "rank": 6,
+    "sample_id": "v034_t0071.00",
+    "signature": "c42b783ef2acc3383cef1f54ca2aac592dd09368165a32f7c963755eb483b965",
+    "files": [
+      "api_cache/affect_forecasting/c42b783ef2acc3383cef1f54ca2aac592dd09368165a32f7c963755eb483b965/input.json",
+      "api_cache/affect_forecasting/c42b783ef2acc3383cef1f54ca2aac592dd09368165a32f7c963755eb483b965/request.json",
+      "api_cache/affect_forecasting/c42b783ef2acc3383cef1f54ca2aac592dd09368165a32f7c963755eb483b965/response.json"
+    ]
+  },
+  {
+    "task": "affect_forecasting",
+    "rank": 12,
+    "sample_id": "v050_t0068.00",
+    "signature": "9b0cd86972b278c5db3a9a99b7360204b01909715aa38ff6587a28360da4ac4b",
+    "files": [
+      "api_cache/affect_forecasting/9b0cd86972b278c5db3a9a99b7360204b01909715aa38ff6587a28360da4ac4b/input.json",
+      "api_cache/affect_forecasting/9b0cd86972b278c5db3a9a99b7360204b01909715aa38ff6587a28360da4ac4b/request.json",
+      "api_cache/affect_forecasting/9b0cd86972b278c5db3a9a99b7360204b01909715aa38ff6587a28360da4ac4b/response.json"
+    ]
+  },
+  {
+    "task": "affect_forecasting",
+    "rank": 18,
+    "sample_id": "v038_t0104.00",
+    "signature": "333bb8aae5e692261c404ed93edc090c224bf7bae48c6afceb3f67f4093b477c",
+    "files": [
+      "api_cache/affect_forecasting/333bb8aae5e692261c404ed93edc090c224bf7bae48c6afceb3f67f4093b477c/input.json",
+      "api_cache/affect_forecasting/333bb8aae5e692261c404ed93edc090c224bf7bae48c6afceb3f67f4093b477c/request.json",
+      "api_cache/affect_forecasting/333bb8aae5e692261c404ed93edc090c224bf7bae48c6afceb3f67f4093b477c/response.json"
+    ]
+  },
+  {
+    "task": "scene_graph_anticipation",
+    "rank": 4,
+    "sample_id": "predcls:KOQGE.mp4_0.5",
+    "signature": "7b7a80a72516afb07c316ae47ea28d8ff0d66291a137686cd7cd4ce2a8267489",
+    "files": [
+      "api_cache/scene_graph_anticipation/7b7a80a72516afb07c316ae47ea28d8ff0d66291a137686cd7cd4ce2a8267489/input.json",
+      "api_cache/scene_graph_anticipation/7b7a80a72516afb07c316ae47ea28d8ff0d66291a137686cd7cd4ce2a8267489/request.json",
+      "api_cache/scene_graph_anticipation/7b7a80a72516afb07c316ae47ea28d8ff0d66291a137686cd7cd4ce2a8267489/response.json"
+    ]
+  },
+  {
+    "task": "scene_graph_anticipation",
+    "rank": 6,
+    "sample_id": "predcls:V1BX9.mp4_0.5",
+    "signature": "4daa99393ed0c20fe89f5bf07862ed999cab1e66aec2313c0f3a130c8aadb445",
+    "files": [
+      "api_cache/scene_graph_anticipation/4daa99393ed0c20fe89f5bf07862ed999cab1e66aec2313c0f3a130c8aadb445/input.json",
+      "api_cache/scene_graph_anticipation/4daa99393ed0c20fe89f5bf07862ed999cab1e66aec2313c0f3a130c8aadb445/request.json",
+      "api_cache/scene_graph_anticipation/4daa99393ed0c20fe89f5bf07862ed999cab1e66aec2313c0f3a130c8aadb445/response.json"
+    ]
+  },
+  {
+    "task": "scene_graph_anticipation",
+    "rank": 7,
+    "sample_id": "predcls:YDWIW.mp4_0.5",
+    "signature": "954be9cd20c1afaf890e01e2e8dde8468770192f104c5f5224127ad7b1c02f53",
+    "files": [
+      "api_cache/scene_graph_anticipation/954be9cd20c1afaf890e01e2e8dde8468770192f104c5f5224127ad7b1c02f53/input.json",
+      "api_cache/scene_graph_anticipation/954be9cd20c1afaf890e01e2e8dde8468770192f104c5f5224127ad7b1c02f53/request.json",
+      "api_cache/scene_graph_anticipation/954be9cd20c1afaf890e01e2e8dde8468770192f104c5f5224127ad7b1c02f53/response.json"
+    ]
+  },
+  {
+    "task": "scene_graph_anticipation",
+    "rank": 9,
+    "sample_id": "predcls:WC5QK.mp4_0.5",
+    "signature": "b242dd3b454b1daf20b34d4076d4e542848c130df4c6c339b613e6a4e34400f9",
+    "files": [
+      "api_cache/scene_graph_anticipation/b242dd3b454b1daf20b34d4076d4e542848c130df4c6c339b613e6a4e34400f9/input.json",
+      "api_cache/scene_graph_anticipation/b242dd3b454b1daf20b34d4076d4e542848c130df4c6c339b613e6a4e34400f9/request.json",
+      "api_cache/scene_graph_anticipation/b242dd3b454b1daf20b34d4076d4e542848c130df4c6c339b613e6a4e34400f9/response.json"
+    ]
+  },
+  {
+    "task": "scene_graph_anticipation",
+    "rank": 10,
+    "sample_id": "predcls:0UPBN.mp4_0.5",
+    "signature": "3b8ce050ce43cfc40ebd5040bf9338f49a0081fea7cbb45ca0d9254e60276165",
+    "files": [
+      "api_cache/scene_graph_anticipation/3b8ce050ce43cfc40ebd5040bf9338f49a0081fea7cbb45ca0d9254e60276165/input.json",
+      "api_cache/scene_graph_anticipation/3b8ce050ce43cfc40ebd5040bf9338f49a0081fea7cbb45ca0d9254e60276165/request.json",
+      "api_cache/scene_graph_anticipation/3b8ce050ce43cfc40ebd5040bf9338f49a0081fea7cbb45ca0d9254e60276165/response.json"
+    ]
+  },
+  {
+    "task": "trajectory_forecasting",
+    "rank": 1,
+    "sample_id": "crowds_zara01_576",
+    "signature": "6a26597438107428e9a8c2fb62f3dc78b1d48d9610acc385e68c0b145a3af95c",
+    "files": [
+      "api_cache/trajectory_forecasting/6a26597438107428e9a8c2fb62f3dc78b1d48d9610acc385e68c0b145a3af95c/input.json",
+      "api_cache/trajectory_forecasting/6a26597438107428e9a8c2fb62f3dc78b1d48d9610acc385e68c0b145a3af95c/request.json",
+      "api_cache/trajectory_forecasting/6a26597438107428e9a8c2fb62f3dc78b1d48d9610acc385e68c0b145a3af95c/response.json"
+    ]
+  },
+  {
+    "task": "trajectory_forecasting",
+    "rank": 2,
+    "sample_id": "crowds_students003_3349",
+    "signature": "db8e2db17e6a80c5be4f719e87176fda5f3931433041d4647d9e3baef3170c1c",
+    "files": [
+      "api_cache/trajectory_forecasting/db8e2db17e6a80c5be4f719e87176fda5f3931433041d4647d9e3baef3170c1c/input.json",
+      "api_cache/trajectory_forecasting/db8e2db17e6a80c5be4f719e87176fda5f3931433041d4647d9e3baef3170c1c/request.json",
+      "api_cache/trajectory_forecasting/db8e2db17e6a80c5be4f719e87176fda5f3931433041d4647d9e3baef3170c1c/response.json"
+    ]
+  },
+  {
+    "task": "trajectory_forecasting",
+    "rank": 5,
+    "sample_id": "crowds_students003_3499",
+    "signature": "f6581ee86716a33098b07722d970878a32f26f0ca2d7ee26fe844bbf9905adf5",
+    "files": [
+      "api_cache/trajectory_forecasting/f6581ee86716a33098b07722d970878a32f26f0ca2d7ee26fe844bbf9905adf5/input.json",
+      "api_cache/trajectory_forecasting/f6581ee86716a33098b07722d970878a32f26f0ca2d7ee26fe844bbf9905adf5/request.json",
+      "api_cache/trajectory_forecasting/f6581ee86716a33098b07722d970878a32f26f0ca2d7ee26fe844bbf9905adf5/response.json"
+    ]
+  },
+  {
+    "task": "trajectory_forecasting",
+    "rank": 7,
+    "sample_id": "crowds_students003_3679",
+    "signature": "fdfc0373800ec61c20cd6c7ae0aa5c0992ef9ed5754533dfcb05d6a0f3002877",
+    "files": [
+      "api_cache/trajectory_forecasting/fdfc0373800ec61c20cd6c7ae0aa5c0992ef9ed5754533dfcb05d6a0f3002877/input.json",
+      "api_cache/trajectory_forecasting/fdfc0373800ec61c20cd6c7ae0aa5c0992ef9ed5754533dfcb05d6a0f3002877/request.json",
+      "api_cache/trajectory_forecasting/fdfc0373800ec61c20cd6c7ae0aa5c0992ef9ed5754533dfcb05d6a0f3002877/response.json"
+    ]
+  },
+  {
+    "task": "trajectory_forecasting",
+    "rank": 13,
+    "sample_id": "crowds_students003_3343",
+    "signature": "111fcd7563e9c8df2d949bb02016d45dc2ba684386196082783d5813855d3681",
+    "files": [
+      "api_cache/trajectory_forecasting/111fcd7563e9c8df2d949bb02016d45dc2ba684386196082783d5813855d3681/input.json",
+      "api_cache/trajectory_forecasting/111fcd7563e9c8df2d949bb02016d45dc2ba684386196082783d5813855d3681/request.json",
+      "api_cache/trajectory_forecasting/111fcd7563e9c8df2d949bb02016d45dc2ba684386196082783d5813855d3681/response.json"
+    ]
+  }
+]

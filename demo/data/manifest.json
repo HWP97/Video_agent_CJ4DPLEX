@@ -24,8 +24,9 @@
     ]
   },
   "cases": 15,
-  "raw_assets": 146,
-  "bytes": 255300365,
+  "api_cache_cases": 15,
+  "raw_assets": 191,
+  "bytes": 255647091,
   "symlinks": false,
   "new_inference": false,
   "new_api_calls": 0
