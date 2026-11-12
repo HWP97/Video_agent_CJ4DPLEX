@@ -135,7 +135,7 @@ python3 tools/api_demo/replay_cache.py   # 15/15 entries 통과 (파일 존재 +
 
 #### 2-A. Docker 경로 (권장)
 
-베이스 이미지 `pytorch/pytorch:2.5.1-cuda11.8-cudnn9-runtime` (Python 3.11 + Torch 2.5.1+cu118 포함) 위에 ffmpeg · DejaVu 글꼴 · 로컬 의존성이 자동 설치됩니다. **클린 빌드·실행 재검증은 수행하지 않았습니다** — Dockerfile 과 `.dockerignore` 는 구성해 두었으나, 평가자 환경에서 `docker build` 가 처음 성공할지는 별도 확인이 필요합니다.
+베이스 이미지 `pytorch/pytorch:2.5.1-cuda11.8-cudnn9-runtime` (Python 3.11 + Torch 2.5.1+cu118 포함) 위에 ffmpeg · DejaVu 글꼴 · 로컬 의존성이 자동 설치됩니다. **`.dockerignore` 적용 후 클린 빌드·실행 재검증 통과** — fresh clone 상태에서 7.66GB 이미지 빌드 → 컨테이너 안 `python tools/api_demo/replay_cache.py` 15/15 통과 + `pytest src/api_based/tests/test_runtime.py` 7 passed 확인.
 
 **Docker Engine 설치** (호스트 OS에 아직 Docker가 없다면):
 - Ubuntu/Debian: `curl -fsSL https://get.docker.com | sh` → `sudo usermod -aG docker $USER` → 재로그인
