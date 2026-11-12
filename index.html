@@ -151,8 +151,10 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
 </section>
 
 <section id="demo">
-  <h2>Demo (최종 15개 · Head별 5개)</h2>
-  <p>각 사례의 Baseline · Ours · GT를 함께 표시했다. 관측은 1x, cutoff 이후는 0.5x로 재생한다. GIF 아래 수치는 해당 사례의 지표이며 전체 성능과 다르다.</p>
+  <h2>Demo</h2>
+  <p>각 사례의 Baseline · Ours · GT를 함께 표시했다. 관측은 1x, cutoff 이후는 0.5x로 재생한다. GIF 아래 수치는 해당 사례의 지표이며 전체 성능과 다르다. API 경로와 Local 경로는 평가집합·cutoff가 달라 직접 비교하지 않는다.</p>
+
+  <h2 style="margin-top:28px;font-size:18px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line);padding-bottom:6px">API 경로 · 선정 15개 (Head별 5개)</h2>
 
   <h3>Scene Graph Anticipation</h3>
   <div class="gallery">
@@ -182,6 +184,38 @@ code{background:var(--soft);padding:1px 6px;border-radius:3px;font-size:13px}
   </div>
   <p class="note">
     선정 사례의 지표 차이를 전체 성능으로 일반화하지 않는다. 지표 차이와 원영상 이용 가능성을 함께 고려해 선정했다.
+  </p>
+
+  <h2 style="margin-top:36px;font-size:18px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line);padding-bottom:6px">Local 경로 · Head별 상위 5개</h2>
+
+  <h3>Scene Graph Anticipation</h3>
+  <div class="gallery">
+    <figure><img loading="lazy" src="assets/demos/local_scene_graph_anticipation_demo_01.gif" alt="Local scene graph demo 01"><figcaption><span class="id">predcls:GF7DV.mp4_0.5</span>NC R@20 (%) · Baseline 46.15 → Ours 84.62</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_scene_graph_anticipation_demo_02.gif" alt="Local scene graph demo 02"><figcaption><span class="id">predcls:6PESI.mp4_0.5</span>NC R@20 (%) · Baseline 60.00 → Ours 95.00</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_scene_graph_anticipation_demo_03.gif" alt="Local scene graph demo 03"><figcaption><span class="id">predcls:DLFPX.mp4_0.5</span>NC R@20 (%) · Baseline 65.48 → Ours 100.00</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_scene_graph_anticipation_demo_04.gif" alt="Local scene graph demo 04"><figcaption><span class="id">predcls:4ALLQ.mp4_0.5</span>NC R@20 (%) · Baseline 58.68 → Ours 91.67</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_scene_graph_anticipation_demo_05.gif" alt="Local scene graph demo 05"><figcaption><span class="id">predcls:NDDHA.mp4_0.5</span>NC R@20 (%) · Baseline 47.46 → Ours 80.24</figcaption></figure>
+  </div>
+
+  <h3>Affection Forecasting</h3>
+  <div class="gallery">
+    <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_01.gif" alt="Local affection demo 01"><figcaption><span class="id">v003_official_test_t00139.0400</span>MAE · Baseline 0.3731 → Ours 0.1037</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_02.gif" alt="Local affection demo 02"><figcaption><span class="id">v067_official_test_t00074.0000</span>MAE · Baseline 0.3396 → Ours 0.1181</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_03.gif" alt="Local affection demo 03"><figcaption><span class="id">v094_official_test_t00074.7600</span>MAE · Baseline 0.7203 → Ours 0.5624</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_04.gif" alt="Local affection demo 04"><figcaption><span class="id">v060_official_test_t00046.6000</span>MAE · Baseline 0.1819 → Ours 0.0275</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_affect_forecasting_demo_05.gif" alt="Local affection demo 05"><figcaption><span class="id">v058_official_test_t00054.6800</span>MAE · Baseline 0.4186 → Ours 0.3301</figcaption></figure>
+  </div>
+
+  <h3>Trajectory Forecasting</h3>
+  <div class="gallery">
+    <figure><img loading="lazy" src="assets/demos/local_trajectory_forecasting_demo_01.gif" alt="Local trajectory demo 01"><figcaption><span class="id">crowds_zara01_57</span>ADE · Baseline 0.0533 → Ours 0.0877</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_trajectory_forecasting_demo_02.gif" alt="Local trajectory demo 02"><figcaption><span class="id">crowds_students003_3356</span>ADE · Baseline 0.3229 → Ours 0.0957</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_trajectory_forecasting_demo_03.gif" alt="Local trajectory demo 03"><figcaption><span class="id">crowds_zara01_222</span>ADE · Baseline 0.1204 → Ours 0.1109</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_trajectory_forecasting_demo_04.gif" alt="Local trajectory demo 04"><figcaption><span class="id">crowds_students003_2473</span>ADE · Baseline 0.0705 → Ours 0.0842</figcaption></figure>
+    <figure><img loading="lazy" src="assets/demos/local_trajectory_forecasting_demo_05.gif" alt="Local trajectory demo 05"><figcaption><span class="id">crowds_zara01_258</span>ADE · Baseline 0.3909 → Ours 0.0754</figcaption></figure>
+  </div>
+  <p class="note">
+    Local 경로의 상위 5개는 catalog 선정 순(모델 자체 지표 기반)이며 모든 사례에서 개선된 것은 아니다. Trajectory 1·4번 사례처럼 ADE가 악화되는 경우도 함께 보고한다.
   </p>
 </section>
 

@@ -1,0 +1,32 @@
+{
+  "family": "api_based",
+  "tasks": {
+    "affect_forecasting": [
+      2,
+      4,
+      6,
+      12,
+      18
+    ],
+    "scene_graph_anticipation": [
+      4,
+      6,
+      7,
+      9,
+      10
+    ],
+    "trajectory_forecasting": [
+      1,
+      2,
+      5,
+      7,
+      13
+    ]
+  },
+  "cases": 15,
+  "raw_assets": 146,
+  "bytes": 255300365,
+  "symlinks": false,
+  "new_inference": false,
+  "new_api_calls": 0
+}
