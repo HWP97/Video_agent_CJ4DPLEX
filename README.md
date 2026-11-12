@@ -85,6 +85,19 @@ GIF는 사례 설명용입니다. 선정 사례의 지표 차이를 전체 성�
 
 ## Installation
 
+### 0. 저장소 받기
+
+```bash
+git clone https://github.com/HWP97/Video_agent_CJ4DPLEX.git
+cd Video_agent_CJ4DPLEX
+```
+
+**최소 체크 (설치 전):** 저장소 안의 `demo/data/api_cache/` + `demo/api_based/*/catalog.json` 만으로도 15개 Demo 재검증이 가능합니다.
+
+```bash
+python3 tools/api_demo/replay_cache.py   # 외부 리소스 없이 15/15 재검증 통과 확인
+```
+
 ### 1. 실행 환경
 
 | 항목 | 확인한 환경 |
@@ -335,6 +348,21 @@ python -B -m pytest -q -p no:cacheprovider \
 ```
 
 관측 전용 추론과 평가 GT 접근을 분리하고, 동결 자산 SHA·원 예측 일치·영상 디코딩을 확인합니다. 재학습 없이 제공된 checkpoint를 사용하며 새 API 호출은 수행하지 않습니다.
+
+## 출력 결과 저장 위치
+
+과제원문 2.4 (README 필수: "출력 결과의 저장 위치 및 확인 방법")에 따른 통합 안내.
+
+| 명령 | 출력 위치 | 확인 방법 |
+|---|---|---|
+| `python tools/api_demo/replay_cache.py` | 콘솔 출력 (`OK` / `FAIL` + 지표) | 터미널에 15/15 재검증 통과 메시지 |
+| `python main.py api <head> <baseline|ours> evaluate` | `results/api_based/<branch>/<action>-<id>/` | `scores.json` · `per_case.jsonl` + stdout 경로 안내 |
+| `python main.py local <head> <baseline|ours> evaluate` | `results/local_model_based/<branch>/<action>-<id>/` | 동일 구조. 감정은 `results/local_model_based/b2/` 하위에 `predictions/` + `scores.json` |
+| `python main.py api <head> <baseline|ours> predict --sample-id X` | `results/.../<action>-<id>/predict/` | 미래 예측 numpy / JSON 저장 + 콘솔에 파일 경로 출력 |
+| `python main.py api <head> <baseline|ours> verify` | `results/.../<action>-<id>/verify/` | 동결 자산 SHA 비교 결과 (`status.json`) + 콘솔 요약 |
+| `python main.py demo <head>` | `demo/api_based/<head>/` (MP4 신규 렌더 시) | `catalog.json` + poster JPG + 영상 파일 |
+
+`results/` 는 `.gitignore` 로 제외되어 있으며, 각 실행은 UUID 를 붙인 새 하위 디렉터리에 결과를 저장합니다. 동일 명령을 다시 실행해도 이전 결과를 덮어쓰지 않습니다. 상위 집계(예: 전체 평가 요약)는 각 디렉터리의 `scores.json` 을 비교해 확인합니다.
 
 ## Project Structure
 

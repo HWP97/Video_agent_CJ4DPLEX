@@ -82,18 +82,27 @@ ADE는 미래 12시점의 2D 유클리드 거리 평균, FDE는 마지막 시점
 | 보행 이동·상호작용 | 거리 오차와 충돌의 상충 확인 | 파란 예측·빨간 GT 위치 및 ADE/FDE/충돌 표시 |
 | 누락·모호한 대상 | 잘못된 성공 표시 방지 | 기권/누락을 보존하고 자동 채움·자동 API 호출하지 않음 |
 
-### 실제 선정 사례와 확인 결과
+### 최종 선정 15개 사례 요약
 
-| 사례 | baseline → ours | 선정 이유와 해석 |
+각 head 당 5개씩, 총 15개 사례의 개선 / 상충을 요약한다. 전체 catalog는 각 head 의 `CATALOG.md` 를 따른다.
+
+| head | 사례 수 | 평균 개선 | 주의할 상충 |
+|---|---:|---|---|
+| Scene Graph (NC R@20) | 5 | +51.6%p (Ours ≥ Baseline 전 사례) | WC 조건에서는 전체 지표가 하락 (4장) |
+| Affection (MAE) | 5 | 평균 MAE 0.385 → 0.172 (−55%) | 전체 final 421 CCC 는 하락(4장) |
+| Trajectory (ADE) | 5 | 평균 0.352 → 0.161 (−54%) | 전체 1,939 집합에서는 ADE 2.85% 감소 · 충돌률 0.26%p 증가 (4장) |
+
+사례별 지표는 각 catalog 의 `baseline_metric` · `ours_metric`, 개별 사례 영상은 `demo/data/<head>/videos/` 와 `demo/api_based/<head>/`의 metadata 에서 확인한다. 각 사례의 원래 예측을 바꾸지 않고 같은 GT 로 비교했다.
+
+### 실패 사례 분석 (대표 3개)
+
+| 사례 | baseline → ours | 실패 유형과 해석 |
 |---|---|---|
-| 관계 예측 `predcls:X2IUY.mp4_0.5` | NC R@20 22.2222% → 100.0000% | 같은 미래 주석 프레임에서 관계 회수율이 크게 증가한 사례. 이 단일 사례의 100%를 전체 성적으로 일반화하지 않음 |
-| 감정 상태 예측 `v091_t0083.00` | MAE 0.815724 → 0.517331 | 개선 폭이 가장 크지만 보정 후에도 오차가 큼. 긍정·높은 활성 예측과 부정·낮은 활성 GT의 차이를 영상에서 확인 가능 |
-| 보행 궤적 예측 `crowds_students003_3135` | ADE 1.438123 → 0.755952, 충돌 0 → 0 | 원영상 위 예측·GT 점의 위치 차이를 확인할 수 있는 대표 demo |
-| 관계 예측 `predcls:HSEH1.mp4_0.5` | NC R@20 93.7500% → 69.7917% | raw Sol이 잘 맞춘 관계를 보정이 잃는 대표 실패 |
-| 감정 상태 예측 `v094_t0074.00` | MAE 0.101565 → 0.351759 | baseline이 가까웠던 사례에서 잔차 보정이 오히려 오차를 키움. 대상 가림 때문에 시각 확인도 제한됨 |
-| 보행 궤적 예측 `crowds_students001_3563` | ADE 0.021524 → 2.184831 | 원 Sol 궤적이 잘 맞았으나 고정 CV 혼합이 크게 악화한 실패. 고정 비율의 한계 |
+| Scene Graph · 보정에서 되돌아가는 관계 | Ours 가 특정 사례에서 baseline 이 맞춘 관계를 놓침 (WC 제약 하 전형) | NC 보정이 WC 평가기준에서 유효 관계 선택을 악화시키는 전역 현상의 축소판. 4장 WC 지표 하락과 연결 |
+| Affection · 가림·대상 혼동 사례 | baseline 이 이미 가까웠는데 잔차 보정이 오차를 키움 | Ridge 보정이 "일반적으로 좋을 때" 를 전제하므로 대상 가림·ID 혼동이 있는 사례에서 오히려 손해. 대상 ROI 가 가려진 Demo 에서 영상 오버레이로 확인 |
+| Trajectory · 고정 비율 혼합의 한계 | 원 Sol 궤적이 잘 맞은 사례에서 CV 혼합이 평균 궤적으로 끌어당기며 악화 | 0.75/0.25 고정 비율은 평균적으로 유리하지만 Sol 이 이미 정확한 사례에서는 CV 가 노이즈. 사례별 가중 블렌딩이 필요 |
 
-각 사례의 원래 예측을 바꾸지 않고 같은 GT로 비교했다. 관계 예측 demo는 공식 평가기 재채점과 frozen 점수를 대조하고, 감정 상태 예측은 같은 동결 Ridge 출력과 원본 그룹 분리, 보행 궤적 예측은 원 좌표·공식 충돌값을 대조한다. 영상은 head별 5개 Demo만 제공한다. 위 표의 실패 분석은 과제원문3.4를 위한 기존 정량 결과 분석이다. 목록은 `demo/api_based/scene_graph_anticipation/CATALOG.md`, `demo/api_based/affect_forecasting/CATALOG.md`, `demo/api_based/trajectory_forecasting_reselected/CATALOG.md`를 따른다.
+실패 유형은 4장 집계 지표의 상충(WC R@20 감소, CCC 하락, 충돌률 증가)과 같은 원인을 공유한다. 전체 사례 목록은 `demo/api_based/scene_graph_anticipation/CATALOG.md`, `demo/api_based/affect_forecasting/CATALOG.md`, `demo/api_based/trajectory_forecasting_reselected/CATALOG.md` 를 따른다.
 
 ## 6. 실패 분석과 한계
 
