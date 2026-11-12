@@ -254,14 +254,15 @@ tar xzf api_cache.tar.gz
     └── trajectory/
 ```
 
-**현재 `--dataset` 은 `tools/api_demo/replay_cache.py` 한 도구에만 배선되어 있습니다.** `main.py api/local/demo` 서브커맨드는 `--dataset` 을 받지만 하위 렌더러·모델 로더는 Repository 내 고정 경로만 사용하므로, 외부 묶음은 **replay_cache 에만 적용**됩니다. 전수 재채점을 하려면 다운로드한 파일을 각 head 의 기대 경로(`src/{api,local}_based/data/...`)로 복사하거나 심볼릭 링크로 연결해야 하며, OneDrive 묶음에는 input features / manifest / GT 가 포함되지 않아 완전 재추론은 보장되지 않습니다.
+**외부 묶음 활용 범위 (중요):**
+
+- OneDrive 의 `weights.tar.gz` 는 `src/{api,local}_based/data/...` 아래 기대 경로로 복사·심링크해야 각 head 의 동결 모델이 로드됩니다. 세부 매핑은 각 head 의 ours/entry.py 와 `docs/RESOURCES.md` 를 따릅니다.
+- OneDrive 의 `api_cache.tar.gz` 는 전체 Sol 요청·응답 원본(`<head>/raw/<signature>/...` + `index.final.jsonl`) 으로, `src/api_based/data/b{1,2,3}/sol/` 에 매핑합니다. **`tools/api_demo/replay_cache.py` 는 이 전체 캐시와 호환되지 않습니다** — replay_cache 는 Repository 내장 15개 서브셋(`demo/data/api_cache/` 의 `index.json` + `<head>/<sig>/response.json` 구조) 전용입니다.
+- 로컬 모델 전수 forward 재채점에 필요한 **입력 특징(`inputs.npz`)·manifest·평가 GT** 는 외부 묶음에 포함되지 않아 완전 재추론은 보장되지 않습니다.
 
 ```bash
-# OneDrive 묶음의 api_cache/ 로 15개 응답 형식 확인 (지표 재계산 아님)
-python tools/api_demo/replay_cache.py --dataset /path/to/dataset
-
-# 환경변수 사용
-VFA_DATASET_DIR=/path/to/dataset python tools/api_demo/replay_cache.py
+# Repository 만으로 15개 Sol 응답 형식 확인 (지표 재계산 아님)
+python tools/api_demo/replay_cache.py
 ```
 
 `--dataset` 을 생략하면 Repository 내장 15개 서브셋(`demo/data/api_cache/`) 만 사용합니다.
