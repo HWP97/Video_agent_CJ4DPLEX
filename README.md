@@ -85,70 +85,60 @@ GIF는 사례 설명용입니다. 선정 사례의 지표 차이를 전체 성�
 
 동결 감정 head와 저장 결과 재현은 CPU에서 실행할 수 있습니다. 보행 모델의 전수 동일성 검증은 CUDA에서 수행했습니다. 새 장비의 전체 설치는 별도로 확인해야 하며, 실제 확인한 패키지 버전은 [환경 안내](requirements/README.md)에 제공합니다.
 
-### 2. 기본 환경 설치
+### 2. 설치 방법
 
-받은 저장소의 루트에서 실행합니다.
+두 가지 중 하나를 고릅니다. **Docker 경로는 OS·CUDA·Python 버전 불일치를 피할 수 있어 평가자에게 권장합니다.**
 
-```bash
-python3.10 -m venv .venv_local
-source .venv_local/bin/activate
+#### 2-A. Docker 경로 (권장)
 
-python -m pip install -r requirements/local.txt
-```
+**Docker Engine 설치** (호스트 OS에 아직 Docker가 없다면):
+- Ubuntu/Debian: `curl -fsSL https://get.docker.com | sh` → `sudo usermod -aG docker $USER` → 재로그인
+- macOS: Docker Desktop 다운로드 (https://docs.docker.com/desktop/install/mac-install/)
+- Windows: Docker Desktop + WSL2 (https://docs.docker.com/desktop/install/windows-install/)
+- GPU 사용 시: NVIDIA Container Toolkit 추가 설치 (https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
-영상 렌더링이나 GIF 재생성이 필요하면 추가로 준비합니다.
-
-```bash
-sudo apt-get install ffmpeg
-python -m pip install -r requirements/demo.txt
-```
-
-<details>
-<summary><strong>Docker로 재현</strong></summary>
-
-로컬 환경 구성을 생략하려면 Repository 루트의 `Dockerfile`로 이미지를 빌드해 실행합니다. PyTorch 2.5.1 + CUDA 11.8 + ffmpeg + 로컬·demo 의존성이 이미 포함되어 있습니다.
+**이미지 빌드·실행:**
 
 ```bash
-# 이미지 빌드 (약 4~6GB)
+# 이미지 빌드 (약 4~6GB, 10~15분)
 docker build -t video-forecasting-agent .
 
-# GPU 추론 (NVIDIA Container Toolkit 필요)
+# GPU 추론 (NVIDIA Container Toolkit 필요, 권장)
 docker run --rm -it --gpus all \
   -v /path/to/external_data:/data \
   video-forecasting-agent \
-  python main.py --python python local affect ours evaluate
+  python main.py local affect ours evaluate
 
-# CPU만 사용 (동결 자산 검증·README verify 가능, 240k 전수 forward는 CUDA 권장)
+# CPU만 사용 (동결 자산 verify·소규모 evaluate 가능, 240k 전수 forward는 CUDA 권장)
 docker run --rm -it \
   -v /path/to/external_data:/data \
   video-forecasting-agent
 ```
 
-`/data`에는 [Resources](docs/RESOURCES.md)에 따라 받은 모델·관측 입력·평가 GT를 마운트하고 `src/{api,local}_based/data/` 아래 심볼릭 링크 또는 복사로 연결합니다. 이미지에 모델 가중치·데이터는 포함되지 않습니다.
+`/data`에는 [Resources](docs/RESOURCES.md)에 따라 받은 모델·관측 입력·평가 GT를 마운트하고 `src/{api,local}_based/data/` 아래 심볼릭 링크 또는 복사로 연결합니다. 이미지에 모델 가중치·데이터는 포함되지 않습니다. API 감정 경로의 별도 PyTorch 2.8+cu126 환경은 컨테이너 안에서 `python -m venv .venv_api_affect && .venv_api_affect/bin/pip install -r requirements/b2.txt` 로 추가합니다.
 
-API 감정 경로는 별도 PyTorch 2.8+cu126 환경을 사용하므로 컨테이너 안에서 `python -m venv .venv_api_affect && .venv_api_affect/bin/pip install -r requirements/b2.txt` 로 추가 환경을 만들어 사용합니다.
+#### 2-B. venv 직접 설치
 
-</details>
+```bash
+sudo apt-get install -y ffmpeg       # 영상 디코딩용 (Ubuntu 기준)
+python3.10 -m venv .venv_local
+source .venv_local/bin/activate
+python -m pip install -r requirements/local.txt
+python -m pip install -r requirements/demo.txt   # 영상 렌더링·GIF 재생성 필요 시
+```
 
-<details>
-<summary><strong>API 감정 경로의 별도 환경</strong></summary>
+API 감정 경로는 별도 PyTorch 2.8+cu126 환경을 사용합니다.
 
 ```bash
 python3.10 -m venv .venv_api_affect
 .venv_api_affect/bin/python -m pip install -r requirements/b2.txt
-```
 
-실행할 때 해당 Python을 명시합니다.
-
-```bash
 .venv_api_affect/bin/python main.py \
   --python "$PWD/.venv_api_affect/bin/python" \
   api affect ours evaluate
 ```
 
 API 관계·보행은 기본 로컬 환경과 같은 PyTorch 계열을 사용합니다. API 경로는 저장 응답의 재현이므로 API key 없이 동작하며 누락 응답을 자동으로 재호출하지 않습니다.
-
-</details>
 
 ### 3. 모델과 데이터 준비
 
