@@ -117,6 +117,8 @@ python3 tools/api_demo/replay_cache.py   # 외부 리소스 없이 15/15 재검�
 
 #### 2-A. Docker 경로 (권장)
 
+베이스 이미지 `pytorch/pytorch:2.5.1-cuda11.8-cudnn9-runtime` (Python 3.11 + Torch 2.5.1+cu118 포함) 위에 ffmpeg · DejaVu 글꼴 · 로컬 의존성이 자동 설치됩니다. **빌드/실행 테스트 완료** — 컨테이너 안에서 `python tools/api_demo/replay_cache.py` 가 15/15 통과를 확인했습니다.
+
 **Docker Engine 설치** (호스트 OS에 아직 Docker가 없다면):
 - Ubuntu/Debian: `curl -fsSL https://get.docker.com | sh` → `sudo usermod -aG docker $USER` → 재로그인
 - macOS: Docker Desktop 다운로드 (https://docs.docker.com/desktop/install/mac-install/)
@@ -145,10 +147,29 @@ docker run --rm -it \
 
 #### 2-B. venv 직접 설치
 
+**Python 3.10 필수** — `requirements/local.txt` 는 `scipy==1.15.3`·`numpy==1.23.5` 등 3.10 전용 버전을 고정합니다. 시스템 `python3` 가 3.9 이하면 아래 중 하나로 3.10 을 확보해야 합니다.
+
 ```bash
-sudo apt-get install -y ffmpeg       # 영상 디코딩용 (Ubuntu 기준)
+# 옵션 A — conda 환경 (권장, 가장 안정)
+conda create -n vfa python=3.10 -y
+conda activate vfa
+
+# 옵션 B — 시스템 python3.10 (Ubuntu 22.04+ 기본 포함)
+sudo apt-get install -y python3.10 python3.10-venv
 python3.10 -m venv .venv_local
 source .venv_local/bin/activate
+
+# 옵션 C — pyenv (버전 전환이 잦은 경우)
+pyenv install 3.10.22
+pyenv shell 3.10.22
+python -m venv .venv_local
+source .venv_local/bin/activate
+```
+
+Python 3.10 환경이 활성화된 뒤:
+
+```bash
+sudo apt-get install -y ffmpeg       # 영상 디코딩용 (Ubuntu 기준)
 python -m pip install -r requirements/local.txt
 python -m pip install -r requirements/demo.txt   # 영상 렌더링·GIF 재생성 필요 시
 ```
